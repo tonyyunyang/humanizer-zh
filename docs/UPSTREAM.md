@@ -16,37 +16,46 @@
 
 本次查看时，op7418 仓库未归档，最新提交日期为 2026-01-19。我们不据此替作者宣布弃用或停止维护。Blader 的最新提交日期为 2026-09-06；说人话为 2026-09-02。
 
+## 2026-09-12 中文审阅草稿
+
+依据[中文编辑方向调研](CHINESE-EDITING-RESEARCH.md)重写根目录 skill，供本地审阅。沿用上表的已审阅基线，不修改 `upstream.lock.json`；版本与插件元数据仍保留当前发布版，正式发版时再统一更新。
+
+- **采用并改写：** 加入中文承接、省略与指代、动作和定语、小词语义、停顿及作者语气六条方法；单列术语与混排格式。每条都有原创修改例子和保留例子，研究术语不进入运行正文。
+- **合并：** 原先 25 项通用模式按五个大类组织为 12 项；主语、动词、限定和连字符等内容移入相应的中文与混排条目。上游模式与现稿的对应关系见下表。
+- **跳过：** 固定句长、统一口语化、全面翻译英文词、固定自然度评分，以及档位和额外必读文件。来源介绍和上游编号不再占用运行正文。
+- **静态检查：** 对照原有 16 个回归场景的要求，补入 10 个不同于正文示例的合成场景，检查保护信息、例子与保留边界的覆盖。没有运行新一轮模型输出，不将此项或仓库检查记作行为回归通过。
+
 ## Blader 3.0.0 对照表
 
-本项目保留上游 1–25 的编号，便于比较。每项都经过中文判断；“适配”不表示逐字翻译，也不表示每项都要执行删改。
+表中编号只用于上游对照。运行正文按编辑主题组织，现稿位置指上面的未发布中文草稿；“适配”不表示逐字翻译，也不表示每项都要执行删改。
 
-| 编号 | 上游模式 | 中文处理 |
-| --- | --- | --- |
-| 1 | Not X but Y | 去掉没有信息的对比；保留真实区别、纠错和限制 |
-| 2 | One-line closers and dramatic fragments | 处理金句收尾和碎句表演，保留有用的短句 |
-| 3 | Sayings that sound deep | 改写“本质”“底层逻辑”等空泛定调，保留实际原理 |
-| 4 | Staged run-up before the point | 去掉预告层，不把教程引导和正常口语一并删除 |
-| 5 | Arguing with no one | 处理假想反对者，保留真实异议与取舍 |
-| 6 | Forced triads | 检查是否信息重复，不靠删掉第三个真实项目打散结构 |
-| 7 | Repeated sentence openings | 调整机械起句，保留有意排比 |
-| 8 | Dashes as the universal connector | 处理滥用；不采用无样文时全面禁止破折号的规则 |
-| 9 | Stacked qualifiers | 简化重复限定，保留真实不确定性和范围 |
-| 10 | Hyphenated pairs everywhere | 仅对中英混排按语法处理；纯中文不适用 |
-| 11 | Passive voice and missing subjects | 理顺动作和主体；不为中文省略句编造执行者 |
-| 12 | Overused AI words | 改成中文语境的抽象词与黑话判断，不建硬性禁词表 |
-| 13 | Inflated significance | 删除没有信息的拔高、空展望；保留计划和限制 |
-| 14 | Vague connection or association | 有依据才具体化，不把“参与”改成“负责” |
-| 15 | Shallow -ing riders | 对应中文句尾的“体现、彰显、确保”；保留实际因果 |
-| 16 | Sales language | 降低无依据的宣传性，保留真实特点和个人喜好 |
-| 17 | Borrowed authority | 保留归属，指出必要的来源缺口，防止把无源结论洗成事实 |
-| 18 | Avoiding is, are, and has | 还原“是、有、负责”等具体动词，不模糊动作差异 |
-| 19 | Bold as decoration | 清理重复标签，保留方便检索和比较的结构 |
-| 20 | Decorative headings | 处理装饰和重复标题；中文不套英文标题大小写规则 |
-| 21 | Curly quotation marks | 不采用“中文弯引号像 AI”的判断；遵循中文及目标格式习惯 |
-| 22 | Chatbot residue | 删除正文外壳，保留真实的礼貌、称呼和邀请 |
-| 23 | Knowledge-limit disclaimers and guesses | 清理模型自述与脑补，保留有意义的日期和资料缺口 |
-| 24 | A heading repeated in the first sentence | 删除同义重述，保留必要定义和前提 |
-| 25 | Writing about the previous version | 现状文档聚焦当前行为，变更类文档保留前后关系 |
+| 编号 | 上游模式 | 中文处理 | 现稿位置 |
+| --- | --- | --- | --- |
+| 1 | Not X but Y | 去掉没有信息的对比；保留真实区别、纠错和限制 | 空对比和假想反驳 |
+| 2 | One-line closers and dramatic fragments | 合并空收尾；按信息与语气处理碎句 | 碎句和重复起句；拔高和空收尾 |
+| 3 | Sayings that sound deep | 改写空泛定调，保留实际原理 | 普通判断装得深刻 |
+| 4 | Staged run-up before the point | 去掉预告层，保留背景与步骤引导 | 预告和重述 |
+| 5 | Arguing with no one | 处理假想反对者，保留真实异议与取舍 | 空对比和假想反驳 |
+| 6 | Forced triads | 按信息判断并列项，不靠数量决定去留 | 凑齐并列项 |
+| 7 | Repeated sentence openings | 调整机械起句，保留有意排比与自然省略 | 碎句和重复起句；该省的省，该说清的说清 |
+| 8 | Dashes as the universal connector | 按语义关系使用破折号，保留正常中文用法 | 按意思安排停顿 |
+| 9 | Stacked qualifiers | 简化重复限定，保留范围、程度与不确定性 | 留住小词里的意思 |
+| 10 | Hyphenated pairs everywhere | 并入混排；保护名称和标识符的连字符 | 术语留得准，中文写得顺 |
+| 11 | Passive voice and missing subjects | 理顺动作和主体，保留省略与自然被动句 | 该省的省，该说清的说清；把动作展开 |
+| 12 | Overused AI words | 关注抽象词是否掩盖动作，保留真实术语 | 抽象词和宣传腔 |
+| 13 | Inflated significance | 删除无信息的拔高与展望，保留计划和限制 | 拔高和空收尾 |
+| 14 | Vague connection or association | 有依据才具体化，不把参与改成负责 | 模糊关系和借来的权威 |
+| 15 | Shallow -ing riders | 合并句尾的空泛意义，保留实际因果 | 拔高和空收尾 |
+| 16 | Sales language | 用已有功能与特点表达，保留个人喜好 | 抽象词和宣传腔 |
+| 17 | Borrowed authority | 保留归属和必要来源缺口，不把无源结论洗成事实 | 模糊关系和借来的权威 |
+| 18 | Avoiding is, are, and has | 与动作及名词化问题合并，保留动作含义 | 把动作展开 |
+| 19 | Bold as decoration | 清理重复标签，保留查找与比较所需结构 | 过密的粗体和标签 |
+| 20 | Decorative headings | 处理装饰，保留文档层级和作者视觉风格 | 装饰性标题 |
+| 21 | Curly quotation marks | 遵循中文及目标格式习惯，保护引文与精确字符 | 标点和间距跟随文章与载体 |
+| 22 | Chatbot residue | 删除正文外壳，保留真实礼貌、称呼和邀请 | 助手客套和模型自述 |
+| 23 | Knowledge-limit disclaimers and guesses | 清理模型自述，保留日期和资料缺口，禁止脑补 | 助手客套和模型自述；怎样改 |
+| 24 | A heading repeated in the first sentence | 删除同义重述，保留必要定义和前提 | 预告和重述 |
+| 25 | Writing about the previous version | 现状文档聚焦当前行为，变更类文档保留前后关系 | 改稿过程混进现状说明 |
 
 ## 从说人话吸收什么
 

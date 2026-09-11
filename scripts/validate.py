@@ -59,7 +59,6 @@ def validate():
     copies = [path for path in ROOT.rglob("SKILL.md") if not any(part in {".git", "node_modules", ".venv"} for part in path.relative_to(ROOT).parts)]
     require(copies == [ROOT / "SKILL.md"], "Keep exactly one root SKILL.md")
     require(len(skill.splitlines()) <= 250 and len(skill.encode()) <= 24000, "Keep the self-contained skill under 250 lines and 24 KB; review any growth")
-    require([int(n) for n in re.findall(r"^\*\*(\d+)\. ", skill, re.M)] == list(range(1, 26)), "Keep the reviewed upstream pattern numbering 1–25")
 
     plugin = json.loads(read(".claude-plugin/plugin.json"))
     market = json.loads(read(".claude-plugin/marketplace.json"))
@@ -80,7 +79,7 @@ def validate():
     for source in lock["sources"]:
         require(source["revision"] in read("docs/UPSTREAM.md"), f"Document the reviewed commit for {source['id']}")
     upstream_version = next(source["version"] for source in lock["sources"] if source["id"] == "blader")
-    require(f"Blader Humanizer v{upstream_version}" in skill, "Skill's upstream version differs from the lock")
+    # Upstream provenance belongs to maintenance records, not the runtime skill.
     require(f"Blader Humanizer {upstream_version}" in read("README.md"), "README's upstream version differs from the lock")
     require("Copyright (c) 2026 Tony Yang" in read("LICENSE"), "Preserve the existing repository license")
     for owner in ["2025 Siqi Chen", "2026 MrGeDiao", "2026 歸藏"]:
