@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 41.471,
+  "prompt_sha256": "06828c677e4130cc61be407964f921434bf13a3c1637fcd90bf00649f29d9c50",
+  "output": "这里的 p95 是按单次 request 算的：p95 = 420 ms，意思是这批记录里至少 95% 的请求耗时不超过 420 ms，不代表平均每次都要等 420 ms，也不代表 95% 的用户都觉得快。\n\n目前图表只纳入 status=200 的请求，timeout 和其他错误列在另一张表里。所以比较两次发布时，不能只看这张图的曲线是不是降了，还得一起看错误数量。这个限制也适用于 `loadUser()` 的分项数据。\n\n我在演示里选的是周二 14:00 到 15:00 这段时间，只想说明这张图怎么读，没打算用它证明全天表现。如果要讨论发布效果，我们得另选可比的时间窗口。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12842,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1209,
+    "reasoning_output_tokens": 1025
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "c3f4cc0b144998329bf75354cecef0a63b6d7e3f5dae0341b76d205432f873e1",
+  "stderr_lines": 17
+}

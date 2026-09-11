@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 32.285,
+  "prompt_sha256": "a242353deccacf8765ba1a4fb6d6ac0295f4616bc059e01141f8c5a1bcc83cb7",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留了「週五」及其两种可能含义、对店家的复合感受、对想念对象的不确定、回程时间的考量和原有结尾，维持繁体及犹豫但不自责的口吻。B 将「貨架可以慢慢翻」改为「貨架上的唱片可以慢慢翻」，动作对象更明确，属于克制的轻修，略优。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11042,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 966,
+    "reasoning_output_tokens": 804
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "2a19fe01b7ed84df34172eb593842e002ca3fb3a5553d7d28e6923cc186f95de",
+  "stderr_lines": 16
+}

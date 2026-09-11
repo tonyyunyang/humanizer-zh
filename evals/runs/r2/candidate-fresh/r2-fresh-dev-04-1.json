@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 33.089,
+  "prompt_sha256": "a3a61e82878c04cd13de665dc6c7dd9d39fd4aaa5c0fd70f9a444cdfd873abc1",
+  "output": "搬家後，我還是常去原來那家早餐店。其實新家樓下就有一間，走過去不用兩分鐘，只是我還沒記住老闆的臉，他也還不知道我不喝甜的。\n\n舊店的阿姨倒不是每次都記得。有一回她問我是不是照舊，我說對，端上來的卻是別人的蘿蔔糕。我們兩個都笑了，她一邊換盤子一邊說，最近事情多，腦袋有點亂。\n\n所以也沒有「一進門就被懂得」那麼神奇。我只是喜歡那裡的窗邊，早上九點以後曬得到太陽。偶爾多走十五分鐘，坐下來吃完再走，覺得還不錯。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12932,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 968,
+    "reasoning_output_tokens": 773
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "633b6acc2e2b1593a4aef0de8066e538de2243f228f6c44ac301fa7d28cd1074",
+  "stderr_lines": 17
+}

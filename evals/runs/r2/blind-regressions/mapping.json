@@ -1,0 +1,30 @@
+{
+  "first": {
+    "run": "evals/runs/r2/baseline-regressions",
+    "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+  },
+  "second": {
+    "run": "evals/runs/r2/candidate-regressions",
+    "skill_commit": "9d4b42bf5d11eb2d52af7bc02c384b41a4d3a9f2"
+  },
+  "seed": 2026091205,
+  "cases": {
+    "r2-regression-01-existing-qualification": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-regression-02-request-paraphrase": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-regression-03-explicit-removal": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-regression-04-existing-explanation": {
+      "A": "second",
+      "B": "first"
+    }
+  },
+  "note": "Keep this mapping out of all judge prompts; first/second identities are not in tasks.json."
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-regression-01-existing-qualification",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 39.794,
+  "prompt_sha256": "312572e3fcba42b00c0efcbcb472bb2dd81439c5bae4ba0712e1c3406f2b29b5",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版均保留了作者的不满、两个月与三遍的例子、“可能”的限定、原有引文、“月底冲业绩”的比喻及尊重他人选择的边界，没有新增平衡说教。A 的“不是因为读得少而不好意思”比 B 的逗号停顿更自然，从原因到例子、再到个人立场的承接也更顺畅。B 将限定前置、以比喻收尾同样成立。综合略偏好 A。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10547,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1211,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8da9382049e6d02ca1e4b79235dd82bac4f25c18d178eb54c2ca0b61f5336b92",
+  "stderr_lines": 17
+}

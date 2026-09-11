@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 54.121,
+  "prompt_sha256": "9b0a26624ecb5095b85dece987591d61e388adcf286ff20d3ba1b10fa41e9abe",
+  "output": "{\"gate_a\":\"pass\",\"gate_b\":\"pass\",\"issues_a\":[],\"issues_b\":[],\"preference\":\"tie\",\"reason\":\"两版均保留次数、预约时间、约满时长和迟到失效信息，人物归属、否定、条件、时序及完成状态未变；明确批评及其轻重关系、理解、感谢、让步和经历范围也完整保留，未额外展开或添加结论。A 的“到门口才被告知”交代更完整，B 的“那会儿”更口语，均属适度润色，无明确优劣。\",\"confidence\":\"high\"}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10941,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1592,
+    "reasoning_output_tokens": 1440
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "d32238d7a9330d44f63170001c5ed3e0278b1856b4503584000212b8510c192a",
+  "stderr_lines": 17
+}

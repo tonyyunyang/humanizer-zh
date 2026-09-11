@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 179.829,
+  "prompt_sha256": "f05aaa44ca17cd3cbe2fafd29501992394428b0c3d8113758c075feb968b8203",
+  "output": "陈老师，你好：\n\n谢谢你们昨天整理两版展板 draft、逐张补齐旧照片出处，省了不少核对时间。抱歉我们前天的名单漏了两位摄影者，让排好的署名区又要调整。修正名单见附件。\n\n下次 review，我们建议先看第三版版式，标题层级未定，逐字校对容易返工。若需先锁定文字，我们也可配合。周三下午四点后都能参加；周四上午要等负责旧照片的同事回复才能确定。\n\n这轮希望先看六块入口展板。楼上十二块专题展板还缺两份授权，建议材料齐后另约，以免这次讨论不完。方便的话，请周二下班前回复偏好的顺序和可参加时间，我们再一起确认。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12988,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5885,
+    "reasoning_output_tokens": 5696
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "281f6b14346585b66fab9db70217dda1086d91887f6e27afb8e4f3be898ed14b",
+  "stderr_lines": 17
+}

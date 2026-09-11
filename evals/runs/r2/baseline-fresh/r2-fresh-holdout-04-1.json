@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 58.348,
+  "prompt_sha256": "e6cae9b587c58c6972f256e5b3f7e51a870bff2fd6e62478aa3889ba27262247",
+  "output": "週日整理抽屜，翻到一張以前常去的唱片行名片。電話旁邊有我用鉛筆寫的兩個字：週五。我已經忘了那是到貨的日子，還是老闆叫我那天再打去問。\n\n那家店其實沒有對我特別好。有時候我問起一張很冷門的唱片，老闆會直接說沒聽過，然後低頭繼續拆箱。我當時也覺得他有點敷衍，可是貨架上的唱片可以慢慢翻，待一個下午沒買東西，也沒有人一直過來問。這一點我很喜歡。\n\n我不確定自己想念的是那間店，還是那時候真的有一整個下午可以閒晃。現在讓我再去，我大概還是會先看一下回程要多久。這樣想，也沒有很難過，只是覺得有點好笑。名片最後留在抽屜裡，旁邊是幾張不知道還能不能用的集點卡。下次整理時，也許會再看見吧。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12936,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1826,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "6aa2b89f6c9ec4415f6d071b8bcf0c6c479687c2eb08dc8693cbb50ca516daf4",
+  "stderr_lines": 17
+}

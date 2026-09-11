@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 32.922,
+  "prompt_sha256": "0378df37bdf7c83399093f8bffa90c0c3391887e713cbc526c143d96eb88d52a",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均完整删除规划段，保留3秒到8秒的调整、客户端等待与服务端执行时限的区别、cancellation条件，以及maxRetries=2对应最多重试两次、总计最多三个请求和接口适用范围。两版也保留最近两天、未做对照实验、请求量低及不能断定服务端提速的限制，未新增建议。B明确写出“timeout次数”有原文依据；其余语序、标点差异均属等义润色，可读性无明显高下。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10734,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 988,
+    "reasoning_output_tokens": 802
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "052d7fe3498c6edff00875f618b3e7d68fa67102a7ff359af44c7f0ec5113aec",
+  "stderr_lines": 17
+}

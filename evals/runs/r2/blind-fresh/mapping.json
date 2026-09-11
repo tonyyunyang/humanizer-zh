@@ -1,0 +1,46 @@
+{
+  "first": {
+    "run": "evals/runs/r2/baseline-fresh",
+    "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+  },
+  "second": {
+    "run": "evals/runs/r2/candidate-fresh",
+    "skill_commit": "9d4b42bf5d11eb2d52af7bc02c384b41a4d3a9f2"
+  },
+  "seed": 2026091206,
+  "cases": {
+    "r2-fresh-dev-01": {
+      "A": "first",
+      "B": "second"
+    },
+    "r2-fresh-dev-02": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-fresh-dev-03": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-fresh-dev-04": {
+      "A": "first",
+      "B": "second"
+    },
+    "r2-fresh-holdout-01": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-fresh-holdout-02": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-fresh-holdout-03": {
+      "A": "second",
+      "B": "first"
+    },
+    "r2-fresh-holdout-04": {
+      "A": "second",
+      "B": "first"
+    }
+  },
+  "note": "Keep this mapping out of all judge prompts; first/second identities are not in tasks.json."
+}

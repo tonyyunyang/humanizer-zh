@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 47.904,
+  "prompt_sha256": "3a005907a732470b19db48cffd1a32c96f05c54c80672721b813b6a1e070d4ca",
+  "output": "小周，你好。附件是今天的 meeting notes，标黄的三处是我们还没对齐的内容。\n\n昨天我们误发了旧版 schema，是我的疏忽，抱歉让你们多核了一遍。附件里的版本已经改正，想麻烦你再核对一下导出的字段名称，主要确认 order_id 和 created_at 这两个字段是否都可以采用这一版的格式。如果方便，希望你能在周四中午前回复；如果时间比较赶，也请告诉我你们大概什么时候能确认，我们好安排后面的联调。\n\n截图里的颜色先不用管，设计同事还在调整。谢谢，明天再聊。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12817,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1434,
+    "reasoning_output_tokens": 1282
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "4d087800bf0a8191b2addf25473bf79d0b7cda70b63f5e3e54149d7903fef837",
+  "stderr_lines": 17
+}

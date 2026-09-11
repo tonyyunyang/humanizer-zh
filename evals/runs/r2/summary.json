@@ -1,0 +1,232 @@
+{
+  "accepted_skill_commit": "9d4b42bf5d11eb2d52af7bc02c384b41a4d3a9f2",
+  "decision": "Retain the narrow no-addition versus deletion clarification and author-qualification example. Do not retain the earlier grouping hint.",
+  "comparisons": {
+    "blind-regressions": {
+      "first": {
+        "run": "evals/runs/r2/baseline-regressions",
+        "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+      },
+      "second": {
+        "run": "evals/runs/r2/candidate-regressions",
+        "skill_commit": "9d4b42bf5d11eb2d52af7bc02c384b41a4d3a9f2"
+      },
+      "preference_counts": {
+        "first": 1,
+        "second": 1,
+        "tie": 2,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "cases": [
+        {
+          "case_id": "r2-regression-01-existing-qualification",
+          "preferred": "second",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留了作者的不满、两个月与三遍的例子、“可能”的限定、原有引文、“月底冲业绩”的比喻及尊重他人选择的边界，没有新增平衡说教。A 的“不是因为读得少而不好意思”比 B 的逗号停顿更自然，从原因到例子、再到个人立场的承接也更顺畅。B 将限定前置、以比喻收尾同样成立。综合略偏好 A。"
+        },
+        {
+          "case_id": "r2-regression-02-request-paraphrase",
+          "preferred": "first",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留非因读得少而不好意思的否定、对数量交流的厌烦、两个月与同章三遍的例子、统计结果的“可能”，以及“月底冲业绩”的比喻和尊重他人打卡的限定。B 的“把同一章读了三遍”更自然，结尾用“我退出，是因为……”直接连接个人选择与原因，以原有比喻收束，承接更顺。"
+        },
+        {
+          "case_id": "r2-regression-03-explicit-removal",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均按要求删除末句，保留“不是因为读得少”的否定、两个月与同一章三遍的例子、“可能”的限定、作者的厌烦及“月底冲业绩”的比喻。开头均更简洁自然。A句内承接连贯，B分句突出转折；两种节奏各有取舍，无明确优劣。"
+        },
+        {
+          "case_id": "r2-regression-04-existing-explanation",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留缓存命中的已有释义、同参数先查缓存和过期仍须重算的行为，以及当前仅在单进程环境验证、跨进程尚未测试的范围，未增加新概念或保证。两版表达均清楚自然，措辞差异无明确优劣。"
+        }
+      ]
+    },
+    "blind-fresh": {
+      "first": {
+        "run": "evals/runs/r2/baseline-fresh",
+        "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+      },
+      "second": {
+        "run": "evals/runs/r2/candidate-fresh",
+        "skill_commit": "9d4b42bf5d11eb2d52af7bc02c384b41a4d3a9f2"
+      },
+      "preference_counts": {
+        "first": 1,
+        "second": 0,
+        "tie": 7,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 8,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 8,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "cases": [
+        {
+          "case_id": "r2-fresh-dev-01",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版均保留次数、预约时间、约满时长和迟到失效信息，人物归属、否定、条件、时序及完成状态未变；明确批评及其轻重关系、理解、感谢、让步和经历范围也完整保留，未额外展开或添加结论。A 的“到门口才被告知”交代更完整，B 的“那会儿”更口语，均属适度润色，无明确优劣。"
+        },
+        {
+          "case_id": "r2-fresh-dev-02",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均逐字保留第一、三段，保留发件人的疏忽与道歉、附件已改正的状态、order_id 和 created_at 的格式确认范围，以及周四中午前回复的期望和另报确认时间的余地；未新增主题、附件内容、承诺或联调日期。两版都先说明疏忽，再提出请求，承接清楚、语气自然，措辞差异基本等义，无明确优劣。"
+        },
+        {
+          "case_id": "r2-fresh-dev-03",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均完整删除规划段，保留3秒到8秒的调整、客户端等待与服务端执行时限的区别、cancellation条件，以及maxRetries=2对应最多重试两次、总计最多三个请求和接口适用范围。两版也保留最近两天、未做对照实验、请求量低及不能断定服务端提速的限制，未新增建议。B明确写出“timeout次数”有原文依据；其余语序、标点差异均属等义润色，可读性无明显高下。"
+        },
+        {
+          "case_id": "r2-fresh-dev-04",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "A、B 完全相同，仅微调「所以也沒有什麼……的神奇」一句，属于等义调整。事实、数字、人物归属、时序、否定范围及引文均保留，也保住了繁体口语语感、对浪漫化解读的保留态度和喜欢窗边阳光的朴素理由，未增加背景或结尾。"
+        },
+        {
+          "case_id": "r2-fresh-holdout-01",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均按要求仅保留中间两段，保住了时长、第二块版未完成时老师开始收拾设备、小陈的具体帮助等细节。安全说明不能省、熟练者可能跟得上的限定，以及明确不满、不愿否定所有人员和主要来亲手练习的立场均未改变。A 调整承接，B 通过断句突出不满，各有取舍，无明显优劣。"
+        },
+        {
+          "case_id": "r2-fresh-holdout-02",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均明显缩短、接近目标篇幅，保留必要感谢、己方遗漏与道歉、附件更正、版式建议及理由、文字优先的备选、时间条件、展板数量与授权情况，以及周二下班前回复后共同确认的请求，未将建议写成定案。A责任与因果表述更直接，B保留内部讨论且建议与理由衔接更清楚，整体各有取舍。"
+        },
+        {
+          "case_id": "r2-fresh-holdout-03",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均原样保留英文、数字和行内代码，完整保留统计口径、否定说明、错误另表、比较发布的要求、分项适用范围，以及演示时段和目的限制，未额外展开。改动均属等义润色，承接、节奏和文体无明显优劣。"
+        },
+        {
+          "case_id": "r2-fresh-holdout-04",
+          "preferred": "first",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留了「週五」及其两种可能含义、对店家的复合感受、对想念对象的不确定、回程时间的考量和原有结尾，维持繁体及犹豫但不自责的口吻。B 将「貨架可以慢慢翻」改为「貨架上的唱片可以慢慢翻」，动作对象更明确，属于克制的轻修，略优。"
+        }
+      ]
+    }
+  },
+  "repeated_trigger_checks": [
+    {
+      "version": "baseline",
+      "path": "evals/runs/r1/current-holdout/fresh-zh-holdout-02-1.json",
+      "prompt_sha256": "89fbc5cf40d72e084ffa9c5a8d4ff1105b8c5f924f57aadec4a0148fc00e7380",
+      "status": "fail",
+      "reason": "The original respect for others choosing reading check-ins is omitted."
+    },
+    {
+      "version": "baseline",
+      "path": "evals/runs/r2/baseline-regressions/r2-regression-01-existing-qualification-1.json",
+      "prompt_sha256": "89fbc5cf40d72e084ffa9c5a8d4ff1105b8c5f924f57aadec4a0148fc00e7380",
+      "status": "pass",
+      "reason": "The original respect for others choosing reading check-ins and the personal scope are preserved."
+    },
+    {
+      "version": "baseline",
+      "path": "evals/runs/r2/baseline-repeats/r2-regression-01-existing-qualification-1.json",
+      "prompt_sha256": "89fbc5cf40d72e084ffa9c5a8d4ff1105b8c5f924f57aadec4a0148fc00e7380",
+      "status": "fail",
+      "reason": "The original respect for others choosing reading check-ins is omitted."
+    },
+    {
+      "version": "baseline",
+      "path": "evals/runs/r2/baseline-repeats/r2-regression-01-existing-qualification-2.json",
+      "prompt_sha256": "89fbc5cf40d72e084ffa9c5a8d4ff1105b8c5f924f57aadec4a0148fc00e7380",
+      "status": "pass",
+      "reason": "The original respect for others choosing reading check-ins and the personal scope are preserved."
+    },
+    {
+      "version": "candidate",
+      "path": "evals/runs/r2/candidate-regressions/r2-regression-01-existing-qualification-1.json",
+      "prompt_sha256": "bdcce99875b25a176d2817a389108e0a52c9c37d464f2e251b7f7eb39b244b55",
+      "status": "pass",
+      "reason": "The original respect for others choosing reading check-ins and the personal scope are preserved."
+    },
+    {
+      "version": "candidate",
+      "path": "evals/runs/r2/candidate-repeats/r2-regression-01-existing-qualification-1.json",
+      "prompt_sha256": "bdcce99875b25a176d2817a389108e0a52c9c37d464f2e251b7f7eb39b244b55",
+      "status": "pass",
+      "reason": "The original respect for others choosing reading check-ins and the personal scope are preserved."
+    },
+    {
+      "version": "candidate",
+      "path": "evals/runs/r2/candidate-repeats/r2-regression-01-existing-qualification-2.json",
+      "prompt_sha256": "bdcce99875b25a176d2817a389108e0a52c9c37d464f2e251b7f7eb39b244b55",
+      "status": "pass",
+      "reason": "The original respect for others choosing reading check-ins and the personal scope are preserved."
+    }
+  ],
+  "repeat_review_method": "The two additional repeats per version were reviewed by the maintaining agent against the actual source. Initial failure was independently flagged; the first R2 pair was anonymously judged.",
+  "limitations": [
+    "Four baseline outputs and three candidate outputs are too few to estimate reliable failure rates.",
+    "Same underlying model family can share generation and judging biases.",
+    "All eight fresh cases pass information gates in both versions; this is compatibility evidence, not proof of an overall stylistic improvement.",
+    "R2 fresh cases were authored after candidate freeze without inspecting the skill or its failures. All R2 cases are consumed for future rounds."
+  ]
+}

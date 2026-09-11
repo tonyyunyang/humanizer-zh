@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-regression-04-existing-explanation",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 21.083,
+  "prompt_sha256": "907a14a3734183f3a1169462aa2dd26d011dbf0f07811913615a0902a3cbb542",
+  "output": "{\"gate_a\":\"pass\",\"gate_b\":\"pass\",\"issues_a\":[],\"issues_b\":[],\"preference\":\"tie\",\"reason\":\"两版均保留缓存命中的已有释义、同参数先查缓存和过期仍须重算的行为，以及当前仅在单进程环境验证、跨进程尚未测试的范围，未增加新概念或保证。两版表达均清楚自然，措辞差异无明确优劣。\",\"confidence\":\"high\"}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10225,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 569,
+    "reasoning_output_tokens": 455
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "77a72caf5bcb4ee846ae8824a4527c788e039226dc3aa872b0789b66fd576d47",
+  "stderr_lines": 16
+}

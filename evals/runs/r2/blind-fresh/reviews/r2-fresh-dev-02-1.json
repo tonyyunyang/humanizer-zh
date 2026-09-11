@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 40.13,
+  "prompt_sha256": "8581260da0f9b852020e2d26fe2433521147fdefd2036f142e9508c91f1efde1",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均逐字保留第一、三段，保留发件人的疏忽与道歉、附件已改正的状态、order_id 和 created_at 的格式确认范围，以及周四中午前回复的期望和另报确认时间的余地；未新增主题、附件内容、承诺或联调日期。两版都先说明疏忽，再提出请求，承接清楚、语气自然，措辞差异基本等义，无明确优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10611,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1203,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "5b9ce7f0061f0755d0419ffa6d56702d4acdfa583b4a6e8c7baabef28cda6a0c",
+  "stderr_lines": 17
+}

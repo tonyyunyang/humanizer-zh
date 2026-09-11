@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-regression-04-existing-explanation",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 18.779,
+  "prompt_sha256": "f2b86e55f2909e1dfa015f37c35f20d26f7b109a4b3a2116839c686bf478aa91",
+  "output": "这里的“缓存命中”指直接使用已有结果，不重新计算。开启缓存后，会先查找同一组参数对应的缓存结果；如果结果已过期，仍须重新计算。目前只在单进程环境下验证过，跨进程行为还没测试。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12685,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 496,
+    "reasoning_output_tokens": 429
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8ef9b2e44933c5c2ebf4486da9d6b68cf5bd0b650fc04eb8d8ca04715751aa40",
+  "stderr_lines": 16
+}

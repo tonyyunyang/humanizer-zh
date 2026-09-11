@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-regression-02-request-paraphrase",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 47.828,
+  "prompt_sha256": "66d11e383b8aed04dc44a194c46465e54f82b963c6a12c87286081a35cd53e3b",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留非因读得少而不好意思的否定、对数量交流的厌烦、两个月与同章三遍的例子、统计结果的“可能”，以及“月底冲业绩”的比喻和尊重他人打卡的限定。B 的“把同一章读了三遍”更自然，结尾用“我退出，是因为……”直接连接个人选择与原因，以原有比喻收束，承接更顺。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10540,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1489,
+    "reasoning_output_tokens": 1321
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "fa2f646e7209f0b64bb92e206b268903bab5a9572eb460cc2306dbc36b931b23",
+  "stderr_lines": 17
+}

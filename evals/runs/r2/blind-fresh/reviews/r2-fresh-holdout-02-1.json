@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 125.06,
+  "prompt_sha256": "8a1beeca8c9abde92bbd7d732496bf9ff24d1f708d4d4e370faaae697dba57be",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均明显缩短、接近目标篇幅，保留必要感谢、己方遗漏与道歉、附件更正、版式建议及理由、文字优先的备选、时间条件、展板数量与授权情况，以及周二下班前回复后共同确认的请求，未将建议写成定案。A责任与因果表述更直接，B保留内部讨论且建议与理由衔接更清楚，整体各有取舍。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10876,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4068,
+    "reasoning_output_tokens": 3902
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "2c6c7a010c2fab792e7996857e6f6d00b2845c4f08a04e9a4f932981dd7eff46",
+  "stderr_lines": 17
+}

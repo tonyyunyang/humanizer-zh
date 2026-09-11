@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 52.759,
+  "prompt_sha256": "9a19d0fdb7f6bb9168ff1e572c5bff087a483b74897cb9865577c245afb550ab",
+  "output": "图书馆把周末自习区改成预约制以后，我去了三个星期天，感受确实不太好。我能理解工作人员想减少占座，毕竟以前把书放下就走的人也不少。但现在只能在前一天晚上八点预约，名额十来分钟就没了，对那个时间还在通勤的人来说，实在不方便。\n\n我最不满意的倒不是没约上，而是规则写得不清楚。第一次我晚到了十一分钟，到门口才被告知预约已经取消了。后来才发现，迟到十分钟就作废的规定写在确认短信的最下面。工作人员愿意帮我找临时空位，我很感谢她，可我还是觉得，这种会直接影响能不能进去的规则，应该在预约前就让人看见。\n\n这只是我去的这个馆、这三个周末的经历，我不知道其他馆是不是一样。也可能有人觉得提前预约更省心，我没打算否认这一点。只是原来我能临时找个安静地方坐一会儿，现在出门前得先抢名额，确实有点失落。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12918,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1576,
+    "reasoning_output_tokens": 1319
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "01c70669ae3b160ef7fda1e95c832fbee529b183d3898710e7678e0d9eb286df",
+  "stderr_lines": 17
+}

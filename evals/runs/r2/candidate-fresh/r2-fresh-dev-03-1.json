@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 28.642,
+  "prompt_sha256": "616f1e935fda856c0bbac6bd17d1e3a83201768f5c1b6a1fd1609f06779d326d",
+  "output": "这次把客户端的 request timeout 从 3 秒延长到了 8 秒。这个设置只决定客户端愿意等多久，不会把服务端任务的执行上限变成 8 秒。客户端取消等待后，服务端是否继续处理，还要看这个接口有没有实现 cancellation。\n\nmaxRetries=2 表示首次请求失败后最多再试两次，所以一次调用最多会发出三个请求。现在只有查询接口会自动重试，创建订单的接口没有开启这项设置。\n\n最近两天，日志里的 timeout 少了。不过，我们还没做对照实验，这两天的请求量也低。目前只能说记录到的超时次数下降了，还不能据此断定这次改动让服务端变快了。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12936,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 842,
+    "reasoning_output_tokens": 677
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8e31c02e9a8cdeaa61ce19278da45cfbead68c5e29c96200d1132b0cc126f9e5",
+  "stderr_lines": 17
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-regression-03-explicit-removal",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 26.644,
+  "prompt_sha256": "9e5f3f9fc8753045ffa31cc9775451f4ddde1eefe2e7bf1531602613274ec45b",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均按要求删除末句，保留“不是因为读得少”的否定、两个月与同一章三遍的例子、“可能”的限定、作者的厌烦及“月底冲业绩”的比喻。开头均更简洁自然。A句内承接连贯，B分句突出转折；两种节奏各有取舍，无明确优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10498,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 785,
+    "reasoning_output_tokens": 633
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "438623abee453739a52521491904f54ec02e076b708f6d03819ab9861319bed0",
+  "stderr_lines": 17
+}

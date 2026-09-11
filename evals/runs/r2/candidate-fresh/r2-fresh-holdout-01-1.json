@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 34.672,
+  "prompt_sha256": "f8d6fb8a4cf23b81a3f99d93012a8f12e8aef79c6c1e41dd85bf2407fd32da74",
+  "output": "课程一共两个半小时，前面将近一小时都在介绍工具、展示老师的作品。安全说明不能省，这点我理解，但展示作品的时间真的太长了，轮到自己动手时就明显有些赶。我的第二块版还没刻完，老师就开始收拾投影设备，这个节奏我不满意。熟练的人也许能跟上，但至少对我这个新手来说，留给实际操作的时间不够。\n\n助教小陈很耐心，看我握刀不稳，专门拿废木片让我再练了几次，最后还留下来帮我试印。这部分体验是好的，我不想因为对课程安排不满意，就把现场每个人的工作一起否定。只是我交费来，主要是想亲手练习，不是听完介绍以后回家再摸索。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13028,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1028,
+    "reasoning_output_tokens": 833
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8cc2cfdbdfb87f64ba6536a07e91d9a9f9c87dfc256de3c0c4f9a4d9af1999fc",
+  "stderr_lines": 17
+}

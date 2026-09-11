@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 17.95,
+  "prompt_sha256": "60844fd31400608743cf522d1c942f494b389b40c5097644705c40f100cf0714",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"A、B 完全相同，仅微调「所以也沒有什麼……的神奇」一句，属于等义调整。事实、数字、人物归属、时序、否定范围及引文均保留，也保住了繁体口语语感、对浪漫化解读的保留态度和喜欢窗边阳光的朴素理由，未增加背景或结尾。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10761,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 488,
+    "reasoning_output_tokens": 337
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "522e8abfabee8dbb361f20b20d0e13dc3d96205bcc9c766cc6ce8cf5c27d8fdf",
+  "stderr_lines": 17
+}

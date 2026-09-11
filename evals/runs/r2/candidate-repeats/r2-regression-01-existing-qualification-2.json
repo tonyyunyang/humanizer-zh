@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-regression-01-existing-qualification",
+  "repetition": 2,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 53.687,
+  "prompt_sha256": "bdcce99875b25a176d2817a389108e0a52c9c37d464f2e251b7f7eb39b244b55",
+  "output": "每次看到有人问“今年读了多少本书”，我都不知道该怎么接话。不是因为读得少而不好意思，而是我厌烦这种只剩下数量的交流。别人喜欢打卡，是别人的自由；我说的只是自己为什么退出。\n\n一本书放在桌上两个月，中间把同一章读了三遍，在统计表里可能还只是一个未完成的项目。但对我来说，那些反复读的时间恰恰才是阅读。我不想把阅读也过成月底冲业绩。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12863,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1613,
+    "reasoning_output_tokens": 1486
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a80d6a447c0201156f9f008e60ce6f64560dbf86dfec8eb1d32a6b1097a9bd32",
+  "stderr_lines": 17
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 35.331,
+  "prompt_sha256": "2c9b5aa12a04584d944aefbeefd269f1852eaa09ef7aff95c6ad4f69791ced19",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均按要求仅保留中间两段，保住了时长、第二块版未完成时老师开始收拾设备、小陈的具体帮助等细节。安全说明不能省、熟练者可能跟得上的限定，以及明确不满、不愿否定所有人员和主要来亲手练习的立场均未改变。A 调整承接，B 通过断句突出不满，各有取舍，无明显优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10898,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1072,
+    "reasoning_output_tokens": 910
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "2bb29166daf00cbb772194a6c332876b22a160854419f1c1d82d7b3db146b3ee",
+  "stderr_lines": 17
+}

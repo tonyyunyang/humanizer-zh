@@ -1,0 +1,23 @@
+{
+  "case_id": "r2-fresh-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 28.075,
+  "prompt_sha256": "ecf1d3d6e395fca8ff583465a1c2e60baa54bd3abc91eb5b88730fcb8bdb7acd",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均原样保留英文、数字和行内代码，完整保留统计口径、否定说明、错误另表、比较发布的要求、分项适用范围，以及演示时段和目的限制，未额外展开。改动均属等义润色，承接、节奏和文体无明显优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10751,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 776,
+    "reasoning_output_tokens": 637
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "ce0e79ad07751c1db530a3f6b1f23be6d277e320fea666b4934813a262ce36c1",
+  "stderr_lines": 16
+}
