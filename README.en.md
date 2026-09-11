@@ -27,7 +27,7 @@ For Claude Code 2.1.142 or newer, use the same plugin route as Blader's project:
 
 The marketplace is served by this GitHub repository. It does not imply a listing or endorsement in an official curated marketplace.
 
-For a manual installation, copy `SKILL.md`, `LICENSE`, and `THIRD_PARTY_NOTICES.md` into a `humanizer-zh` folder under `~/.claude/skills/` for Claude Code or `~/.agents/skills/` for Codex. See the [Chinese README](README.md#安装) for updates and removal. Back up and remove another skill with the same name before switching editions.
+For a manual installation, download the [minimal ZIP](https://github.com/tonyyunyang/humanizer-zh/releases/latest/download/humanizer-zh.zip) and place its `humanizer-zh` folder under `~/.claude/skills/` for Claude Code or `~/.agents/skills/` for Codex. It contains the skill, licenses, and optional Codex display metadata. See the [Chinese README](README.md#安装) for updates and removal. Back up and remove another skill with the same name before switching editions.
 
 ## Use
 

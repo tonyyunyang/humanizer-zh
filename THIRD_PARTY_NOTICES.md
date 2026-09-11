@@ -1,6 +1,6 @@
 # Third-party notices
 
-本项目保留以下上游的版权与 MIT 许可。说明和示例经过中文改编；来源与具体取舍见 [docs/UPSTREAM.md](docs/UPSTREAM.md)。本项目原有许可见 [LICENSE](LICENSE)。
+本项目保留以下上游的版权与 MIT 许可。说明和示例经过中文改编；来源与具体取舍见 [上游适配记录](https://github.com/tonyyunyang/humanizer-zh/blob/main/docs/UPSTREAM.md)。本项目原有许可见 [LICENSE](LICENSE)。
 
 ## blader/humanizer
 

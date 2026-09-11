@@ -71,7 +71,7 @@ npx skills add tonyyunyang/humanizer-zh --global
 <details>
 <summary>手动安装、更新与卸载</summary>
 
-下载[仓库 ZIP](https://github.com/tonyyunyang/humanizer-zh/archive/refs/heads/main.zip)，新建 `humanizer-zh` 文件夹，把 `SKILL.md`、`LICENSE` 和 `THIRD_PARTY_NOTICES.md` 放进去，再将文件夹放入对应目录：
+下载[精简安装包](https://github.com/tonyyunyang/humanizer-zh/releases/latest/download/humanizer-zh.zip)，解压得到 `humanizer-zh` 文件夹，再把它放入对应目录：
 
 | 工具 | 个人 skill 目录 |
 | --- | --- |
@@ -80,7 +80,7 @@ npx skills add tonyyunyang/humanizer-zh --global
 
 Windows 下 `~` 对应你的用户目录。其他工具使用其文档指定的 skill 目录。没有 skill 功能时，也可以把 `SKILL.md` 的正文作为写作指令粘贴到对话中。
 
-运行只需要 `SKILL.md`；一起保留两个许可文件，方便分发时保留版权说明。手动安装时无需复制 `.claude-plugin` 或维护脚本。
+运行只需要 `SKILL.md`；安装包还保留了两个许可文件和可选的 Codex 展示元数据。包里没有维护脚本，也不用复制整个仓库。
 
 安装后如果没有出现，重新加载 skills 或开启新会话。已有其他同名 `humanizer-zh` 时，先备份并移除旧版，避免两个版本同时生效。
 
@@ -99,7 +99,7 @@ claude plugin update humanizer-zh@humanizer-zh
 
 更新后开启新会话。想自动接收后续版本，可以在 Claude Code 的 `/plugin` → Marketplaces 中选择 `humanizer-zh`，启用 auto-update；第三方 marketplace 默认不会自动更新。
 
-手动安装的版本重新下载并替换这三个文件即可。卸载时，Skills CLI 用户运行 `npx skills remove humanizer-zh --global`；Claude 插件用户运行 `/plugin uninstall humanizer-zh@humanizer-zh`；手动安装用户移除自己创建的 skill 文件夹。
+手动安装的版本重新下载并替换自己安装的文件夹即可；改过规则的话先做备份。卸载时，Skills CLI 用户运行 `npx skills remove humanizer-zh --global`；Claude 插件用户运行 `/plugin uninstall humanizer-zh@humanizer-zh`；手动安装用户移除自己创建的 skill 文件夹。
 
 官方说明：[Skills CLI](https://github.com/vercel-labs/skills)、[Claude 插件](https://code.claude.com/docs/en/discover-plugins)、[Codex skills](https://developers.openai.com/codex/skills)。
 

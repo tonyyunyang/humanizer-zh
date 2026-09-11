@@ -71,6 +71,14 @@ CI 在临时项目中使用固定版本 Skills CLI 安装本地 skill，核对�
 
 跑检查并确认合并后的 CI 通过，再创建同名 tag（例如 `v1.0.0`）和 GitHub Release。Release 说明已适配的上游提交、中文行为变化、验证方式和已知限制。不要写“全模型通用”“100% 去 AI 味”等未经验证的承诺。
 
+为手动安装提供精简 ZIP。把示例中的 tag 换成本次发布版本，生成后作为 Release 附件上传，保持文件名 `humanizer-zh.zip`，让 README 的下载地址继续有效：
+
+```bash
+git archive --format=zip --prefix=humanizer-zh/ --output=humanizer-zh.zip v1.0.0 SKILL.md LICENSE THIRD_PARTY_NOTICES.md agents/openai.yaml
+```
+
+检查 ZIP 内的文件与 tag 一致，且包含完整许可；不要加入维护脚本或第二份 skill。
+
 ## 反馈处理
 
 先复现，再判断是事实损坏、语体漂移、未去掉模板感还是安装问题。优先修会改错事实或破坏命令的例子。解释采用或拒绝规则的原因；不要对贡献者的文笔或作者身份下判断。
