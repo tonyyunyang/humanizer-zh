@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 33.278,
+  "prompt_sha256": "c1717572ee3ea96f7a637203b2e7771b96fb292791185ab3b5b7ce66f61d49ef",
+  "output": "离线时，你仍然可以编辑已下载的草稿，修改会先保存在这台设备上。重新联网后，打开草稿页，应用才会开始上传修改。上传时，页面会显示“正在同步”；看到“已同步”，才表示本次修改已上传完成。如果一直显示“等待连接”，可以稍后再打开草稿页查看。仅凭这个状态，无法判断修改是否丢失。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12755,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 972,
+    "reasoning_output_tokens": 873
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "08b5c7dc6c3201304b0c2e66d4a3608f0788d05ced22f1d18a1e0b53518c6973",
+  "stderr_lines": 17
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 28.89,
+  "prompt_sha256": "69317006036103856ba8f0df4f7b2a5fbb5ac5f768f8b26eba5b60a6d78c4150",
+  "output": "昨天下班後繞去老街，才發現那家修鞋店還開著。老闆戴著一副用膠帶纏過的眼鏡，低頭看了看我的鞋，說：「這個還能穿，換個底就好。」我本來已經想好要買新鞋了，聽完反而有點不好意思，好像先放棄它的人是我。等他找鞋底的時候，我站在門口吹風。說真的，那十幾分鐘也沒發生什麼大事，就是忽然不急著走了。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12822,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 858,
+    "reasoning_output_tokens": 716
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b5d582a37609214966aa43f49f067dfb3b62e357234b53bd9f24631a47782c63",
+  "stderr_lines": 17
+}

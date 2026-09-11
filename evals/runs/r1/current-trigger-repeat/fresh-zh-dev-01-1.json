@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 29.812,
+  "prompt_sha256": "788fa4eec588badebe5b1f39b692eff278fc8720e637aefbdeae4912c4249b64",
+  "output": "本地搜索支持离线使用。首次使用时，需要先点击“建立索引”，索引建立完成后才能搜索。未加入索引的笔记不会出现在搜索结果中。\n\n开启“自动更新”后，索引每 5 分钟更新一次，应用退出后会停止更新。你也可以运行 `buildIndex({ mode: \"local\" })` 手动更新索引。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12773,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 886,
+    "reasoning_output_tokens": 794
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "1bd0fa67b3fb15915cc742227a21107462f8ae0af7e9013ff02864a286a4d769",
+  "stderr_lines": 18
+}

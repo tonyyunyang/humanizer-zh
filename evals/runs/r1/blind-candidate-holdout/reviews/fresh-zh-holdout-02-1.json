@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 57.724,
+  "prompt_sha256": "e80e76a3c74a7fd82b0650dc183ca7caf4ed9d6b537f4d68e44903599dac27a9",
+  "output": "{\n  \"gate_a\": \"fail\",\n  \"gate_b\": \"fail\",\n  \"issues_a\": [\n    {\n      \"input_evidence\": \"原文：“至于别人喜欢打卡，那是别人的自由，我这段话说的是我自己为什么退出。”验收要求明确保留作者尊重别人打卡选择的限定。\",\n      \"output_evidence\": \"结尾：“我退出，是因为不想把阅读也过成月底冲业绩。”\",\n      \"reason\": \"保留了个人退出理由，却删除了尊重他人打卡选择的明确态度，遗漏了要求保留的立场限定。用户不要求新增平衡说理，不意味着可以删除原有限定。\"\n    }\n  ],\n  \"issues_b\": [\n    {\n      \"input_evidence\": \"原文：“至于别人喜欢打卡，那是别人的自由，我这段话说的是我自己为什么退出。”验收要求明确保留作者尊重别人打卡选择的限定。\",\n      \"output_evidence\": \"结尾：“我退出打卡，就是不想把阅读也过成月底冲业绩。”\",\n      \"reason\": \"保留了个人退出理由，却删除了尊重他人打卡选择的明确态度，遗漏了要求保留的立场限定。第一人称表达不能替代这项明确限定。\"\n    }\n  ],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留了厌烦态度、两个月与三遍的例子、统计结果的“可能”及“月底冲业绩”的比喻，但都遗漏同一项必须保留的立场限定。实质信息层面无明确优劣，不再以文风分胜负。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10526,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1817,
+    "reasoning_output_tokens": 1420
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "816da82c017a3f2c7b30c9329c8592c938900634527cd00f4364418c5d3af4b1",
+  "stderr_lines": 17
+}

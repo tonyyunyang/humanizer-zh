@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 30.424,
+  "prompt_sha256": "062a14c086acae473302a5fe38ae3f48c6b92b2886da3ae41bb1db0813e1e1d1",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"A仅将“谁来拍板”后的逗号改为句号，B保留原文。两版均保留事实、数字、责任不明的观察、条件与范围，以及不愿再参加此类会议的明确立场；第一人称、直接克制的语气、三句“就”的排比、引号内措辞和结尾对照也完整保留。A断句后强调态度，B保持连贯节奏，均自然，无明确优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10530,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 902,
+    "reasoning_output_tokens": 728
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "5d44d9b2791ce1d800ea0b15f12c7909de20df331545af32ed064ff63d010654",
+  "stderr_lines": 16
+}

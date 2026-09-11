@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 32.97,
+  "prompt_sha256": "b3f17143f95ca6f43e9eff316c65afbcd8fba980e520ff03594621110c03eda0",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留已下载草稿的编辑范围、修改先存于本机、联网后打开草稿页才开始上传的条件；三个界面状态名称逐字保留，过程与完成状态的区别、等待连接无法单独判断修改是否丢失的边界也均准确，未新增排障步骤。B 用“只有……才……”突出上传条件，并将等待连接的说明单独成段，阅读层次略清楚。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10437,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 959,
+    "reasoning_output_tokens": 796
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "af059a409dfa1c22c54c4c5403eb9d2b7574fdd5d7a91d97974311adae52bdd2",
+  "stderr_lines": 16
+}

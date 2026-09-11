@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 35.945,
+  "prompt_sha256": "83c2d5547e151ed1b13057798d867dc4c37c32edd23e1ebc5310e625f4402a5b",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留附件名、第 4 页、两个时间节点及修改已完成的状态。图片能否公开使用仍待贵方确认；移图留文仍是无法及时确认时的建议，并继续征询对方意见。两版都减少了冗余，礼貌直接，仅提供正文。A 明示反馈“该页”的结果，B 将处理方式的确认请求独立成句，各有取舍，无明确优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10556,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1083,
+    "reasoning_output_tokens": 921
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "0af1cd5c664b9c0aa5a52d23ffb8f66a014529d9cdf59bf594e7fd6a63c99982",
+  "stderr_lines": 17
+}

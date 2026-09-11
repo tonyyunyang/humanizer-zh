@@ -1,0 +1,38 @@
+{
+  "first": {
+    "run": "evals/runs/r1/pre-rewrite-fresh",
+    "skill_commit": "2827295d131a7f89f777165877e8b7203d2de80c"
+  },
+  "second": {
+    "run": "evals/runs/r1/baseline-fresh",
+    "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+  },
+  "seed": 2026091201,
+  "cases": {
+    "fresh-zh-dev-01": {
+      "A": "second",
+      "B": "first"
+    },
+    "fresh-zh-dev-02": {
+      "A": "first",
+      "B": "second"
+    },
+    "fresh-zh-dev-03": {
+      "A": "second",
+      "B": "first"
+    },
+    "fresh-zh-dev-04": {
+      "A": "second",
+      "B": "first"
+    },
+    "fresh-zh-dev-05": {
+      "A": "first",
+      "B": "second"
+    },
+    "fresh-zh-dev-06": {
+      "A": "first",
+      "B": "second"
+    }
+  },
+  "note": "Keep this mapping out of all judge prompts; first/second identities are not in tasks.json."
+}

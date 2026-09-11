@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 33.74,
+  "prompt_sha256": "6507fc5059e2c1fe4e2fd454a333d1bf0db4826522edfc63e0879071a68a8b94",
+  "output": "{\"gate_a\":\"pass\",\"gate_b\":\"pass\",\"issues_a\":[],\"issues_b\":[],\"preference\":\"A\",\"reason\":\"两版均保留搜索范围、首次建索引完成后才能搜索的顺序，以及自动更新的开启条件、每 5 分钟一次和应用退出后停止的限制；界面名称与代码字符不变，也未增加承诺。A 首句直接说明离线搜索的对象，后文明确写出“自动更新会停止”，信息衔接略更清楚。B 通过上下文同样保留了这些含义，无实质错误。\",\"confidence\":\"high\"}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10464,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 995,
+    "reasoning_output_tokens": 849
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "d06ac7007fe7d0bf4a2529ecfc71e002ca0b5a7e839ccca8a245c4781267414b",
+  "stderr_lines": 16
+}

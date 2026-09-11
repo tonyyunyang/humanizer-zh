@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 33.988,
+  "prompt_sha256": "10f25be54553b7bf7e7463057c9ce00bcd9fa2179df801be55e2aa84e75cf1c5",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留附件名“讲义_第二轮.pdf”、第 4 页、两个截止节点及修改已完成的状态；明确公开使用仍待贵方确认，移图留文仍是无法及时确认时的建议，并征询对方是否认可。均删去冗余、保持礼貌直接，仅提供正文，未增加催促或承诺。A 将征询单独成句，B 衔接更紧凑，整体无明显优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10562,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 983,
+    "reasoning_output_tokens": 814
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "3f7cadd7fa4f233dc3864a8390f07df0ca0eab34c1cf496440cad23e861d021f",
+  "stderr_lines": 17
+}

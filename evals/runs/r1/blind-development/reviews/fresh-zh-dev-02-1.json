@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 20.185,
+  "prompt_sha256": "b59f2d652c1b1228b3e21794458637ba4254c1c04b4f27b518735d66ed32f263",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"A完整保留原文；B仅将“谁来拍板”后的逗号改为句号，让不愿继续参加此类会议的表态独立成句。两版均保留事实、观察范围、明确立场、第一人称和克制语气，引文、三句“就”的排比及结尾对照也未改变。A承接紧密，B停顿稍强，无明确优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10526,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 570,
+    "reasoning_output_tokens": 410
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "f2011794e0019ff0b4d0abb7abfe15db6dd9a7c7a38e8a83d456738fc773d693",
+  "stderr_lines": 17
+}

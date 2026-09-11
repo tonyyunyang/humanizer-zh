@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 23.153,
+  "prompt_sha256": "b8ce8b05d7bd525d10d0a5fc1a4475a31fb79a0a1d76e8c9cc8f27b7d3599190",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"兩版均保留繁體用字、原有事實與細節、逐字引文，以及輕微擬人和聊天語氣，修改幅度符合要求。B 僅比 A 多一個「後」，時序含義不變，表達效果無明確高下。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10590,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 628,
+    "reasoning_output_tokens": 498
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "7ee088c0c2cb4e1b7db92e14d7041cea4ac72f1090d5ce15cab77c303099d931",
+  "stderr_lines": 17
+}

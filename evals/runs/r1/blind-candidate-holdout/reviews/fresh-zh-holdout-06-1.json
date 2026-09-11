@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-06",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 66.57,
+  "prompt_sha256": "9accf0661b6748f9433af60fd1bd47b85343eceae997655512e27b3af73e8b29",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留背景事实、小周判断尚未证实的限定、分类与复核流程、试行范围和人员分工、二十分钟检查进度、现场确认后续负责人等要求。关键数字、名称和引文准确，反馈安排、缩小范围或停用的条件及不压制异议的立场完整，未把提案写成已完成的结果。B将有分歧的问题明确移回“需要决定”栏，呼应前文类别名称，让操作流程略清楚，因此小幅优于A。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11568,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2113,
+    "reasoning_output_tokens": 1928
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a04fef0e9d73458c6065874e9185f025314c42eda1dad69502093bf6949823c3",
+  "stderr_lines": 16
+}

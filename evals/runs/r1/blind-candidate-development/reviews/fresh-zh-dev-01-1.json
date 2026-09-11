@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 30.534,
+  "prompt_sha256": "5e6443c1c37eaeda8b2fefb0332166bcc0d69da76089b51e1b898a037301f7eb",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留离线搜索的对象及排除范围、首次点击“建立索引”并完成后才能搜索的顺序、自动更新的开启条件与每 5 分钟的周期、退出后停止更新及手动更新方法；界面名称和代码字符未变，也未增加承诺。A 明确写出“索引建立完成”，并单列搜索限制；B 将搜索对象与限制集中说明。两版都删去了冗余表达，适合 README，各有组织上的优点，无明确优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10476,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 905,
+    "reasoning_output_tokens": 723
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e8bcb35370b27607a985829cff708948f0b6db3b0555af53192786caaf423b07",
+  "stderr_lines": 17
+}

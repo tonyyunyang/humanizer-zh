@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-14-long-form-scope",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 28.415,
+  "prompt_sha256": "4f4e307580801cb272b15a0a3d4a407f82865dd01dbc85d67f8b4f368390573e",
+  "output": "我们周一完成了接口改动，持续投入有了成果。\n\n客户端还没完成适配，因此本周不会全量发布。\n\n王同学负责补测试，李同学负责更新文档。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12719,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 820,
+    "reasoning_output_tokens": 770
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "bcd84c8aa0d6c6d3568a8e362a2bc65d4a94510f65f6d40925ab9cae247465ce",
+  "stderr_lines": 16
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 53.584,
+  "prompt_sha256": "c933f663f05d8a9589769488f3744ffc40e273b2acf64aa77420a5e93402001c",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留离线搜索范围、首次索引完成后才能搜索的顺序、自动更新条件、每 5 分钟更新及退出后停止更新的规则，也保留了手动更新方法。界面名称和代码字符未变，无新增承诺。B 将搜索范围与限制集中在开头，并将首次使用单独成段，更便于 README 读者定位操作步骤，略优。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10472,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1665,
+    "reasoning_output_tokens": 1511
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "4238378cd3252b8890ac75b739c6a8632e67fccb7d7f502e39f6b13f3d454a43",
+  "stderr_lines": 17
+}

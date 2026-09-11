@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-06",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 36.595,
+  "prompt_sha256": "1f85f6cd83e41b7a73a11a676119b354e1ee9b4836cf2a43acb1f2eb994bb4c7",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留事实与数量、年份异说及其归属、公开范围限制、计划和未完成状态，也保住阿姨的观点归属、作者的犹豫与“接缝”比喻，无实质信息损失。B用“除了怎么记录”和“至于这些记录该怎么写”承接记录分歧、公开范围与写作反思，段落关系更清楚；同时减少冗余，保留第一人称叙述和未解决的问题，更贴合本次润色重点。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11565,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1092,
+    "reasoning_output_tokens": 907
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "62b821e22f338a33b6b9c1984ea190cd4746762dac4bc8f1bd2c5c1e7ea4af45",
+  "stderr_lines": 17
+}

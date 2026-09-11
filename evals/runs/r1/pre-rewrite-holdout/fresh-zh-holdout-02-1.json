@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 53.183,
+  "prompt_sha256": "62e82c394e24d27a406ae83ab48625bdf8775a24159cfb1bcb3e8a1a0ed297bc",
+  "output": "每次看到有人问“今年读了多少本书”，我都不知道该怎么接话。不是因为读得少而不好意思，而是我厌烦了这种只剩下数量的交流。\n\n一本书放在桌上两个月，期间我把同一章读了三遍。这在统计表里可能还只是一个未完成的项目，可对我来说，那些反复读的时间，恰恰就是阅读。我选择退出，是因为我不想把阅读也过成月底冲业绩。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12819,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1670,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "fe14c8175b3c32cd28b219422ebacbe39e9647b8ddebb460a38a8295a16bc2a4",
+  "stderr_lines": 17
+}

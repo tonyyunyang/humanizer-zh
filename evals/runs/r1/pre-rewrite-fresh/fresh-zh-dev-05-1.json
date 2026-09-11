@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-05",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 35.041,
+  "prompt_sha256": "cbeb7813f80299889fea052d32a7c63c72d36e1bc2f3779b379b942ecec41526",
+  "output": "本文将首次发送请求称为 initial attempt，失败后再次发送请求称为 retry。max_retries=2 表示最多允许 2 次 retry，加上 initial attempt，一次调用最多发送 3 次请求。只有返回码列在 retryable_statuses 中时才会重试；其他失败会直接返回给调用方。阅读日志时要注意，attempt_count 统计的是实际发送次数，而不是 retry 次数。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12807,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 992,
+    "reasoning_output_tokens": 895
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "f9e0b9546f5eaea8ae2f260355fc39308c2d46681f2ee4284024920c41cc3a7b",
+  "stderr_lines": 17
+}

@@ -1,0 +1,298 @@
+{
+  "comparisons": {
+    "blind-development": {
+      "first": {
+        "run": "evals/runs/r1/pre-rewrite-fresh",
+        "skill_commit": "2827295d131a7f89f777165877e8b7203d2de80c"
+      },
+      "second": {
+        "run": "evals/runs/r1/baseline-fresh",
+        "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+      },
+      "preference_counts": {
+        "first": 1,
+        "second": 1,
+        "tie": 4,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 6,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 6,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "cases": [
+        {
+          "case_id": "fresh-zh-dev-01",
+          "preferred": "first",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留离线搜索范围、首次索引完成后才能搜索的顺序、自动更新条件、每 5 分钟更新及退出后停止更新的规则，也保留了手动更新方法。界面名称和代码字符未变，无新增承诺。B 将搜索范围与限制集中在开头，并将首次使用单独成段，更便于 README 读者定位操作步骤，略优。"
+        },
+        {
+          "case_id": "fresh-zh-dev-02",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "A完整保留原文；B仅将“谁来拍板”后的逗号改为句号，让不愿继续参加此类会议的表态独立成句。两版均保留事实、观察范围、明确立场、第一人称和克制语气，引文、三句“就”的排比及结尾对照也未改变。A承接紧密，B停顿稍强，无明确优劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-03",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留附件名、第 4 页、两个时间节点及修改已完成的状态。图片能否公开使用仍待贵方确认；移图留文仍是无法及时确认时的建议，并继续征询对方意见。两版都减少了冗余，礼貌直接，仅提供正文。A 明示反馈“该页”的结果，B 将处理方式的确认请求独立成句，各有取舍，无明确优劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-04",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "兩版均保留繁體用字、原有事實與細節、逐字引文，以及輕微擬人和聊天語氣，修改幅度符合要求。B 僅比 A 多一個「後」，時序含義不變，表達效果無明確高下。"
+        },
+        {
+          "case_id": "fresh-zh-dev-05",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版均保留英文术语与参数的精确拼写、首次发送与重试的区别、两项次数上限、重试条件、其他失败的返回方式，以及 attempt_count 统计实际发送次数而非 retry 次数的含义，未增加入门说明。A 行文紧凑，B 通过分段和代码格式便于查读；均衔接自然，无明显优劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-06",
+          "preferred": "second",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版均保留事实与数量、年份异说及其归属、公开范围限制、计划和未完成状态，也保住阿姨的观点归属、作者的犹豫与“接缝”比喻，无实质信息损失。B用“除了怎么记录”和“至于这些记录该怎么写”承接记录分歧、公开范围与写作反思，段落关系更清楚；同时减少冗余，保留第一人称叙述和未解决的问题，更贴合本次润色重点。"
+        }
+      ]
+    },
+    "blind-candidate-development": {
+      "first": {
+        "run": "evals/runs/r1/baseline-fresh",
+        "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+      },
+      "second": {
+        "run": "evals/runs/r1/candidate1-fresh",
+        "skill_commit": "8cb2e9bb2c20be15530f20cd4195bb7062b24625"
+      },
+      "preference_counts": {
+        "first": 1,
+        "second": 0,
+        "tie": 5,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 6,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 6,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "cases": [
+        {
+          "case_id": "fresh-zh-dev-01",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版均保留离线搜索的对象及排除范围、首次点击“建立索引”并完成后才能搜索的顺序、自动更新的开启条件与每 5 分钟的周期、退出后停止更新及手动更新方法；界面名称和代码字符未变，也未增加承诺。A 明确写出“索引建立完成”，并单列搜索限制；B 将搜索对象与限制集中说明。两版都删去了冗余表达，适合 README，各有组织上的优点，无明确优劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-02",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "A仅将“谁来拍板”后的逗号改为句号，B保留原文。两版均保留事实、数字、责任不明的观察、条件与范围，以及不愿再参加此类会议的明确立场；第一人称、直接克制的语气、三句“就”的排比、引号内措辞和结尾对照也完整保留。A断句后强调态度，B保持连贯节奏，均自然，无明确优劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-03",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留附件名“讲义_第二轮.pdf”、第 4 页、两个截止节点及修改已完成的状态；明确公开使用仍待贵方确认，移图留文仍是无法及时确认时的建议，并征询对方是否认可。均删去冗余、保持礼貌直接，仅提供正文，未增加催促或承诺。A 将征询单独成句，B 衔接更紧凑，整体无明显优劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-04",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "兩版均保留原有事實、時長、人物歸屬、否定、時序及情緒，完整保留擬人與聊天語氣；正文維持繁體，引文逐字一致，符合輕度潤稿要求。B 僅比 A 多一個「後」，將原已明確的時序說得更完整，未見明顯優劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-05",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留英文术语和参数、首次发送与 retry 的区别、最多 2 次 retry 和 3 次发送的上限、重试条件、其他失败的返回行为，以及 attempt_count 的实际发送计数口径，未增加入门解释。A 稍简练；B 保留“配置项”，并用“区分这两个概念”回接定义。两版衔接自然，整体无明显优劣。"
+        },
+        {
+          "case_id": "fresh-zh-dev-06",
+          "preferred": "first",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留关键数量、角色与观点归属、公开限制及未完成状态，也保留作者的犹豫和“接缝”比喻，没有新增圆满结局。B用“除了怎么记录”和“至于这些记录该怎么写”串起记录分歧、公开范围与写作反思，段落关系更清楚，更贴合本次润色重点，同时保持了第一人称随笔的语气。"
+        }
+      ]
+    },
+    "blind-candidate-holdout": {
+      "first": {
+        "run": "evals/runs/r1/current-holdout",
+        "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+      },
+      "second": {
+        "run": "evals/runs/r1/candidate1-holdout",
+        "skill_commit": "8cb2e9bb2c20be15530f20cd4195bb7062b24625"
+      },
+      "preference_counts": {
+        "first": 2,
+        "second": 1,
+        "tie": 3,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 5,
+          "fail": 1,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 5,
+          "fail": 1,
+          "uncertain": 0
+        }
+      },
+      "cases": [
+        {
+          "case_id": "fresh-zh-holdout-01",
+          "preferred": "second",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版均保留已下载草稿的编辑范围、修改先存于本机、联网后打开草稿页才开始上传的条件；三个界面状态名称逐字保留，过程与完成状态的区别、等待连接无法单独判断修改是否丢失的边界也均准确，未新增排障步骤。B 用“只有……才……”突出上传条件，并将等待连接的说明单独成段，阅读层次略清楚。"
+        },
+        {
+          "case_id": "fresh-zh-holdout-02",
+          "preferred": "tie",
+          "gates": {
+            "first": "fail",
+            "second": "fail"
+          },
+          "reason": "两版均保留了厌烦态度、两个月与三遍的例子、统计结果的“可能”及“月底冲业绩”的比喻，但都遗漏同一项必须保留的立场限定。实质信息层面无明确优劣，不再以文风分胜负。"
+        },
+        {
+          "case_id": "fresh-zh-holdout-03",
+          "preferred": "first",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均准确保留附件名、蓝色两段的待确认状态、通话日期与时段、两种方式任选、上午无法接电话的原因，以及时间有限时的审阅顺序，语气和输出形式也符合要求。B 将两种可选方式放在同一句中，承接更顺；A 在两者之间插入上午安排，略打断行文，但不构成实质错误。"
+        },
+        {
+          "case_id": "fresh-zh-holdout-04",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "兩版均改善首句與重複表述，保留繁體中文、focus mode 和 side panel 的寫法，以及提醒消失但備註仍保留供查資料的區別。專注效果仍未確定，新鮮感仍只是可能解釋；目前順手、下次開會兼改稿時可能換回配置的個人判斷也完整保留。兩版都維持猶豫口吻，未寫成推薦文，承接與節奏無明確優劣。"
+        },
+        {
+          "case_id": "fresh-zh-holdout-05",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留事实因果、短句重复、狗与树枝的幽默拟人，以及结尾限于“今天”的空落感，未添加背景或慢生活道理。吹风长句都已理顺；A的“凉了下来”稍舒缓，B的“把脸吹凉了”稍利落，没有明确的整体优劣。"
+        },
+        {
+          "case_id": "fresh-zh-holdout-06",
+          "preferred": "first",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留背景事实、小周判断尚未证实的限定、分类与复核流程、试行范围和人员分工、二十分钟检查进度、现场确认后续负责人等要求。关键数字、名称和引文准确，反馈安排、缩小范围或停用的条件及不压制异议的立场完整，未把提案写成已完成的结果。B将有分歧的问题明确移回“需要决定”栏，呼应前文类别名称，让操作流程略清楚，因此小幅优于A。"
+        }
+      ]
+    },
+    "blind-trigger-repeat": {
+      "first": {
+        "run": "evals/runs/r1/current-trigger-repeat",
+        "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+      },
+      "second": {
+        "run": "evals/runs/r1/candidate1-trigger-repeat",
+        "skill_commit": "8cb2e9bb2c20be15530f20cd4195bb7062b24625"
+      },
+      "preference_counts": {
+        "first": 0,
+        "second": 1,
+        "tie": 0,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 1,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 1,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "cases": [
+        {
+          "case_id": "fresh-zh-dev-01",
+          "preferred": "second",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留搜索范围、首次建索引完成后才能搜索的顺序，以及自动更新的开启条件、每 5 分钟一次和应用退出后停止的限制；界面名称与代码字符不变，也未增加承诺。A 首句直接说明离线搜索的对象，后文明确写出“自动更新会停止”，信息衔接略更清楚。B 通过上下文同样保留了这些含义，无实质错误。"
+        }
+      ]
+    }
+  },
+  "interpretation": "Small synthetic samples; preference counts are not statistical proof. Same-family judge, one order per pair; repeated trigger generation does not establish a population success rate.",
+  "candidate1_decision": "Withdraw grouping sentence. Development and holdout comparisons total 1 candidate preference, 3 baseline preferences and 8 ties; repeated trigger pair slightly favors candidate but does not resolve inconsistency. Both versions omit an existing author qualification on holdout-02.",
+  "holdout_status": "R1 holdout is consumed. Holdout-02 is promoted to R2 development regression; fresh R2 cases are authored independently."
+}

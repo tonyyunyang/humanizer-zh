@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-05",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 37.777,
+  "prompt_sha256": "3fe9476ba72420cb8271803dfef73680f96b5695683351b6dbb293a2f01fea7f",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留事实因果、短句重复、狗与树枝的幽默拟人，以及结尾限于“今天”的空落感，未添加背景或慢生活道理。吹风长句都已理顺；A的“凉了下来”稍舒缓，B的“把脸吹凉了”稍利落，没有明确的整体优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10569,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1132,
+    "reasoning_output_tokens": 987
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "32af0ae85240ee68a192e3cd76cf7b31d5f131cc9f66659702e718643adb531a",
+  "stderr_lines": 16
+}

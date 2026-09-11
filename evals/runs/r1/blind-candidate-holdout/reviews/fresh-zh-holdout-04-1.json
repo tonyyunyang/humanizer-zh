@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 39.89,
+  "prompt_sha256": "7bd00cfb42e420f3091b532caa94e70599cfea4f2c11d29e753952bfb6bcc5a7",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"兩版均改善首句與重複表述，保留繁體中文、focus mode 和 side panel 的寫法，以及提醒消失但備註仍保留供查資料的區別。專注效果仍未確定，新鮮感仍只是可能解釋；目前順手、下次開會兼改稿時可能換回配置的個人判斷也完整保留。兩版都維持猶豫口吻，未寫成推薦文，承接與節奏無明確優劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10580,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1216,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9e91324c336cb2fb9fa27ebd39ba0cbaaf33608e7f742b918a091a2bd2eef269",
+  "stderr_lines": 17
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-05",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 32.695,
+  "prompt_sha256": "17f4913cab897fc8c0f64cf1dda50a98eedf9076b5676260735fc42ec23d6e2d",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留英文术语和参数、首次发送与 retry 的区别、最多 2 次 retry 和 3 次发送的上限、重试条件、其他失败的返回行为，以及 attempt_count 的实际发送计数口径，未增加入门解释。A 稍简练；B 保留“配置项”，并用“区分这两个概念”回接定义。两版衔接自然，整体无明显优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10501,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 972,
+    "reasoning_output_tokens": 811
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "0bced0f0073042b7c7314c6d25982a8bd1e720d158c712d4a5c0e652f5569f7d",
+  "stderr_lines": 17
+}

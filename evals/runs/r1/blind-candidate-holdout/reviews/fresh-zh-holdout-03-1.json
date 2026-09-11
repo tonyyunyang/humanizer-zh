@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 27.061,
+  "prompt_sha256": "6ae424cff97fa597320539056765b73b790a871377be224d51cdd13f6bc4db0d",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均准确保留附件名、蓝色两段的待确认状态、通话日期与时段、两种方式任选、上午无法接电话的原因，以及时间有限时的审阅顺序，语气和输出形式也符合要求。B 将两种可选方式放在同一句中，承接更顺；A 在两者之间插入上午安排，略打断行文，但不构成实质错误。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10507,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 798,
+    "reasoning_output_tokens": 640
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "f6cfe08e34bb3efa50d45d18cd699f9ae60ff8b109866723a0b0cea8ec419786",
+  "stderr_lines": 17
+}

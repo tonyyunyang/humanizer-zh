@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 33.738,
+  "prompt_sha256": "4f2ca0c6bc118529b059a7da6dfacc606c0e800f9cec867d98eefbe3a0a64ad8",
+  "output": "谢谢您发来场地照片，入口的位置现在清楚多了。我已把展板文字放在附件“展板文字_v3.docx”里，其中蓝色标出的两段还想请您确认。\n\n我们可以在 11 月 6 日下午通话。当天上午我要带学生布展，无法接电话。您也可以直接在文档里留言，选方便的方式就好。\n\n如果这次只来得及看一段，请先看入口介绍，另一段可以留到下一轮。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12789,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1013,
+    "reasoning_output_tokens": 894
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e584083331ca59c643e69f6a6b531e20694cdb0e87b9bd646709cfc0040fbc53",
+  "stderr_lines": 17
+}

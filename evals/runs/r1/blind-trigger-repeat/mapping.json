@@ -1,0 +1,18 @@
+{
+  "first": {
+    "run": "evals/runs/r1/current-trigger-repeat",
+    "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+  },
+  "second": {
+    "run": "evals/runs/r1/candidate1-trigger-repeat",
+    "skill_commit": "8cb2e9bb2c20be15530f20cd4195bb7062b24625"
+  },
+  "seed": 2026091203,
+  "cases": {
+    "fresh-zh-dev-01": {
+      "A": "second",
+      "B": "first"
+    }
+  },
+  "note": "Keep this mapping out of all judge prompts; first/second identities are not in tasks.json."
+}

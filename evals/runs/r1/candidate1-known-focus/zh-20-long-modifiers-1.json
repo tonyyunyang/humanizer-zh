@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-20-long-modifiers",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 18.462,
+  "prompt_sha256": "c4f7b02e7adb68fcb9ee8fb9a835dd27708d296256e94da8162c4e8065cae126",
+  "output": "我们正在试用一个办法：助教每周收集学生提交的阅读问题，只收集本周提交的，再由教师在课上逐条回应。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12697,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 490,
+    "reasoning_output_tokens": 449
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "79976b21066f910870dec37a27e6a67bceaa8c27b4d7d24f3410defea86416ad",
+  "stderr_lines": 17
+}

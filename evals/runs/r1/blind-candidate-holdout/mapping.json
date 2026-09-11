@@ -1,0 +1,38 @@
+{
+  "first": {
+    "run": "evals/runs/r1/current-holdout",
+    "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1"
+  },
+  "second": {
+    "run": "evals/runs/r1/candidate1-holdout",
+    "skill_commit": "8cb2e9bb2c20be15530f20cd4195bb7062b24625"
+  },
+  "seed": 2026091204,
+  "cases": {
+    "fresh-zh-holdout-01": {
+      "A": "first",
+      "B": "second"
+    },
+    "fresh-zh-holdout-02": {
+      "A": "first",
+      "B": "second"
+    },
+    "fresh-zh-holdout-03": {
+      "A": "second",
+      "B": "first"
+    },
+    "fresh-zh-holdout-04": {
+      "A": "first",
+      "B": "second"
+    },
+    "fresh-zh-holdout-05": {
+      "A": "second",
+      "B": "first"
+    },
+    "fresh-zh-holdout-06": {
+      "A": "second",
+      "B": "first"
+    }
+  },
+  "note": "Keep this mapping out of all judge prompts; first/second identities are not in tasks.json."
+}

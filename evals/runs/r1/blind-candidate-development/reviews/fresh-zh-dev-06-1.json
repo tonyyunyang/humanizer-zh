@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-06",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 47.522,
+  "prompt_sha256": "be86ccb390e8c4da27e06f34af9cf40d41ff9d702b388f300c97bfbda81893bc",
+  "output": "{\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留关键数量、角色与观点归属、公开限制及未完成状态，也保留作者的犹豫和“接缝”比喻，没有新增圆满结局。B用“除了怎么记录”和“至于这些记录该怎么写”串起记录分歧、公开范围与写作反思，段落关系更清楚，更贴合本次润色重点，同时保持了第一人称随笔的语气。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11574,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1475,
+    "reasoning_output_tokens": 1311
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "22e1bfe3ef0dd83255fa200f8d7172c0a9278cf94e9be8c1756cc415784c9929",
+  "stderr_lines": 17
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-05",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 39.309,
+  "prompt_sha256": "db05adcdb6f17c3c759cef012ad5fb3ab5110250950c3b7565f9d267fa918292",
+  "output": "河边那条路修好了，我反而走得比以前慢。以前总要低头避开松动的砖，现在脚下平了，才有空看桥洞里的水。\n\n慢一点。不是我忽然懂了什么，是前面有只狗，叼着比它还长的树枝，怎么也转不过弯。我等它，它等那根树枝自己想明白。\n\n刚才赶路，脸有一点发热。风从桥洞里出来，把脸吹凉了。\n\n再慢一点。反正今天，没有人在对岸等我。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12811,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1144,
+    "reasoning_output_tokens": 1011
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a7615e45651558b35eef0340f0d12e8b135fff7a7054abd3ddd474da250e8158",
+  "stderr_lines": 17
+}

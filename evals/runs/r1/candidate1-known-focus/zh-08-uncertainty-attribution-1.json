@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-08-uncertainty-attribution",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 28.525,
+  "prompt_sha256": "759b5dfdc04b062fcae6af570ddecea86d69fbfb782863c1ed02b668e52f08d2",
+  "output": "截至 2026 年 8 月，甲组计划支持离线模式；乙组认为还需要验证。只有测试通过后，才会发布。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12685,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 845,
+    "reasoning_output_tokens": 806
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "5ddfe6c0d2bdbe53030bd10ddd56d7d08504c6673a5bff685550cf6e36a157e0",
+  "stderr_lines": 17
+}

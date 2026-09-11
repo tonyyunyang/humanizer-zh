@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-22-necessary-condition",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 18.013,
+  "prompt_sha256": "604bbb8beb9878584970af57641b46a68043f912c1a61ede13ac83a74ca0cd5f",
+  "output": "访客也可以提交申请。只有管理员确认后，申请才会进入排队状态，但这不代表审核通过。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12682,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 474,
+    "reasoning_output_tokens": 442
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "dc19761b40e279a9f833d69a68b3dfbfbe7dd532c13bc57f5e7834c98a085359",
+  "stderr_lines": 16
+}

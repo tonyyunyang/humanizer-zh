@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-holdout-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 37.283,
+  "prompt_sha256": "0f3c0d388def4868b4bcc8d7f15d7047b46b5cb46dfeb7ad9ff8324a3ac7d248",
+  "output": "這星期寫稿時，我試著打開 focus mode。最有感的是右側那排提醒真的從畫面上消失了，少了那種一直要我注意別的東西的感覺。但我還不確定這樣是不是讓我更專心，也可能只是剛開始用，覺得新鮮。\n\n我還是把備註留在 side panel，因為查資料時需要看得到。現在這樣用對我比較順手；等下次要一邊開會一邊改稿，可能又會換回原來的配置。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12836,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1138,
+    "reasoning_output_tokens": 1000
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "ffcfa09c9d5d849b2eeed984edf232452ea3865df2474d301201daf986ef800d",
+  "stderr_lines": 17
+}
