@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+  <title id="title">Humanizer-zh：写得像你。</title>
+  <desc id="desc">米色纸张上的中文编辑稿，划掉空泛的价值宣言，留下“现在可以批量导出。”</desc>
+  <rect width="1280" height="400" rx="12" fill="#f5f1e8"/>
+  <path d="M58 56h30v5H58z" fill="#c84b31"/>
+  <text x="104" y="65" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="22" letter-spacing="2" fill="#252525">HUMANIZER-ZH</text>
+  <g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif">
+    <text x="56" y="187" font-size="76" font-weight="650" letter-spacing="2" fill="#252525">写得像你。</text>
+    <text x="61" y="242" font-size="23" fill="#58554e">去掉套话，保留事实与自己的语气。</text>
+    <text x="61" y="337" font-size="17" fill="#8a4939">持续跟进上游 · 为中文认真改写</text>
+  </g>
+  <rect x="714" y="57" width="510" height="286" rx="8" fill="#fffcf6" stroke="#ded8cd"/>
+  <text x="750" y="99" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="2" fill="#827b6f">A SMALL EDIT. A CLEARER SENTENCE.</text>
+  <g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="23">
+    <text x="750" y="151" fill="#9b9387">这不仅是效率的飞跃，</text>
+    <path d="M746 141l279 3" stroke="#c84b31" stroke-width="2" stroke-linecap="round"/>
+    <text x="750" y="191" fill="#9b9387">更是全新篇章的开启。</text>
+    <path d="M747 184l280 -6" stroke="#c84b31" stroke-width="2" stroke-linecap="round"/>
+    <path d="M750 221h430" stroke="#e5dfd3"/>
+    <text x="750" y="271" font-size="27" font-weight="600" fill="#252525">现在可以批量导出。</text>
+    <path d="M1099 258l7 8 15 -20" stroke="#c84b31" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <text x="750" y="309" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="13" fill="#827b6f">让有用的信息留下来。</text>
+</svg>

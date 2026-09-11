@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "humanizer-zh",
+  "version": "1.0.0",
+  "description": "润色中文、去 AI 味，保留事实与作者语气。持续跟进 Blader Humanizer。",
+  "author": { "name": "Tony Yang", "url": "https://github.com/tonyyunyang" },
+  "homepage": "https://github.com/tonyyunyang/humanizer-zh",
+  "repository": "https://github.com/tonyyunyang/humanizer-zh",
+  "license": "MIT",
+  "keywords": ["chinese", "writing", "editing", "humanizer", "agent-skills"],
+  "skills": ["./"]
+}

@@ -1,0 +1,25 @@
+name: 安装问题
+description: 安装失败、找不到 skill，或更新后没有生效。
+title: "[安装] "
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: 系统和工具版本
+      placeholder: macOS / Claude Code 版本 / Node.js 版本（如使用 npx）
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 安装方式与复现步骤
+      description: 贴出实际执行的命令，说明是否安装过其他同名版本。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 实际结果或报错
+      description: 请移除令牌和个人路径中不愿公开的信息。
+    validations:
+      required: true

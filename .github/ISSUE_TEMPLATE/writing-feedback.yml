@@ -1,0 +1,41 @@
+name: 改写反馈
+description: 丢失事实、语气不对、改得生硬，或仍有模板感。
+title: "[改写] "
+body:
+  - type: markdown
+    attributes:
+      value: 请分享你有权公开的最小例子，并移除私人信息。自然中文、繁体中文和中英混排的反馈都欢迎。
+  - type: input
+    id: environment
+    attributes:
+      label: 使用环境
+      description: 工具、模型、skill 版本或提交，以及安装方式；不知道的部分可以写未知。
+      placeholder: Claude Code / 模型名称 / humanizer-zh 1.0.0 / Skills CLI
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: 你的改写要求
+      description: 包括用途、语气、保留范围及是否提供样文。
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: 原文
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: 实际输出
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪里不对
+      description: 指出具体丢失的信息、被改变的意思或生硬的句子。可以附你更喜欢的改法。
+    validations:
+      required: true

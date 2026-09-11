@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "humanizer-zh",
+  "owner": { "name": "Tony Yang", "url": "https://github.com/tonyyunyang" },
+  "description": "Humanizer-zh 中文写作 skill 的 Claude Code 安装入口。",
+  "plugins": [
+    {
+      "name": "humanizer-zh",
+      "source": "./",
+      "description": "润色中文、去 AI 味，保留事实与作者语气。",
+      "license": "MIT",
+      "keywords": ["chinese", "writing", "editing", "humanizer", "agent-skills"]
+    }
+  ]
+}

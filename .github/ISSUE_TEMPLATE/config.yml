@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 安全或隐私问题
+    url: https://github.com/tonyyunyang/humanizer-zh/blob/main/SECURITY.md
+    about: 先阅读报告方式，不要在公开 Issue 放入私人内容或令牌。
