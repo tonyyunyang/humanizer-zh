@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-24-mixed-identifiers",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 17.673,
+  "prompt_sha256": "c59f3cb2ecf0ed38c920ba06a89c61d82e0ea00e464fb384ca2dfdc7e1f7ce48",
+  "output": "这段示例创建一个 Secret，并在其中保存 `api_token`。文中的 `real-time` 是标签值，`secrets` 是路径片段。这项改动是为了让排查更方便。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12685,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 447,
+    "reasoning_output_tokens": 395
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "d4a1eb1ffca5fd922817f47034f23e10891ca6a6cabe7092391e8b5cbc495219",
+  "stderr_lines": 17
+}

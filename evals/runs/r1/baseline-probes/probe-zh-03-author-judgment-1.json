@@ -1,0 +1,23 @@
+{
+  "case_id": "probe-zh-03-author-judgment",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 33.98,
+  "prompt_sha256": "200a2fde01d7a782d0b951fa0bf4f6afb79fd9eaf8a1a6dda49ddafab010d1eb",
+  "output": "这是一场失败的发布。团队按时交了东西，却把尚未测试的版本叫作稳定版，还让用户自己承担排错的成本。准时当然重要，但按时交出一个不可信的版本，不值得庆祝。最该追问的不是工程师有没有加班，而是谁定下了这样的交付标准。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12717,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1002,
+    "reasoning_output_tokens": 922
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "dce7420430105dddad07f51817a43138aa3f66daa541485711e7fc8ad4340650",
+  "stderr_lines": 17
+}

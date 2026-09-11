@@ -1,0 +1,23 @@
+{
+  "case_id": "probe-zh-04-effect-without-metrics",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 27.991,
+  "prompt_sha256": "fbb0d6940db1c16bb0f16985000abc0ff260898e05759e12f93b8944387fc8df",
+  "output": "这次调整明显改善了查询性能，同事排查问题也更省时间了。不过，我们没有记录具体指标，也没有在其他部署环境中验证。这些结论目前只限于内部试用。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12679,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 801,
+    "reasoning_output_tokens": 751
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "29e97198eb05aaa476fef5fb52b04d83be39423d31f90ec31882f5466ed2a7aa",
+  "stderr_lines": 16
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-19-reference-switch",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 20.492,
+  "prompt_sha256": "8c51100acacaa63a1623938f1164b8d554755179212c2057f468a0c523af81ab",
+  "output": "小周把样稿交给小陈，小陈请小林核对引文。小周负责最后定稿。另一处记录只写了“他明天再看”，没有说明“他”指谁。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12682,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 569,
+    "reasoning_output_tokens": 516
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a623d7cc115d3883a509e5911d529552deb24d60b5a6f38e85f1708ffabff8e9",
+  "stderr_lines": 17
+}

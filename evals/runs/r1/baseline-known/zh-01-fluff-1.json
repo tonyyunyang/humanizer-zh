@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-01-fluff",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 7.388,
+  "prompt_sha256": "c08a3a55d063777096577cf2fe2204ebd049af9fda2de735e455ba9e13350921",
+  "output": "现在可以按文件名搜索历史记录。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12668,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 140,
+    "reasoning_output_tokens": 125
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "556ebb57e6b37a169692f36ac8b971d86c2c399c28cade202edc35d2a7d21aa3",
+  "stderr_lines": 16
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "probe-zh-01-qualifier-layers",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 19.022,
+  "prompt_sha256": "dce1ddf0cf30e6236ef21574ade0edafcd2fb30c0396ba56a2e525fa7c974e07",
+  "output": "在这组样本中，这个方法可能会在一定程度上减少误报。不过，我们还没有完成低频类别的验证，因此暂时不能确认它是否对所有类别都有效。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12684,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 496,
+    "reasoning_output_tokens": 449
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "536736f72996fe34be43f98fc8eb65bd1e26bbddd309a90c8e6d3d53db7935f8",
+  "stderr_lines": 17
+}

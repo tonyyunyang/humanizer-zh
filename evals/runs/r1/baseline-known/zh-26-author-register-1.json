@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-26-author-register",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 7.883,
+  "prompt_sha256": "c313e2435b3f092f6a9192c1f73457c3a4d0b2e54f7b5e7684680e382366f388",
+  "output": "這封信我寫了又刪，刪了又寫。最後只剩一句：路上小心。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12669,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 161,
+    "reasoning_output_tokens": 129
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "1b4ec687c9b10162ac3f1760e1a6e4493f95a3b1d58e6f8ea478e4d48097f8d5",
+  "stderr_lines": 16
+}

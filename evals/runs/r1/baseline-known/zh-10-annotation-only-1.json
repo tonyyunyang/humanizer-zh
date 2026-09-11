@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-10-annotation-only",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 26.296,
+  "prompt_sha256": "37c8e3cd996c1c1e68c67aa47e70926de869a4e24a7267e664ffe3bd2e248905",
+  "output": "- “不仅是一款工具，更是重塑行业格局的关键力量”：对比主要在拔高语气，缺少具体信息。“重塑行业格局”的判断很大，需要说明工具的实际作用，并补充依据。\n- “它的未来值得期待”：空泛收尾，没有说明期待什么、为什么值得期待。建议补充具体理由；若无新信息，可删去。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12648,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 760,
+    "reasoning_output_tokens": 668
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e08bfc0206a23a474b2a0cb9ac2e927c4519f1d464e51d0ba4d004b577315fb0",
+  "stderr_lines": 17
+}

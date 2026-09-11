@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 29.79,
+  "prompt_sha256": "c766b268f1dcc2f85705706334306ff9af6dc47bf1fb5f71f7cefd90aaa306e9",
+  "output": "我不反对开会，我反对的是把“大家都在场”当成“事情已经说清楚”。十个人轮流报一遍进度，听上去很忙，散会后却没人知道谁来拍板。这种会我不想再参加了。能在文档里回答的就写下来，需要争论的就留出时间，暂时没有答案的就承认没有答案。我知道这样会让某些场面没那么圆满。但比起一张人人点头的合影，我更想要一个有人负责的决定。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12784,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 893,
+    "reasoning_output_tokens": 762
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "3b267d4f6cd0141048f77b379e68f2e5fc592ba047f84da6b1289a9413618544",
+  "stderr_lines": 17
+}

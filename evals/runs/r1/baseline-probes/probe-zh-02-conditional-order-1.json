@@ -1,0 +1,23 @@
+{
+  "case_id": "probe-zh-02-conditional-order",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 16.674,
+  "prompt_sha256": "b15e50f7a8181640f5b590aac45596bd9659c37379b563e5dceb7f0b6cefcbe0",
+  "output": "只有申请人先撤回旧申请，新申请才会进入队列；进入队列后，仍须由审核员人工确认。管理员可以查看队列，但不能代替申请人撤回旧申请。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12680,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 412,
+    "reasoning_output_tokens": 361
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "db4383b70308370c8ce0ad6bebce2ce5117cefde7c10da9debdd17dcf2dde2d8",
+  "stderr_lines": 16
+}

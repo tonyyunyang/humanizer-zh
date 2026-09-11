@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-23-narrative-rhythm",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 13.494,
+  "prompt_sha256": "a368da1da63be3ed04eb5c67f2bea4ec3b39a8899123ed02e8d76739e9183070",
+  "output": "我等着。等了一个下午，还是没等到。\n\n第二天她来了，我却没提这件事。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12667,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 293,
+    "reasoning_output_tokens": 261
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "31357fb919d908ca9bfdbb95ad3ae947dae384d2bab796cebb9d1073281a3f49",
+  "stderr_lines": 17
+}

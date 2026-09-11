@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-04-terminology",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 13.55,
+  "prompt_sha256": "c2b3122d3f6baf23f98b8c2be0dedec59d3ef24caa7818d9590e89349e4ac5ad",
+  "output": "控制器采用闭环控制。我们已完成 2 项测试，另有 3 项尚未完成。系统自动将日志落盘。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12656,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 283,
+    "reasoning_output_tokens": 246
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9ba28fd661313be0dd127cd5e8fdd2db6ba5db2e1801854de2e8d3d0d6286d73",
+  "stderr_lines": 17
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-06-sample-is-not-source",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 17.575,
+  "prompt_sha256": "a31fbac49ebb8736e02d282c23f156aa9fac72d7be5f1a67832779399c0aafe0",
+  "output": "昨天整理书架，翻到一本没读完的小说。有点遗憾，想把读书的习惯捡回来。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12690,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 471,
+    "reasoning_output_tokens": 435
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "5ed6310eb814e82bd7d788a5406ad9cecc37e94585e16c64effcf19408cc23aa",
+  "stderr_lines": 17
+}

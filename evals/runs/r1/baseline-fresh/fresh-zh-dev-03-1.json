@@ -1,0 +1,23 @@
+{
+  "case_id": "fresh-zh-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 25.849,
+  "prompt_sha256": "d96a52e27f754c4b7561edae66784b092b0b4e72448dd0a85eebc07d4ded5faa",
+  "output": "下个月工作坊的讲义已按上次沟通的意见修改，请见附件“讲义_第二轮.pdf”。其中，第 4 页的示意图仍需贵方确认是否可以公开使用。\n\n为在 10 月 18 日 18:00 前提交印刷文件，烦请您在 10 月 16 日前反馈该页的确认结果。如果届时仍无法确认，我们建议先移除该图，保留相应的文字说明，也请您告知这样处理是否合适。\n\n感谢您的支持与配合。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12797,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 762,
+    "reasoning_output_tokens": 636
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "047f0683cf7c6dfdb11b19f083c11af830455a1de9be2bde655d5ee6d83b38f9",
+  "stderr_lines": 17
+}

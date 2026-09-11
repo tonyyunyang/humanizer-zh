@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-03-real-contrast-triad",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 6.994,
+  "prompt_sha256": "967cf151d4b724ff32a74a97c717a53361689856477b7df37209c0e0b45a4858",
+  "output": "这是预览版，不是稳定版。目前支持搜索、筛选和导出，暂不支持导入。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12658,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 117,
+    "reasoning_output_tokens": 87
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "de36de63165011e1d6802fc1816d1e8c5fd842621ef1f578a33c1111e502beb1",
+  "stderr_lines": 16
+}

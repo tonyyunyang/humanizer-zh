@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-13-author-voice",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 9.795,
+  "prompt_sha256": "5fd44623ad93c6b3cf44de2f4f9856c6dea11b6749149ee694151574511d1b98",
+  "output": "我本来只想修个小问题，结果一下午都搭进去了。明天再说吧。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12656,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 193,
+    "reasoning_output_tokens": 163
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "79d97f8537ef365e0229ae4c79bab41aa15adb02fbf7996e80e2718fe291e1a3",
+  "stderr_lines": 16
+}

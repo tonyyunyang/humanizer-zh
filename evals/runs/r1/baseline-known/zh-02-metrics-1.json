@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-02-metrics",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 15.677,
+  "prompt_sha256": "ff5aa35382d7b054a701f31c1323a74e6e79c17ae4f27afad933fdc07b2f062f",
+  "output": "测试环境中，60 个请求的 p95 延迟从 420ms 降至 260ms。这次测试只覆盖了缓存命中的情况，缓存未命中场景还没验证。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12681,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 411,
+    "reasoning_output_tokens": 362
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "fa5b9ec86e5dfc8961e6d76867bfd14508f2af2f557bebfef1b49d17a08fe6c6",
+  "stderr_lines": 17
+}

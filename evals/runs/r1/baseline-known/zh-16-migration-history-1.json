@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-16-migration-history",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 15.35,
+  "prompt_sha256": "0088dc4c4c1b3ca6de17d182e960244cd42ba167ac22e9078e2f04fa926facb5",
+  "output": "旧版默认使用 `mode=legacy`，新版默认使用 `mode=strict`。要保留原有行为，需要在升级前显式设置 `mode=legacy`。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12668,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 403,
+    "reasoning_output_tokens": 359
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9d3130ffc400a8ea76bfa5b8e79cd21d7d6ab98a7206e76d133104a6b4f7c184",
+  "stderr_lines": 16
+}
