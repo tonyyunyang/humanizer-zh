@@ -1,0 +1,57 @@
+{
+  "case_id": "zh-11-file-protection",
+  "skill_commit": "a03e0472e2d060f2fc55cb835dcde7f78f5c1bc1",
+  "model": "gpt-6-astra",
+  "effort": "max",
+  "profile": "isolated workspace-write file task; network disabled",
+  "elapsed_seconds": 29.925,
+  "exit_code": 0,
+  "prompt_sha256": "789b43504185378ca5e3c296c7ad253732a798915490d7d776f4e1b6a29d9ee3",
+  "output": "已保存并润色 [guide.md]($CASE_DIR/guide.md)，删去开头的冗余铺垫，保留备份要求、元数据、代码、路径和链接。",
+  "file_written": true,
+  "actions": [
+    {
+      "type": "command_execution",
+      "command": "/bin/zsh -lc \"pwd; rg --files --hidden -g AGENTS.md -g guide.md -g '\"'!'\"\\\\.git/**' -g '\"'!node_modules/**'\"' .\"",
+      "exit_code": 1
+    },
+    {
+      "type": "file_change",
+      "changes": [
+        {
+          "path": "$CASE_DIR/guide.md",
+          "kind": "add"
+        }
+      ]
+    },
+    {
+      "type": "file_change",
+      "changes": [
+        {
+          "path": "$CASE_DIR/guide.md",
+          "kind": "update"
+        }
+      ]
+    },
+    {
+      "type": "command_execution",
+      "command": "/bin/zsh -lc 'cat guide.md'",
+      "exit_code": 0
+    }
+  ],
+  "completed": true,
+  "usage": {
+    "input_tokens": 41990,
+    "cached_input_tokens": 13440,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 688,
+    "reasoning_output_tokens": 231
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [
+    "command_execution",
+    "file_change"
+  ],
+  "stderr_sha256": "5c31cca3851ae46a32d6f2ac64f58ad0ecd2662c25f0fc47a0f891ac6f569d3e"
+}
