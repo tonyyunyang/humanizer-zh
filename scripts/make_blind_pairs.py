@@ -32,7 +32,8 @@ def load_run(directory):
 
 
 def prepare(suite, manifest_a, outputs_a, manifest_b, outputs_b, seed):
-    for field in ("model", "effort", "suite_sha256", "case_ids", "partition"):
+    for field in ("model", "effort", "suite_sha256", "case_ids", "partition",
+                  "cli_version", "runner_sha256", "timeout_seconds", "schema_sha256"):
         if manifest_a[field] != manifest_b[field]:
             raise ValueError(f"Unmatched comparison setting: {field}")
     index = {case["id"]: case for case in suite}

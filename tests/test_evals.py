@@ -61,7 +61,8 @@ class EvaluationIsolation(unittest.TestCase):
     def test_blind_tasks_hide_revision_identity(self):
         suite = [{"id": "case-1", "request": "润色", "input": "原文", "expectations": ["保留事实"]}]
         common = {"model": "test-model", "effort": "max", "suite_sha256": "suite",
-                  "case_ids": ["case-1"], "partition": None}
+                  "case_ids": ["case-1"], "partition": None, "cli_version": "1",
+                  "runner_sha256": "runner", "timeout_seconds": 180, "schema_sha256": None}
         first = {**common, "skill_commit": "baseline-secret-revision"}
         second = {**common, "skill_commit": "candidate-secret-revision"}
         tasks, mapping = prepare(suite, first, {"case-1": "改稿甲"}, second, {"case-1": "改稿乙"}, 19)
@@ -73,11 +74,14 @@ class EvaluationIsolation(unittest.TestCase):
         self.assertEqual(material["A"], source[mapping["case-1"]["A"]])
         self.assertEqual(material["B"], source[mapping["case-1"]["B"]])
 
-    def test_mismatched_model_cannot_be_silently_compared(self):
+    def test_changed_execution_settings_cannot_be_silently_compared(self):
         common = {"model": "a", "effort": "max", "suite_sha256": "suite",
-                  "case_ids": [], "partition": None}
-        with self.assertRaises(ValueError):
-            prepare([], common, {}, {**common, "model": "b"}, {}, 1)
+                  "case_ids": [], "partition": None, "cli_version": "1",
+                  "runner_sha256": "runner", "timeout_seconds": 180, "schema_sha256": None}
+        for field, changed in [("model", "b"), ("cli_version", "2"),
+                               ("runner_sha256", "different-runner"), ("timeout_seconds", 360)]:
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                prepare([], common, {}, {**common, field: changed}, {}, 1)
 
 
 if __name__ == "__main__":
