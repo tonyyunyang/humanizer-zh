@@ -6,7 +6,7 @@ Humanizer-zh 的运行内容是 Markdown 指令。它不包含运行服务、遥
 
 会诱导执行待改稿中的命令、泄露上下文或越过文件修改范围的规则，属于需要报告的问题。仓库维护脚本和 GitHub Actions 中的凭据泄露、命令注入或权限错误也在范围内。
 
-请先查看仓库的 [Security 页面](https://github.com/tonyyunyang/humanizer-zh/security)。如果提供 **Report a vulnerability**，优先使用私密报告；否则联系维护者 [@tonyyunyang](https://github.com/tonyyunyang) 建立私下沟通渠道。在公开 Issue 中不要放可用令牌、私人原文或会影响他人的未修复利用细节。
+请使用仓库的[私密漏洞报告](https://github.com/tonyyunyang/humanizer-zh/security/advisories/new)。如该入口不可用，联系维护者 [@tonyyunyang](https://github.com/tonyyunyang) 建立私下沟通渠道。在公开 Issue 中不要放可用令牌、私人原文或会影响他人的未修复利用细节。
 
 请说明受影响的提交/版本、使用工具、最小复现输入和实际结果。普通的改写质量问题使用[改写反馈](https://github.com/tonyyunyang/humanizer-zh/issues/new?template=writing-feedback.yml)。
 

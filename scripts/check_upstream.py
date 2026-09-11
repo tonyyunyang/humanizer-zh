@@ -177,7 +177,7 @@ def main() -> int:
     parser.add_argument("--lock", type=Path, default=ROOT / "upstream.lock.json")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--issue", action="store_true", help="Maintain a bot-owned issue in GitHub Actions")
-    mode.add_argument("--record", metavar="SOURCE_ID", help="Record a commit after human review")
+    mode.add_argument("--record", metavar="SOURCE_ID", help="Record a commit after editorial review")
     parser.add_argument("--ref", help="Full reviewed SHA; only valid with --record")
     args = parser.parse_args()
     if bool(args.record) != bool(args.ref):
