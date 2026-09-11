@@ -8,6 +8,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from run_evals import command, make_prompt, parse_events, select_cases
+from make_blind_pairs import prepare
 
 
 class EvaluationIsolation(unittest.TestCase):
@@ -56,6 +57,27 @@ class EvaluationIsolation(unittest.TestCase):
             self.assertEqual([c["id"] for c in selected], ["case-2"])
             with self.assertRaises(ValueError):
                 select_cases(path, ["case-typo"], [], None)
+
+    def test_blind_tasks_hide_revision_identity(self):
+        suite = [{"id": "case-1", "request": "润色", "input": "原文", "expectations": ["保留事实"]}]
+        common = {"model": "test-model", "effort": "max", "suite_sha256": "suite",
+                  "case_ids": ["case-1"], "partition": None}
+        first = {**common, "skill_commit": "baseline-secret-revision"}
+        second = {**common, "skill_commit": "candidate-secret-revision"}
+        tasks, mapping = prepare(suite, first, {"case-1": "改稿甲"}, second, {"case-1": "改稿乙"}, 19)
+        serialized = json.dumps(tasks, ensure_ascii=False)
+        self.assertNotIn("secret-revision", serialized)
+        self.assertIn("保留事实", serialized)
+        material = json.loads(tasks[0]["input"])
+        source = {"first": "改稿甲", "second": "改稿乙"}
+        self.assertEqual(material["A"], source[mapping["case-1"]["A"]])
+        self.assertEqual(material["B"], source[mapping["case-1"]["B"]])
+
+    def test_mismatched_model_cannot_be_silently_compared(self):
+        common = {"model": "a", "effort": "max", "suite_sha256": "suite",
+                  "case_ids": [], "partition": None}
+        with self.assertRaises(ValueError):
+            prepare([], common, {}, {**common, "model": "b"}, {}, 1)
 
 
 if __name__ == "__main__":

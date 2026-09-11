@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["gate_a", "gate_b", "issues_a", "issues_b", "preference", "reason", "confidence"],
+  "properties": {
+    "gate_a": {"type": "string", "enum": ["pass", "fail", "uncertain"]},
+    "gate_b": {"type": "string", "enum": ["pass", "fail", "uncertain"]},
+    "issues_a": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "issues_b": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "preference": {"type": "string", "enum": ["A", "B", "tie", "uncertain"]},
+    "reason": {"type": "string"},
+    "confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+  },
+  "$defs": {
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_evidence", "output_evidence", "reason"],
+      "properties": {
+        "input_evidence": {"type": "string"},
+        "output_evidence": {"type": "string"},
+        "reason": {"type": "string"}
+      }
+    }
+  }
+}
