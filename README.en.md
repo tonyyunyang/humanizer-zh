@@ -45,7 +45,7 @@ By default, it returns one finished rewrite. It preserves technical terms, uncer
 
 The latest release, **1.0.0**, adapts **Blader Humanizer 3.0.0**, reviewed on **2026-09-11**. Our version number tracks this Chinese edition independently. The `main` branch includes subsequent unreleased improvements for Chinese, mixed-language text, and issue/PR descriptions; the minimal ZIP contains the released version.
 
-The [improvement record](docs/RSI.md) links the research and recorded rounds of actual outputs. The current skill is the approved baseline for further RSI. The local scheduled improvement task has been deleted; further iterations are started on demand.
+The [improvement record](docs/RSI.md) links the research and recorded rounds of actual outputs. Rounds 5 and 6 retain the approved 178-line skill; the 71-line candidate in [round 6](evals/runs/r6/README.md) remains experimental and has not replaced it. The local scheduled improvement task has been deleted; further iterations are started on demand.
 
 The repository includes a daily [upstream watcher](.github/workflows/upstream.yml). It checks selected files in the three source repositories and creates or updates a review issue only when their contents change. Maintainers review language applicability and examples before updating the skill; the watcher does not translate or merge automatically.
 
