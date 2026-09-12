@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["intended_effect", "information_gate", "task_fit", "issues", "template_issues", "reason", "confidence"],
+  "properties": {
+    "intended_effect": {"type": "string"},
+    "information_gate": {"type": "string", "enum": ["pass", "fail", "uncertain"]},
+    "task_fit": {"type": "string", "enum": ["adequate", "needs_work", "uncertain"]},
+    "issues": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "template_issues": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "reason": {"type": "string"},
+    "confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+  },
+  "$defs": {
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_evidence", "output_evidence", "reason"],
+      "properties": {
+        "input_evidence": {"type": "string"},
+        "output_evidence": {"type": "string"},
+        "reason": {"type": "string"}
+      }
+    }
+  }
+}
