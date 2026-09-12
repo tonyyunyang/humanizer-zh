@@ -160,7 +160,7 @@ def run_case(case, skill, args, repetition):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--suite", type=Path, default=ROOT / "evals/cases.json")
-    parser.add_argument("--skill-ref", default="HEAD", help="Committed skill revision; use none for judging")
+    parser.add_argument("--skill-ref", default="HEAD", help="Committed skill revision; none omits the skill for a control or judging run")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--model", required=True)
     parser.add_argument("--effort", choices=("low", "medium", "high", "xhigh", "max"), required=True)
