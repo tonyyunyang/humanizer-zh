@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "id": "r6-repeat-01",
+      "case_id": "r6-holdout-01",
+      "pair": "full-short",
+      "seed": 2026091231,
+      "first_run": "evals/runs/r6/repeat-full",
+      "second_run": "evals/runs/r6/repeat-short",
+      "labels": {
+        "A": "full",
+        "B": "short"
+      }
+    },
+    {
+      "id": "r6-repeat-02",
+      "case_id": "r6-holdout-01",
+      "pair": "full-none",
+      "seed": 2026091232,
+      "first_run": "evals/runs/r6/repeat-full",
+      "second_run": "evals/runs/r6/repeat-none",
+      "labels": {
+        "A": "full",
+        "B": "none"
+      }
+    },
+    {
+      "id": "r6-repeat-03",
+      "case_id": "r6-holdout-01",
+      "pair": "short-none",
+      "seed": 2026091233,
+      "first_run": "evals/runs/r6/repeat-short",
+      "second_run": "evals/runs/r6/repeat-none",
+      "labels": {
+        "A": "short",
+        "B": "none"
+      }
+    }
+  ],
+  "note": "One fresh draw per arm for the observed certainty-drift case. Repetition is not a new holdout; original successful outputs are retained. Judges receive neither these labels nor primary judgments."
+}

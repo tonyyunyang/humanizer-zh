@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-09-12T14:45:20.312999+00:00",
+  "status": "complete",
+  "skill_commit": null,
+  "skill_sha256": null,
+  "suite_sha256": "09cf248b55bcc6db43fb271e8d653c6e46aee19dd6e83a007965f8b75819aecd",
+  "case_ids": [
+    "r6-holdout-01"
+  ],
+  "excluded_ids": [],
+  "partition": null,
+  "repeats": 1,
+  "jobs": 1,
+  "timeout_seconds": 240,
+  "model": "gpt-6-astra",
+  "effort": "max",
+  "cli_version": "codex-cli 0.153.4",
+  "runner_sha256": "b2fbe61fae2796aa69c550debecd832490b5c7b7ec6c9a61090c6d0101aef30d",
+  "schema_sha256": null,
+  "context": "Fresh text-only sessions; no expected answers in editing prompts; host skill discovery skipped; user config, project docs, memory, apps, plugins and tools disabled where supported.",
+  "limitations": [
+    "Same underlying model family may share editing and judging biases.",
+    "Codex base instructions remain; this is not a bare-model API test.",
+    "Host skill discovery suppression uses an under-development CLI feature.",
+    "File-editing behavior is outside this text-only runner."
+  ],
+  "finished_at": "2026-09-12T14:45:59.579499+00:00",
+  "valid_runs": 1,
+  "total_runs": 1
+}

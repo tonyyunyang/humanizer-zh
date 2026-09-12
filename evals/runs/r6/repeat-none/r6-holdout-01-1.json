@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 39.216,
+  "prompt_sha256": "ca054fe6767a5f4c6da8b74f3d58b13c48c17cd7feff6b2873ffbba94510edc8",
+  "output": "你说得对，我之前只验证了单次点击保存，漏测了连续点击的场景，感谢提醒。\n\n这个 PR 我想先补上提交时禁用按钮、请求失败后恢复按钮可用状态这两块，避免当前页面内因连续点击造成的重复提交。用户同时打开两个页面时，仍可能重复提交，这部分需要服务端做幂等处理，我会单独开 issue 跟进。你看这样拆分可以吗？",
+  "completed": true,
+  "usage": {
+    "input_tokens": 9586,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1142,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "626008db72c8dce19d725b55240236f3743bd9a5afb02052450ee24880fcbb8f",
+  "stderr_lines": 12
+}

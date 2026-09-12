@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 31.275,
+  "prompt_sha256": "3e3f5d1799d3b674ac4089caf52efa127be1b93c723577891cd7fc2edc141b70",
+  "output": "你说得对，我之前只测了单次点击保存的情况，漏测了连续点击。禁用按钮应该能避免当前页面内的重复提交，但用户同时打开两个页面时，还是能重复提交。\n\n这个 PR 我想先补上按钮状态处理和提交失败后的状态恢复。接口幂等性需要改服务端，我会单独开一个 issue 跟进。你看这样拆分可以吗？",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13460,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 876,
+    "reasoning_output_tokens": 778
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "611145c70b8adb7c026e5c692298d3b6040d5e407ba1aafe68c672551f54b528",
+  "stderr_lines": 12
+}
