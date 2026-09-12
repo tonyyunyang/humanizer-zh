@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 24.801,
+  "prompt_sha256": "718fc73113a935f36ba617a9e5b2d6bcd7b40b3328c4abfbc347ac73198762b7",
+  "output": "{\n  \"intended_effect\": \"让读者清楚社区阅览室本周六暂停开放的时间、原因及恢复开放时间，并知道受影响的预约如何免费改约或取消。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版完全相同，均保留了开放时间和预约处理方式。将“更换入口地垫，暂停开放”改为“因更换入口地垫暂停开放”，使因果关系更清楚；“恢复正常开放”承接前面的暂停也更顺。调整幅度符合“必要的地方改一下就好”，没有多余铺垫或模板式收尾。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10639,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 626,
+    "reasoning_output_tokens": 417
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "39aa8bb139a89ee285abf93274a17ce8bbc9ff6857408f15dc085b4f45998794",
+  "stderr_lines": 12
+}

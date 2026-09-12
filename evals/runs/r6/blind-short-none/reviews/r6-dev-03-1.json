@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 50.595,
+  "prompt_sha256": "4f2e666877c9158d5a937fd4cb4d9a858b9dcf3902e5cd55d6841b5553f9bb4d",
+  "output": "{\n  \"intended_effect\": \"让新同事能按顺序在本地配置并启动 worker，知道 ready 表示连上队列而非任务完成，并理解重复投递跳过执行受 30 分钟去重记录有效期限制。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版都准确保留了操作步骤、技术标识、ready 的含义和去重条件，中文也自然。B 将 A 连写的“安装依赖，安装完成后再运行”拆为编号步骤，方便新同事对照执行；日志含义与去重规则各自成段，也更便于查阅。这些结构调整服务于 README 的使用，没有增加模板套话或无依据的解释。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10854,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1261,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "1dda02663dd170ee89a6ead27e5e8c740f796791ac0a9b1d79881aa87d54c4a1",
+  "stderr_lines": 12
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 45.048,
+  "prompt_sha256": "904303fe3df699c74c90c96b2a85515b29d8799ec5b0b03b0f4d2c96f7cedb8e",
+  "output": "{\n  \"intended_effect\": \"让新同事能按顺序在本地启动 worker，并正确理解 ready 日志的含义及相同 jobId 再次投递时跳过执行的有效期条件。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均准确保留操作顺序、技术标识、ready 不代表任务完成及 30 分钟去重条件，中文也都通顺。B 将配置、安装、启动分成编号步骤，用“依赖安装完成后”衔接，更方便新同事边读边操作；A 的“然后执行……完成后再用……”同样自然，但步骤集中在一段。两版都没有无用的模板铺垫，B 的组织方式更贴合这次使用场景。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10864,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1189,
+    "reasoning_output_tokens": 951
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "f04277664e1745022cebd8bf25910113df2974ccc6b933443f85586c31584a84",
+  "stderr_lines": 12
+}

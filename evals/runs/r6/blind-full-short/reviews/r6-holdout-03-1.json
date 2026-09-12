@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 48.267,
+  "prompt_sha256": "cbbd376b6b1c7845ba804f096f3a21f487e87e66f29a982a7efd752bf075afea",
+  "output": "{\n  \"intended_effect\": \"让同事快速了解退款入口的使用进展、咨询量效果尚不能确认的原因，以及接下来核查退款咨询的安排。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均准确保留使用人数、客服初步反馈、判断限制和后续计划，没有把咨询减少写成已验证的效果。A 用“客服反馈……但入口位置也同时调整了”集中呈现反馈及其限制，承接更紧密；B 将“下一步”单独成段，便于同事快速找到后续安排。两版中文都自然简洁，没有明显无效套话，整体收益相近。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10804,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1248,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "02afaad2d60815048a40c5b80e68656e2c2008f1fb041bbd9d43a4cf203cbecb",
+  "stderr_lines": 12
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 72.713,
+  "prompt_sha256": "612a7a040a757dd0bf8443a97278eac2d62282087504e498ccf1a8a239e024b9",
+  "output": "{\n  \"intended_effect\": \"让新同事能依次完成本地 worker 的配置、安装和启动，并正确理解 ready 的含义及重复任务跳过执行的有效期条件。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都保留了准确的操作顺序、标识符及运行语义，措辞自然，没有无效模板表达。A 将日志说明与去重规则分段，便于新同事查阅；B 用“在去重记录的 30 分钟有效期内”直接限定跳过执行，条件关系集中。两种组织方式各有便利，均能完成写顺 README 的目的，差异不足以形成明确偏好。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10837,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1772,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "217c437f3a662af331472f23822bd389b2955d251fb57ef330b0b894eba19a56",
+  "stderr_lines": 12
+}

@@ -1,0 +1,39 @@
+{
+  "first": {
+    "run": "evals/runs/r6/full",
+    "skill_commit": "ce8cd106fb5df3312a6141e7972e0391f474277b"
+  },
+  "second": {
+    "run": "evals/runs/r6/none",
+    "skill_commit": null
+  },
+  "seed": 2026091222,
+  "cases": {
+    "r6-dev-01": {
+      "A": "first",
+      "B": "second"
+    },
+    "r6-dev-02": {
+      "A": "second",
+      "B": "first"
+    },
+    "r6-dev-03": {
+      "A": "first",
+      "B": "second"
+    },
+    "r6-holdout-01": {
+      "A": "second",
+      "B": "first"
+    },
+    "r6-holdout-02": {
+      "A": "first",
+      "B": "second"
+    },
+    "r6-holdout-03": {
+      "A": "first",
+      "B": "second"
+    }
+  },
+  "rubric_sha256": "6e08dc1dbfa9b5f9d2544e9b91add900196502fd6a49beeba3ebc1d3d7e2f43e",
+  "note": "Keep this mapping out of all judge prompts; first/second identities are not in tasks.json."
+}

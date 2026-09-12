@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 67.864,
+  "prompt_sha256": "98e8991a0f15c92cc37f77c54ad3f7f30aa59843aab8caf8afc56dc393ff0fd0",
+  "output": "{\n  \"intended_effect\": \"让同事快速了解退款入口的使用进展、目前还不能确认其减少咨询量的效果，以及下一步分类整理客服工单、查看退款咨询的计划。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都准确交代使用人数，将客服初步反馈与尚未证实的效果区分开，并保留下一步计划，适合简短同步。A 分句较清楚，用“其中 11 人”明确提交者与点击者的关系；B 合并首句，表达稍紧凑。“能否减少咨询量还说不准”与“是否减少了咨询量还说不准”均保留了判断边界。两版中文自然，没有无用铺垫或强行收尾，整体收益相近。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10799,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1769,
+    "reasoning_output_tokens": 1526
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b8a31bd995e52430141d0b432db4828d8566204d38d51cc4ecd1cacba808a91c",
+  "stderr_lines": 11
+}

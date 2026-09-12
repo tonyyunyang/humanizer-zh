@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 46.138,
+  "prompt_sha256": "3e2a612273e1fc240b01de506459c98e054b5f7dad7691fb2c9c38036ee9c683",
+  "output": "{\n  \"intended_effect\": \"把照料绿萝的小事讲得更顺口，保留对自己养花水平的温和自嘲和结尾人与植物之间的幽默反差。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都用“坚信”替换“坚定地认为”，以“才发现”顺接转折，并将“它是真的，我是装的”单独成句，语气更顺，停顿也突出了自嘲的反差，没有解释笑点或强添感悟。唯一差别是 A 的“精神了一点”与 B 的“精神了点”：后者略口语化，前者同样自然，表达效果没有明显高下。两版均无多余的模板铺垫或收尾。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10664,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1276,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "280a5b99ec6f2fa956f4213a83e4e89d351acf84586a30ee8b4f4e064f089b09",
+  "stderr_lines": 12
+}

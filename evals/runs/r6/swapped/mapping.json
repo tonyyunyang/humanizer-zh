@@ -1,0 +1,75 @@
+{
+  "selection": "All five non-tied primary comparisons, including both comparisons of the draft with inconsistent information gates. Flagged draft first; remaining comparisons by case ID and pair name. No primary reviews or variant identities included in judge tasks.",
+  "cases": [
+    {
+      "id": "r6-holdout-01-full-none",
+      "case_id": "r6-holdout-01",
+      "pair": "full-none",
+      "A": "full",
+      "B": "none",
+      "primary_preference": "full",
+      "primary_gates": {
+        "none": "fail",
+        "full": "pass"
+      },
+      "source_tasks": "evals/runs/r6/blind-full-none/tasks.json",
+      "source_tasks_sha256": "59f07bab076cf2e8811683159a3c8d995c30faa149d51efddca80d2d56dfa25f"
+    },
+    {
+      "id": "r6-holdout-01-short-none",
+      "case_id": "r6-holdout-01",
+      "pair": "short-none",
+      "A": "short",
+      "B": "none",
+      "primary_preference": "none",
+      "primary_gates": {
+        "none": "pass",
+        "short": "pass"
+      },
+      "source_tasks": "evals/runs/r6/blind-short-none/tasks.json",
+      "source_tasks_sha256": "06b669071eb353f3e77d77bccbfb3b9e9f7f9379826119f57f530ba0dad2d683"
+    },
+    {
+      "id": "r6-dev-03-full-none",
+      "case_id": "r6-dev-03",
+      "pair": "full-none",
+      "A": "none",
+      "B": "full",
+      "primary_preference": "none",
+      "primary_gates": {
+        "full": "pass",
+        "none": "pass"
+      },
+      "source_tasks": "evals/runs/r6/blind-full-none/tasks.json",
+      "source_tasks_sha256": "59f07bab076cf2e8811683159a3c8d995c30faa149d51efddca80d2d56dfa25f"
+    },
+    {
+      "id": "r6-dev-03-short-none",
+      "case_id": "r6-dev-03",
+      "pair": "short-none",
+      "A": "none",
+      "B": "short",
+      "primary_preference": "none",
+      "primary_gates": {
+        "short": "pass",
+        "none": "pass"
+      },
+      "source_tasks": "evals/runs/r6/blind-short-none/tasks.json",
+      "source_tasks_sha256": "06b669071eb353f3e77d77bccbfb3b9e9f7f9379826119f57f530ba0dad2d683"
+    },
+    {
+      "id": "r6-holdout-01-full-short",
+      "case_id": "r6-holdout-01",
+      "pair": "full-short",
+      "A": "full",
+      "B": "short",
+      "primary_preference": "full",
+      "primary_gates": {
+        "short": "pass",
+        "full": "pass"
+      },
+      "source_tasks": "evals/runs/r6/blind-full-short/tasks.json",
+      "source_tasks_sha256": "e241b3edc40e4b6f52f3ebb3c6a419e870d60d39ec70ecf7c90955023ee9932e"
+    }
+  ]
+}

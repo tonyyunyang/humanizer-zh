@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 37.69,
+  "prompt_sha256": "dcf5cde599e6cf36c6f69c4d303c24d20411d13cbfd3bbe7c13f68b878e9f6bc",
+  "output": "{\n  \"intended_effect\": \"让买家准确理解蓝灰色这批货的预计到仓与发货安排、周日前收货无法保证，以及已下单后可保留订单或申请退款的选择。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版完全相同，均只将“必需”改为“必须”，并把“申请退款，给您添麻烦了”断为两句，符合只修错字和标点的范围。原有到仓预期、验货后按订单顺序发货、无法保证收货期限及订单处理选择均保留，致歉独立成句也自然，没有无用的模板表达，因此并列。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10669,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 884,
+    "reasoning_output_tokens": 663
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "627a7730a1bc46f38578c99ab773631e7e008c134ff44503ef254d8a02b5c8f3",
+  "stderr_lines": 12
+}

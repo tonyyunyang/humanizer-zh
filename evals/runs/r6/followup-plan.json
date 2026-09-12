@@ -1,0 +1,18 @@
+{
+  "status": "fixed_before_followup_outputs",
+  "primary_edit_calls": 18,
+  "primary_judge_calls": 18,
+  "swapped_order_calls": 5,
+  "repeat_edit_calls": 3,
+  "repeat_judge_calls": 3,
+  "planned_total_calls": 47,
+  "maximum_calls": 48,
+  "repeat_case": "r6-holdout-01",
+  "repeat_reason": "The same no-skill draft received both pass and fail for increasing certainty from 应该能 to 可以避免. Repeat the original editing prompt once in every arm and compare the three new drafts anonymously; keep original outputs and judgments.",
+  "repeat_seeds": {
+    "full-short": 2026091231,
+    "full-none": 2026091232,
+    "short-none": 2026091233
+  },
+  "limits": "Repeats probe this one observed failure hypothesis, are not new holdout cases, and do not replace successful original outputs. Repeat preferences will have one judgment per pair and cannot establish stable gains. All variants, rubric, source suite, model and effort remain fixed."
+}

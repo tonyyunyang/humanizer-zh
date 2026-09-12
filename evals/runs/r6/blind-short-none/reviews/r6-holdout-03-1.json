@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 61.262,
+  "prompt_sha256": "33c6dea8c238d9564206f2d7860a7a660182013aa42758a97b00f9dd3eef4538",
+  "output": "{\n  \"intended_effect\": \"让同事快速了解退款入口的使用进展、咨询量是否减少尚无定论，以及下一步的核查安排。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都准确保留了使用数据、客服初步反馈、尚不能确认效果的限制和后续计划。A 用“38 人点击、11 人提交申请”集中交代数据，并将下一步单列，便于查看安排；B 将人数独立成句，用“其中 11 人”承接，随后把客服反馈与判断限制连在一起，衔接顺畅。两版都适合简短的同事进展说明，无多余铺垫或强行收尾，整体相当。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10801,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1670,
+    "reasoning_output_tokens": 1440
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e66e3b7fd79bdab561f0b49a79dd1e1f4f984164006546ef168e7c5773035690",
+  "stderr_lines": 11
+}

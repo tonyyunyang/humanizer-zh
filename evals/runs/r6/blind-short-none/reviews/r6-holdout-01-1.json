@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 49.049,
+  "prompt_sha256": "54f30cec8a7428c090ae31fb7be824b5b163bffee878bc6d5fe38b7d1aa3bd4f",
+  "output": "{\n  \"intended_effect\": \"让评审者了解此前漏测连续点击、本次 PR 的处理范围和服务端幂等的后续安排，并就拆分方案继续讨论。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版都保留了漏测的承认、多页面仍可能重复提交的边界、拟议范围和另开 issue 的安排，也都自然地征求意见。A 用“保存过程中禁用按钮”“提交失败后恢复可点击”具体说明动作与时机，比 B 的“按钮状态控制”“状态恢复”更便于评审者确认改动范围，更符合清楚、合作的目的；两版均无明显无用套话。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10792,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1231,
+    "reasoning_output_tokens": 1012
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "febcdf3d6ab235d3e9a44efb67e5bae982f8859ae7ccecabcc7421a6d452ffbe",
+  "stderr_lines": 12
+}

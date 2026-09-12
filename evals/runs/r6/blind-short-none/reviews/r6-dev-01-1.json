@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 47.957,
+  "prompt_sha256": "d325d03a93e7e931aca027b834df11ebd7fa8b5c261417a28c7ecf21992cfc3e",
+  "output": "{\n  \"intended_effect\": \"轻松分享照料绿萝的小事，让朋友读出作者对自己养花水平的温和自嘲，并感受到结尾人与植物的幽默反差。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都将“坚定地认为”收为“坚信”，并让“它是真的，我是装的”单独成句，表达更利落，自嘲也保留得当。A 用“直到……才发现”连贯地带出转折；B 将“三个月”与“今天”分句，停顿更明显。两种节奏都适合这则轻松的朋友圈，均未解释笑点、添加感悟或引入无用套话，收益相近。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10668,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1413,
+    "reasoning_output_tokens": 1179
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9df538fcef57f5282d60397b774be8c2be4610dc0fb45207269bbbd4ac9c6180",
+  "stderr_lines": 12
+}

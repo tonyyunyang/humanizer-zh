@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 22.799,
+  "prompt_sha256": "dcf5cde599e6cf36c6f69c4d303c24d20411d13cbfd3bbe7c13f68b878e9f6bc",
+  "output": "{\n  \"intended_effect\": \"仅修正错字和标点，让买家准确了解这批货的到仓与发货安排、无法保证周日前送达，以及保留订单或申请退款的选择。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"A、B完全相同，均将“必需”改为“必须”，并把“给您添麻烦了”前的逗号改为句号。两版保留了原有信息和措辞，符合仅校对的范围，断句自然；问候和致歉在买家回复中有实际作用，无需作为模板话术删改。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10669,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 628,
+    "reasoning_output_tokens": 420
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a9f80ce28e48e3c9fb4a3a2cfeaeea1bda9735270ba71369e2d478f13195d9b9",
+  "stderr_lines": 11
+}

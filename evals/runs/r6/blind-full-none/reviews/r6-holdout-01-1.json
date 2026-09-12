@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 121.15,
+  "prompt_sha256": "e57149392cfea95e0a03f580334605e3b930b16785d85ad814b5902634ffe8cd",
+  "output": "{\n  \"intended_effect\": \"让评审者了解此前漏查的连点场景、本次 PR 拟处理的范围及服务端后续安排，并便于双方继续商量拆分方案。\",\n  \"gate_a\": \"fail\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [\n    {\n      \"input_evidence\": \"“这里把按钮 disable 掉应该能挡住当前页面上的重复提交”\",\n      \"output_evidence\": \"“保存过程中禁用按钮，可以避免当前页面因连续点击而重复提交”\",\n      \"reason\": \"将“应该能”的预期效果改成了确定的能力判断，材料没有提供支持这一提升的依据。这会影响评审者对拟议方案效果的理解；问题不在于声称已经完成修改，也不是声称解决了跨页面重复提交。\"\n    }\n  ],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"B 保留“应该能挡住”的判断余地，清楚区分页面内处理与跨页面问题，并用“我想先”“你看这样拆分可以吗”保留讨论空间。A 的“保存时禁用按钮”“恢复可点击”更具体，但提高了对方案效果的确定程度。两版分段自然，均无明显无效模板；B 更符合准确、合作地继续 review 讨论的目的。\",\n  \"confidence\": \"medium\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10790,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3170,
+    "reasoning_output_tokens": 2831
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "593256ceb733d7437a080d05b92811afea94cf6b57ced60bbe96834bc670f7d5",
+  "stderr_lines": 12
+}

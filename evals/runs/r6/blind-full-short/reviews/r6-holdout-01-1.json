@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 41.461,
+  "prompt_sha256": "f9d0ebfab8df296e153aacd15cb6e6f58925e7653741bee94056159d4d1aec56",
+  "output": "{\n  \"intended_effect\": \"让评审者了解此前漏测连续点击、按钮处理的作用边界及本次 PR 的拟议范围，并就服务端幂等另开 issue 跟进的拆分方案征求意见。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版都保留了关键事实、处理边界和后续安排，没有把计划写成完成，也都通过承认漏测、征求意见保持合作语气。B 的“禁用按钮”更简洁顺畅，“提交失败后恢复按钮状态”比 A 的“提交失败后的状态恢复”更清楚地交代恢复对象，便于对方确认 PR 范围，因此略偏好 B。两版均无明显模板化赘语。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10785,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1268,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "fafac754e27696779b0d2d80655710cb54e26c35e781e997b91c35088747cfc5",
+  "stderr_lines": 12
+}
