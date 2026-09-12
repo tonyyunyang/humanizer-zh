@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 58.212,
+  "prompt_sha256": "dd8d31cbe676cd11a7635ca8ff5699cda9d1644f01749503f093298a3396866f",
+  "output": "{\n  \"intended_effect\": \"让参与者了解间歇性退出的试跑记录、尚未排除的因素和材料限制，并建议下一步补充哪些信息、如何继续缩小范围。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留环境、完整命令、次数、日志差异和提供材料的限制，用“尝试次数太少，还不能确定”等表述守住观察边界，符合邀请协助定位的目的。A 的“不能据此排除”明确承接单次关闭缓存的结果；B 将环境独立成段，末句“有没有适合继续缩小范围的检查方法？”更顺畅。两版的列举都便于核对，收尾都有实际求助作用，无无效模板铺垫；整体表达收益相近。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11582,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1800,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e994524ede0ef821877fe871916cc6c870907a02f43799bd74bd849b7561f405",
+  "stderr_lines": 18
+}

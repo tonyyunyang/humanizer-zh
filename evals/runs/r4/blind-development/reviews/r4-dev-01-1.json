@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 72.398,
+  "prompt_sha256": "c7f848cf0392b2d38763e5086c3a24f6250ae723e98ceaa768d71cbacc787125",
+  "output": "{\n  \"intended_effect\": \"让维护者能复现返回列表后仍显示17条未处理订单、导出却包含286条的现象，理解预期导出范围，并知道观察仅限一个测试账号、原因尚未确认。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均保留环境版本、两种URL、页面内返回、17与286条的差异、两组对照及账号范围，并用“不确定”限定可能原因，符合复现和避免武断归因的要求。A用“我希望”自然表达预期，并明确指向这17条；B把“容易让人以为导出的也是这些订单”与预期放在一起，承接更集中。两版措辞均自然，步骤和对照列表有实际用途，没有无效模板，整体收益接近。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11575,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2311,
+    "reasoning_output_tokens": 2058
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "256c680da31bbccc1d65c855b5df5cc37f80ff54693f6be86a9e2881c0833f81",
+  "stderr_lines": 18
+}

@@ -1,0 +1,22 @@
+{
+  "source": "evals/runs/r4/blind-development",
+  "cases": {
+    "r4-dev-03": {
+      "original_preference": "A",
+      "expected_if_stable": "B",
+      "swapped_labels": {
+        "A": "first",
+        "B": "second"
+      }
+    },
+    "r4-dev-04": {
+      "original_preference": "A",
+      "expected_if_stable": "B",
+      "swapped_labels": {
+        "A": "second",
+        "B": "first"
+      }
+    }
+  },
+  "note": "Check every non-tie development preference. This mapping is excluded from judge prompts."
+}

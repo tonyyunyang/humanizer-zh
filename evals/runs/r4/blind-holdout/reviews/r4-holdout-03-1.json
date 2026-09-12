@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 60.767,
+  "prompt_sha256": "a60c0c2979e4d649b182c239f99b9862a2af52707e75ca9b9be1f22b7b419c0c",
+  "output": "{\n  \"intended_effect\": \"借我重读旧笔记的经历，让大家想想“暂时没有新的问题”与“问题已经没有了”的差别，并愿意分享自己发现事情尚未想透的时刻。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留时间关系、原样引文、提问和检查的经历，以及没有准备好的结论、不追究谁做错的立场。犹豫、疑问和空白页收尾都服务于交流邀请，没有无用模板。B的“后面没隔几页，就记着”比A的“往后翻几页，就记着”衔接稍自然，“复盘当年谁做错了什么”的语序也更顺口，适合朗读，因此略偏B，差距很小。\",\n  \"confidence\": \"medium\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11288,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1902,
+    "reasoning_output_tokens": 1652
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "36302dccf620761f9b5a83b8913770df794923d37b0c1e4c417e547cbcc63b78",
+  "stderr_lines": 18
+}

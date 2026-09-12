@@ -1,0 +1,268 @@
+{
+  "accepted_skill_commit": "7d5bfede3f7be38e82b9b2dcb8b829f24c5e8cdf",
+  "baseline_skill_commit": "06bcffe6357b7959aeb048a79c172fd69bfe6963",
+  "case_commit": "a76f659",
+  "research_commit": "9f09398",
+  "decision": "Retain the compact, conditional issue and PR guidance as explicit coverage of the user-requested use case. All tested information and scope gates passed. Initial stylistic preferences favored both versions and all became ties after order swaps; no stable stylistic advantage was established.",
+  "runtime": {
+    "lines": 178,
+    "characters": 5346,
+    "bytes": 14480,
+    "sha256": "2b25ca5d6fbda113fb2241a1ab6f81b92b98bb63e70442c5c809f161a05533ef"
+  },
+  "comparisons": {
+    "blind-development": {
+      "first": {
+        "run": "evals/runs/r4/baseline-development",
+        "skill_commit": "06bcffe6357b7959aeb048a79c172fd69bfe6963"
+      },
+      "second": {
+        "run": "evals/runs/r4/candidate-development",
+        "skill_commit": "7d5bfede3f7be38e82b9b2dcb8b829f24c5e8cdf"
+      },
+      "rubric_sha256": "1741e4356ed7739de767be2a78de4a53ea46018c1c5cf1ceb37d9d4901cd495b",
+      "preference_counts": {
+        "first": 1,
+        "second": 1,
+        "tie": 2,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "template_issue_counts": {
+        "first": 0,
+        "second": 0
+      },
+      "cases": [
+        {
+          "case_id": "r4-dev-01",
+          "intended_effect": "让维护者能复现返回列表后仍显示17条未处理订单、导出却包含286条的现象，理解预期导出范围，并知道观察仅限一个测试账号、原因尚未确认。",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版均保留环境版本、两种URL、页面内返回、17与286条的差异、两组对照及账号范围，并用“不确定”限定可能原因，符合复现和避免武断归因的要求。A用“我希望”自然表达预期，并明确指向这17条；B把“容易让人以为导出的也是这些订单”与预期放在一起，承接更集中。两版措辞均自然，步骤和对照列表有实际用途，没有无效模板，整体收益接近。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r4-dev-02",
+          "intended_effect": "让 PR 审阅者快速确认此次仅纠正注释中的默认值误写，配置项与运行时逻辑未变，并了解已对照常量核对、未运行测试的验证状态。",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版都保持短篇幅，准确保留纠错方向、两个标识符、变更范围及两项验证事实。A 的“从误写的 `500` 改为 `250`”与 B 的“从 `500` 修正为 `250`”等义且自然：前者点明误写，后者用“修正”表达这一意思。“未改动”与“未改”也无明显优劣。两版的“验证”均承载实际信息，没有多余铺垫或模板式收尾，差异不足以形成明确偏好。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r4-dev-03",
+          "intended_effect": "让读者了解间歇性退出的已有观察、尚未确定的原因及材料限制，并据此建议补充信息或继续缩小范围的检查方法。",
+          "preferred": "second",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留关键事实、精确命令和不确定性，没有补造复现流程或排查结论。A 用“运行结果如下”引出对照，比 B 的“目前试了两种配置”更适合后文另有一次关闭缓存尝试的记录结构；环境单列便于核对，末句“有没有适合继续缩小范围的检查方法”也比 B 后置“可以继续缩小范围”更顺畅。两版的列表和收尾都有实际作用，无须判为模板问题，A 略优。",
+          "confidence": "medium"
+        },
+        {
+          "case_id": "r4-dev-04",
+          "intended_effect": "让评审者先理解同毫秒更新遇到消息乱序时的状态覆盖问题，再依据迁移计划、兼容与回滚边界及验证范围，重点检查事务提交保证和新旧事件兼容逻辑。",
+          "preferred": "first",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版都保留了实质条件与完成状态，也将事务提交保证留作评审问题。A 略优：开头将“只比较 `updated_at`”与“同一毫秒”的触发条件紧接呈现；验证部分将单元测试、预发布重放和“未进行线上流量级别的压力测试”分项列出，比 B 集中成段更便于核对验证边界。两版中文都自然，均删去了关于篇幅的自我解释，提示语与列表也都有组织信息的作用。",
+          "confidence": "medium"
+        }
+      ]
+    },
+    "blind-holdout": {
+      "first": {
+        "run": "evals/runs/r4/baseline-holdout",
+        "skill_commit": "06bcffe6357b7959aeb048a79c172fd69bfe6963"
+      },
+      "second": {
+        "run": "evals/runs/r4/candidate-holdout",
+        "skill_commit": "7d5bfede3f7be38e82b9b2dcb8b829f24c5e8cdf"
+      },
+      "rubric_sha256": "1741e4356ed7739de767be2a78de4a53ea46018c1c5cf1ceb37d9d4901cd495b",
+      "preference_counts": {
+        "first": 1,
+        "second": 1,
+        "tie": 2,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "template_issue_counts": {
+        "first": 0,
+        "second": 0
+      },
+      "cases": [
+        {
+          "case_id": "r4-holdout-01",
+          "intended_effect": "让维护者和其他参与者了解作者连续查看批注时的键鼠切换不便，并就可能的改进提出意见，明白作者尚未选定方案或提出确定的实施要求。",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版都保留了具体使用场景、现有“下一条”的能力、备选方案、使用约束和未测试的范围，并以“也不一定要新增快捷键”“不急着定实现”维持征求意见的性质。B 的“如果采用快捷键”进一步限定了按键提示的适用条件；A 的“最好能让人发现这个功能”结合上下文也没有选定方案。两版中文都自然，说明程度贴切，没有无用铺垫或强行收尾，差异不足以形成明显偏好。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r4-holdout-02",
+          "intended_effect": "让 PR 审阅者清楚这次依赖升级处理的 BOM 表头问题、改动范围和验证进度，并明确真实缺表头仍应报错。",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版均准确保留标题、版本、接口、命令、fixture 原始转义串及验证和错误边界，也都把“lockfile 同步”改为更顺畅的“同步更新 lockfile”。A 的“沿用原来的显式配置”自然贴切，B 的“BOM 问题”减少了一处不必要的英文夹杂；“跑了／运行了”等差异主要是语气取舍。两版都便于审阅，限定语有实际作用，没有无效模板，整体收益相近。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r4-holdout-03",
+          "intended_effect": "借我重读旧笔记的经历，让大家想想“暂时没有新的问题”与“问题已经没有了”的差别，并愿意分享自己发现事情尚未想透的时刻。",
+          "preferred": "first",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留时间关系、原样引文、提问和检查的经历，以及没有准备好的结论、不追究谁做错的立场。犹豫、疑问和空白页收尾都服务于交流邀请，没有无用模板。B的“后面没隔几页，就记着”比A的“往后翻几页，就记着”衔接稍自然，“复盘当年谁做错了什么”的语序也更顺口，适合朗读，因此略偏B，差距很小。",
+          "confidence": "medium"
+        },
+        {
+          "case_id": "r4-holdout-04",
+          "intended_effect": "让读者看清 `lookupUser()` 的不兼容变化及错误边界，知道老调用方应如何迁移，并了解验证结果与发布计划。",
+          "preferred": "second",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版都准确保留了行为与类型变化、错误边界、迁移要求、兼容风险和验证发布状态，也都删掉了编辑指令，没有无效模板。略偏 B：开头用“改为返回 `null`，不再抛出……”直接并置新旧行为，紧接类型变化和 breaking change，重点更集中；A 在交代新行为前插入日志背景，稍有延迟。B 的验证列表便于核对已通过和未运行的检查，整体更贴合直接说明兼容性影响、帮助老调用方升级的目的。",
+          "confidence": "high"
+        }
+      ]
+    }
+  },
+  "order_checks": [
+    {
+      "case_id": "r4-dev-03",
+      "run": "development-order-check",
+      "original_preferred": "second",
+      "swapped_preferred": "tie",
+      "preference_reproduced": false,
+      "gates": {
+        "first": "pass",
+        "second": "pass"
+      },
+      "reason": "两版均保留环境、完整命令、次数、日志差异和提供材料的限制，用“尝试次数太少，还不能确定”等表述守住观察边界，符合邀请协助定位的目的。A 的“不能据此排除”明确承接单次关闭缓存的结果；B 将环境独立成段，末句“有没有适合继续缩小范围的检查方法？”更顺畅。两版的列举都便于核对，收尾都有实际求助作用，无无效模板铺垫；整体表达收益相近。",
+      "confidence": "high"
+    },
+    {
+      "case_id": "r4-dev-04",
+      "run": "development-order-check",
+      "original_preferred": "first",
+      "swapped_preferred": "tie",
+      "preference_reproduced": false,
+      "gates": {
+        "second": "pass",
+        "first": "pass"
+      },
+      "reason": "两版都先交代具体问题，完整保留比较规则、兼容限制、发布顺序、回滚边界及验证缺口，也没有把事务提交保证写成已经验证的结论。两版均删去了“背景想写得完整一点”和担心篇幅的自我说明，信息组织切合评审需要。B 将验证分成条目，便于逐项核对；A 的“旧消息覆盖新状态的风险”比 B 的“旧消息可能覆盖新状态的限制”更自然。整体效果接近，没有足以拉开差距的优势。",
+      "confidence": "high"
+    },
+    {
+      "case_id": "r4-holdout-03",
+      "run": "holdout-order-check",
+      "original_preferred": "first",
+      "swapped_preferred": "tie",
+      "preference_reproduced": false,
+      "gates": {
+        "first": "pass",
+        "second": "pass"
+      },
+      "reason": "两版都保留了时序、直接引文和作者立场，通过停顿与问句标点的小幅调整照顾朗读节奏，也保留了从发笑到迟疑、再邀请交流的层次。A 的“后面没隔几页”强调前后记录相隔之近，B 的“往后翻几页”顺着翻阅动作推进叙述；“更想弄明白”与“更想知道”力度略异，都符合探问口吻。犹豫与空白笔记的收尾服务于开放交流，两版均无无效模板铺垫，整体收益相近。",
+      "confidence": "high"
+    },
+    {
+      "case_id": "r4-holdout-04",
+      "run": "holdout-order-check",
+      "original_preferred": "second",
+      "swapped_preferred": "tie",
+      "preference_reproduced": false,
+      "gates": {
+        "second": "pass",
+        "first": "pass"
+      },
+      "reason": "两版均准确保留不兼容变化、错误边界、迁移步骤、验证状态及发布计划，也都移除了编辑要求。A 以“改为返回 `null`，不再抛出”直接呈现改动，验证结果分项便于核对；B 按“原先……现在改为……”自然交代新旧差异，验证段落更紧凑。两版都能支持审阅和升级，没有无效的模板铺垫，组织方式各有便利，未形成明显优劣。",
+      "confidence": "high"
+    }
+  ],
+  "execution": {
+    "model_attempts": 28,
+    "valid_executions": 28,
+    "invalid_executions": 0,
+    "usage_sum": {
+      "input_tokens": 352439,
+      "cached_input_tokens": 47360,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 47463,
+      "reasoning_output_tokens": 39854
+    },
+    "note": "16 editing calls, eight primary anonymous judging calls, and four swapped-order follow-ups. No retry or derived output batches."
+  },
+  "maintenance_checks": {
+    "package_validation": "passed",
+    "skill_creator_validation": "passed",
+    "diff_check": "passed",
+    "research_references": 14,
+    "unit_tests": "Not rerun: no packaging or maintenance code changed in this round."
+  },
+  "judging_calibration": {
+    "rubric": "Unchanged from R3",
+    "prior_checks": "Seven R3 calibration checks matched their predeclared expectations; these were not rerun and are not counted as R4 calls or skill passes.",
+    "note": "Order sensitivity on actual comparisons shows that passing simple calibration does not guarantee stable stylistic preferences."
+  },
+  "review_method": "Independent fresh-session model judgments plus maintaining-agent inspection of source and both generated outputs. Holdout inputs were not displayed to the maintaining agent until the candidate had been committed; the candidate remained unchanged thereafter.",
+  "limitations": [
+    "Eight independent synthetic inputs: seven issue/PR tasks and one unrelated expressive-writing case. Four inputs were held out.",
+    "One generation per version and case, with one initial judge and one additional order-swapped judgment on non-ties. Not a failure-rate or aggregate superiority estimate.",
+    "Order swaps changed all four non-tie preferences to ties; this design cannot separate position effects from ordinary model variability.",
+    "The same model family generated and judged outputs. No human author or professional editor blind review occurred.",
+    "No measured review-time or merge-quality improvement; language quality does not identify AI authorship.",
+    "All R4 cases are consumed for future rounds. Unrelated writing, other Chinese varieties and other model families have limited or no coverage here.",
+    "The required-template case supplied validation facts. A template with completely missing validation evidence remains a useful separate test.",
+    "This text-only round did not rerun all permanent cases or test live repository investigation, command execution, file editing or publication."
+  ],
+  "next_evidence": [
+    "Collect real author or maintainer revisions with permission, paying attention to what they keep as well as delete.",
+    "Use fresh cases for required fields with missing evidence, implementation histories and descriptions based on a final diff.",
+    "Keep current scope and language protections; do not add rules solely to favor one formatting preference in these consumed examples."
+  ]
+}

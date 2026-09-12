@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 43.018,
+  "prompt_sha256": "6d180017bddc0ab4922203ebd1af5c83e998e8ada33b7af823fce5e3b7239825",
+  "output": "上周，我翻到自己三年前的工作笔记。有一页写着：“这周总算把上线前所有不确定性都消掉了。”读到这里，我先笑了，因为往后翻几页，就记着一个上线第三天才被客户问出来的问题。\n\n现在回头看，我当然可以说自己当时太自信了。可我又觉得，事情可能没这么简单。那时候，我确实问了很多问题，也做了自己能想到的检查。我更想知道的是：我们是从什么时候开始，把“暂时没有新的问题”听成了“问题已经没有了”？\n\n今天想借着大家读过的内容，聊聊这个差别。我没有准备好的结论，也不打算复盘谁当年做错了什么。如果大家愿意，可以先从一个很小的时刻说起：你是什么时候发现，自己以为已经想明白的事，其实还留着一个洞？\n\n说起来有点不好意思，我那本笔记后面还有几页空白。今晚也许能记上几句。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13618,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1274,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "87a4de026194f67fa30d772b3575d2757ce988043791013a750f270d97fe185f",
+  "stderr_lines": 17
+}

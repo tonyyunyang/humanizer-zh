@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 69.267,
+  "prompt_sha256": "058791b98266cb9b4e99decf76e27407d8f0f174a582b4084fc0111f8e2eee60",
+  "output": "## Context\n\n上传带 UTF-8 BOM 的 CSV 时，第一列有时会被识别为空表头，报 `ERR_EMPTY_HEADER`。在我们这组 fixture 中，`csvlite 1.7.2` 会触发这个问题，`csvlite 1.7.4` 不会。目前只验证了这组 fixture，未覆盖所有导出工具。\n\n## Changes\n\n将 `csvlite` 从 `1.7.2` 升级到 `1.7.4`，并同步更新 lockfile。传给 `parseCsv()` 的参数没有变，`skip_empty_lines` 仍保留原来的显式配置。这次没有改动上传 UI，也没有增加预处理 BOM 的 fallback。\n\n## Validation\n\n运行了 `pnpm test -- csv-import`，27 个测试通过。新增 fixture 的原始内容是 `\\uFEFFname,email\\r\\nA,a@example.test`。原有的空表头错误用例仍然保留，也已通过。还没有在浏览器中手动上传验证。\n\n## Known limitations\n\n这个 patch 只处理目前遇到的 BOM 问题，并不是让所有导入错误都静默通过。文件本身确实缺少表头时，仍应报 `ERR_EMPTY_HEADER`。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13667,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2161,
+    "reasoning_output_tokens": 1880
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "88d11c8ca89854e47c4b050510d3cdfe4a2eaf01c13790be62be493c0de07afc",
+  "stderr_lines": 18
+}

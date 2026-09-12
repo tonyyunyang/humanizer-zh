@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 58.363,
+  "prompt_sha256": "3b92f1a38aa423eac94f85a8eda26961aa31b8c7fa5be7d353607b8409f391a5",
+  "output": "`lookupUser()` 找不到用户时，原先会抛出 code 为 `USER_NOT_FOUND` 的异常，导致一些正常的首次访问也进入错误日志。现在改为返回 `null`，返回类型从 `Promise<User>` 改为 `Promise<User | null>`。这是 breaking change。\n\n只有确实找不到用户时才返回 `null`。数据库连接错误等其他错误继续抛出，非法用户 ID 仍然抛出 `INVALID_USER_ID`。\n\n升级时，原先在 `catch` 中判断 `USER_NOT_FOUND` 的调用方，需要将这个分支移到 `await` 后，改为检查返回值是否为 `null`。仓库内 4 个调用点已更新，外部还有多少调用方尚不清楚。JavaScript 调用方可能不做类型检查，因此不能只靠重新编译发现所有兼容性问题。\n\n本地运行 `pnpm test user-repository`，16 个单元测试全部通过；`pnpm typecheck` 也已通过。集成测试未运行。\n\n计划随下个 major 版本发布，具体版本号未定。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13140,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1538,
+    "reasoning_output_tokens": 1288
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "27695965648803afdd3e384d516d2116a26460e414065ff3e13382e8b3695c88",
+  "stderr_lines": 18
+}

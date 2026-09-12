@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 38.226,
+  "prompt_sha256": "26198a1254a6659e7aa53abe44da68dbdbfbd7a749e888311aab4baa5bf3498c",
+  "output": "{\n  \"intended_effect\": \"让 PR 审阅者快速确认此次仅纠正注释中的默认值误写，配置项与运行时逻辑未变，并了解已对照常量核对、未运行测试的验证状态。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都保持短篇幅，准确保留纠错方向、两个标识符、变更范围及两项验证事实。A 的“从误写的 `500` 改为 `250`”与 B 的“从 `500` 修正为 `250`”等义且自然：前者点明误写，后者用“修正”表达这一意思。“未改动”与“未改”也无明显优劣。两版的“验证”均承载实际信息，没有多余铺垫或模板式收尾，差异不足以形成明确偏好。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10606,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1139,
+    "reasoning_output_tokens": 876
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b44f752a7e216107ccbf451c64f1d60e992df9dd49465807521e2481f8083dae",
+  "stderr_lines": 18
+}

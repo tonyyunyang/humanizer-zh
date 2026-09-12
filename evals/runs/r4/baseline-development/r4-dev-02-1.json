@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 18.712,
+  "prompt_sha256": "b80cac2eaa88c39f8261425ad9ad02e6e6ce8c3d5b7f0b06a2efb56e5c33c331",
+  "output": "将 `retryDelayMs` 注释中的默认值从 `500` 修正为 `250`。配置项和运行时逻辑未改。\n\n验证：已对照 `DEFAULT_RETRY_DELAY_MS` 核对注释；未运行测试。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12871,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 486,
+    "reasoning_output_tokens": 426
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "dff467e6e71ea36b76616ef7591c32a4524f68bcd9e82c75e8816135c537ccb5",
+  "stderr_lines": 17
+}

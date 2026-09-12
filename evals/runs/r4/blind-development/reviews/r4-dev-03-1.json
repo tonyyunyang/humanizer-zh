@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 107.419,
+  "prompt_sha256": "a50fe56eaff449764c80514cdd871bb4e0c0aab0deb06a411603276f4ab65c7d",
+  "output": "{\n  \"intended_effect\": \"让读者了解间歇性退出的已有观察、尚未确定的原因及材料限制，并据此建议补充信息或继续缩小范围的检查方法。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版均保留关键事实、精确命令和不确定性，没有补造复现流程或排查结论。A 用“运行结果如下”引出对照，比 B 的“目前试了两种配置”更适合后文另有一次关闭缓存尝试的记录结构；环境单列便于核对，末句“有没有适合继续缩小范围的检查方法”也比 B 后置“可以继续缩小范围”更顺畅。两版的列表和收尾都有实际作用，无须判为模板问题，A 略优。\",\n  \"confidence\": \"medium\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11580,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3329,
+    "reasoning_output_tokens": 3081
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a932605764ab029ad34e3de91bbc5860dae78abc4ea53803bfec7dce2aeb2d58",
+  "stderr_lines": 18
+}

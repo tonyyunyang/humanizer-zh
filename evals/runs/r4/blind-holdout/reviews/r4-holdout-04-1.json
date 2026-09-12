@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 42.489,
+  "prompt_sha256": "36b1327f3822a4596a4a295760507ceb0c68dcc81235db110736606104036f77",
+  "output": "{\n  \"intended_effect\": \"让读者看清 `lookupUser()` 的不兼容变化及错误边界，知道老调用方应如何迁移，并了解验证结果与发布计划。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版都准确保留了行为与类型变化、错误边界、迁移要求、兼容风险和验证发布状态，也都删掉了编辑指令，没有无效模板。略偏 B：开头用“改为返回 `null`，不再抛出……”直接并置新旧行为，紧接类型变化和 breaking change，重点更集中；A 在交代新行为前插入日志背景，稍有延迟。B 的验证列表便于核对已通过和未运行的检查，整体更贴合直接说明兼容性影响、帮助老调用方升级的目的。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11459,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1268,
+    "reasoning_output_tokens": 1016
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "192471b55e1030951863df145dfc172d825b8a377e853cccfc5a642ea5629573",
+  "stderr_lines": 18
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 65.517,
+  "prompt_sha256": "709624bafcd4d2306773917ea4280293db423225b1ae23579dae84f3fda222f0",
+  "output": "{\n  \"intended_effect\": \"让 PR 审阅者清楚这次依赖升级处理的 BOM 表头问题、改动范围和验证进度，并明确真实缺表头仍应报错。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均准确保留标题、版本、接口、命令、fixture 原始转义串及验证和错误边界，也都把“lockfile 同步”改为更顺畅的“同步更新 lockfile”。A 的“沿用原来的显式配置”自然贴切，B 的“BOM 问题”减少了一处不必要的英文夹杂；“跑了／运行了”等差异主要是语气取舍。两版都便于审阅，限定语有实际作用，没有无效模板，整体收益相近。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11468,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2017,
+    "reasoning_output_tokens": 1773
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "55fc56068a8544d9a072e138f77bf9544fc081b479ac57e409be78db838bd62e",
+  "stderr_lines": 18
+}

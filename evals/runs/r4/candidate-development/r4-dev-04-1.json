@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 63.689,
+  "prompt_sha256": "d27265c664f9f873cfe08f04eb829f5cc6f1420e67c131a71873d93b387c7749",
+  "output": "订单状态消费者目前只比较 `updated_at`，但异步消息的到达顺序不一定与业务发生顺序一致。两次状态更新落在同一毫秒时，晚到的旧消息可能覆盖新状态。\n\n本 PR 为订单状态事件增加 `message_revision`，在同一次业务事务中递增修订号并写入 outbox。消费端通过 `last_applied_revision` 记录已应用的修订号，只应用修订号比本地记录大的事件，相等或更小的事件会被忽略。`updated_at` 继续保留。\n\n改动仅覆盖订单状态事件，退款事件不在范围内。没有 `message_revision` 的旧事件仍按原来的 `updated_at` 逻辑比较，因此仍有同一毫秒内旧消息覆盖新状态的风险。\n\n数据库迁移新增的 `last_applied_revision` 列允许为空，线上迁移尚未执行。发布顺序为：\n\n1. 先执行数据库迁移。\n2. 再部署代码，初始保持 `ORDER_EVENT_REVISION_V2=0`。\n3. 对 5% 的账号设置 `ORDER_EVENT_REVISION_V2=1`，观察 24 小时，再决定是否扩大到全部账号。观察期结束后不会自动全量。\n\n回滚时可将 `ORDER_EVENT_REVISION_V2` 设回 `0`，恢复旧路径。新增列至少保留到下一个版本，再讨论是否删除。切回旧路径不会重新补放此前忽略的事件；如需补放，须另行处理，本 PR 未实现这部分功能。\n\n验证方面，18 个单元测试全部通过，其中包含缺少 `message_revision` 的旧事件路径。在预发布环境按修订号 `3,1,2` 的顺序重放事件，最终保留了 `3` 对应的状态。尚未进行线上流量级别的压力测试。\n\n请重点评审两处：\n\n- 修订号递增与 outbox 写入是否能保证在同一业务事务中一起提交。\n- 新旧事件混合处理时的兼容逻辑。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13879,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1998,
+    "reasoning_output_tokens": 1531
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9d0f2a2a667b65904da2ce234c70f030d15c2a0968a9a73cd1175aa3a7e3019d",
+  "stderr_lines": 18
+}

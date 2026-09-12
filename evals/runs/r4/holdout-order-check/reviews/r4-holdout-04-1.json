@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 59.144,
+  "prompt_sha256": "2bbef235bb771a8fa33bf9e88c3a8a6f46028e86018c756d65e0bf9233c6cda7",
+  "output": "{\n  \"intended_effect\": \"让评审者和老调用方看清 `lookupUser()` 的新旧行为、类型变化和错误边界，知道如何升级，并了解验证情况与发布计划。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均准确保留不兼容变化、错误边界、迁移步骤、验证状态及发布计划，也都移除了编辑要求。A 以“改为返回 `null`，不再抛出”直接呈现改动，验证结果分项便于核对；B 按“原先……现在改为……”自然交代新旧差异，验证段落更紧凑。两版都能支持审阅和升级，没有无效的模板铺垫，组织方式各有便利，未形成明显优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11459,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1795,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "4da0f5b9e48bb2d3a9f316c646eb03a9ee52f47bec507706bc0d22fb5d303db0",
+  "stderr_lines": 17
+}

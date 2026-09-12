@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 81.647,
+  "prompt_sha256": "d68918dc731960b4310d3d1d6b8adef13ce8ad25cf767579e8027e240c4a534b",
+  "output": "{\n  \"intended_effect\": \"让评审者先理解同毫秒更新遇到消息乱序时的状态覆盖问题，再依据迁移计划、兼容与回滚边界及验证范围，重点检查事务提交保证和新旧事件兼容逻辑。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版都保留了实质条件与完成状态，也将事务提交保证留作评审问题。A 略优：开头将“只比较 `updated_at`”与“同一毫秒”的触发条件紧接呈现；验证部分将单元测试、预发布重放和“未进行线上流量级别的压力测试”分项列出，比 B 集中成段更便于核对验证边界。两版中文都自然，均删去了关于篇幅的自我解释，提示语与列表也都有组织信息的作用。\",\n  \"confidence\": \"medium\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12187,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2541,
+    "reasoning_output_tokens": 2280
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "549ad290ca303b3ecc4d5b97dada87f64f2e34cb5ef1cc8ef6795df8c1c3f368",
+  "stderr_lines": 18
+}

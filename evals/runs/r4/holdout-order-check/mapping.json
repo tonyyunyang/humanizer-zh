@@ -1,0 +1,22 @@
+{
+  "source": "evals/runs/r4/blind-holdout",
+  "cases": {
+    "r4-holdout-03": {
+      "original_preference": "B",
+      "expected_if_stable": "A",
+      "swapped_labels": {
+        "A": "first",
+        "B": "second"
+      }
+    },
+    "r4-holdout-04": {
+      "original_preference": "B",
+      "expected_if_stable": "A",
+      "swapped_labels": {
+        "A": "second",
+        "B": "first"
+      }
+    }
+  },
+  "note": "Check every non-tie holdout preference. This mapping is excluded from judge prompts."
+}

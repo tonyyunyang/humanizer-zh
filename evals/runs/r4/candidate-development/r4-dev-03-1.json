@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 43.416,
+  "prompt_sha256": "ce7241351512302ac79c74e1c8750d26d2281e0fde544655e4ccf4edfcc4f32e",
+  "output": "wavepeek 批处理偶发退出，退出码 `139`\n\n批处理时遇到了进程偶尔退出的问题。目前还没有稳定的复现方式，先把观察到的情况发出来，想请大家一起帮忙定位。\n\n环境是 `wavepeek 0.8.2`、`Python 3.12.3`、`Ubuntu 24.04 arm64`。\n\n同一个目录里放了 200 个 `.wav` 文件，运行结果如下：\n\n- `wavepeek render ./fixtures/batch --workers 4`：跑了 5 次，其中 2 次进程退出，退出码都是 `139`，另外 3 次完成了。\n- `wavepeek render ./fixtures/batch --workers 1`：试了 3 次，都完成了。\n\n这让我怀疑问题和并发有关，但尝试次数太少，还不能确定。两次失败的日志也不一样：一次最后一行有 `frame_index=8192`，另一次没有这行。\n\n有人建议关闭缓存，我又运行了一次 `wavepeek render ./fixtures/batch --workers 4 --no-cache`，进程也退出了，退出码为 `139`。这只能说明那次关闭缓存后仍然遇到了问题，还不能排除缓存的影响。输入文件损坏的可能性也尚未排除。\n\n音频本身不方便上传。如果需要，我可以提供去掉文件名的 stderr。接下来补充哪些信息比较有用？有没有适合继续缩小范围的检查方法？",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13699,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1288,
+    "reasoning_output_tokens": 954
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "2485a6e2435258add71703da443db262641e9b82d63572083ca5008400d60ab9",
+  "stderr_lines": 18
+}

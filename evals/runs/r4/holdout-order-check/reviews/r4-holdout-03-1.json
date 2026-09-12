@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 58.462,
+  "prompt_sha256": "6609bbe5a7a076251a4556ca761bd81fd75df5fde4fe67e67b1b9a67e93b1fb5",
+  "output": "{\n  \"intended_effect\": \"让听众从我回看旧笔记的经历中留意“暂时没有新的问题”与“问题已经没有了”的差别，并愿意在不预设结论、不追责的交流中分享自己的类似时刻。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都保留了时序、直接引文和作者立场，通过停顿与问句标点的小幅调整照顾朗读节奏，也保留了从发笑到迟疑、再邀请交流的层次。A 的“后面没隔几页”强调前后记录相隔之近，B 的“往后翻几页”顺着翻阅动作推进叙述；“更想弄明白”与“更想知道”力度略异，都符合探问口吻。犹豫与空白笔记的收尾服务于开放交流，两版均无无效模板铺垫，整体收益相近。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11284,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1833,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "aac4f1a145b493b09abadb651c591eb1b1d79a654e5f28327b76f4fc80978139",
+  "stderr_lines": 17
+}

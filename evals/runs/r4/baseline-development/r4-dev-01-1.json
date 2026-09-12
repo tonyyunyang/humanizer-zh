@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 45.946,
+  "prompt_sha256": "5cf27e94359e4f2ef8f737e35f140ec0a0e2bca437f39b74c2e81133ec9b20a0",
+  "output": "返回列表后仍显示“未处理”筛选结果，但 CSV 导出包含全部订单\n\n后台版本是 v2.6.1，使用 Chrome 136 / macOS 15.4。测试账号共有 286 条订单，其中“未处理”的有 17 条。\n\n在这个账号上的操作过程如下：\n\n1. 新开一个窗口，直接访问 `/orders?status=pending`。列表显示 17 条订单，筛选器显示“未处理”。\n2. 点开其中任意一条订单，再点击页面上的“返回列表”，不是浏览器的返回按钮。\n3. 此时地址变为 `/orders`，但筛选器仍显示“未处理”，列表也仍是那 17 条订单。\n4. 点击“导出 CSV”，拿到的文件里却有 286 条订单。\n\n我希望导出的范围与当前列表显示的范围一致，也就是这 17 条“未处理”订单。\n\n另外检查了两种情况：\n\n- 在 `/orders?status=pending` 硬刷新后直接导出，文件里是 17 条订单。\n- 一开始就直接打开 `/orders`，页面显示全部订单，导出 286 条，符合预期。\n\n目前只检查了这一个测试账号，还不清楚其他账号是否也会这样。不确定是否与返回列表时未保留路由参数有关，或是导出接口读取筛选条件的方式有问题。按页面上的显示，很容易以为导出的会是筛选后的结果，希望有空时帮忙看一下。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13155,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1370,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "14ddfd82342a6abc589f0e58a8acd57c9cbaaabaed1fb52642add051bf706562",
+  "stderr_lines": 18
+}

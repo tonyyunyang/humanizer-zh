@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 62.595,
+  "prompt_sha256": "0d81d61cf3a228724997f89ade715d861f5924cea415e64d516d9294115bf0db",
+  "output": "异步系统中，消息到达顺序不一定与业务发生顺序一致。当前订单状态消费者只比较 `updated_at`；两次状态更新落在同一毫秒时，晚到的旧消息可能覆盖新状态。\n\n本 PR 为订单状态事件增加 `message_revision`，在同一次业务事务中递增修订号并写入 outbox。消费端记录 `last_applied_revision`，只应用修订号大于本地记录的事件，忽略修订号相等或更小的事件。`updated_at` 继续保留。\n\n本次仅覆盖订单状态事件，退款事件不在范围内。缺少 `message_revision` 的旧事件仍走原来的 `updated_at` 比较逻辑，因此仍存在同毫秒更新时旧消息可能覆盖新状态的限制。\n\n数据库迁移新增的 `last_applied_revision` 列允许为空。线上迁移尚未执行，发布顺序如下：\n\n1. 执行数据库迁移。\n2. 部署代码，初始保持 `ORDER_EVENT_REVISION_V2=0`。\n3. 对 5% 的账号设为 `ORDER_EVENT_REVISION_V2=1`，观察 24 小时，再根据观察结果决定是否扩大到全部账号。24 小时后不会自动全量。\n\n回滚时，将 `ORDER_EVENT_REVISION_V2` 设回 `0` 即可恢复旧路径。新增列至少保留到下一个版本，再讨论是否删除。回滚开关不会重新补放此前被忽略的事件；如需补放，要另行处理，本 PR 未实现补放功能。\n\n验证情况如下：\n\n- 18 个单元测试全部通过；缺少 `message_revision` 的旧事件路径也做了单元测试。\n- 在预发布环境重放修订号 `3,1,2`，最终保留了 `3` 对应的状态。\n- 未进行线上流量级别的压力测试。\n\n请重点评审：\n\n- 同一业务事务中的修订号递增和 outbox 写入是否能保证一起提交。\n- 新旧事件混合到达时的兼容逻辑。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13322,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1956,
+    "reasoning_output_tokens": 1484
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8996f01a207e91a5b25d14c363bcc69995376bd035d22e660f78ba90c76171e8",
+  "stderr_lines": 17
+}

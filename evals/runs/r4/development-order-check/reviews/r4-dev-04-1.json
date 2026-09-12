@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-dev-04",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 65.35,
+  "prompt_sha256": "6c42dae4363b9fc362d5bd5a87aecb245220a05cf9468fbe2ff637511e9936e8",
+  "output": "{\n  \"intended_effect\": \"让评审者先理解同毫秒更新遇到消息乱序时的状态覆盖风险，再依据完整的兼容、迁移、回滚和验证信息，重点审查事务提交保证与新旧事件混用逻辑。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都先交代具体问题，完整保留比较规则、兼容限制、发布顺序、回滚边界及验证缺口，也没有把事务提交保证写成已经验证的结论。两版均删去了“背景想写得完整一点”和担心篇幅的自我说明，信息组织切合评审需要。B 将验证分成条目，便于逐项核对；A 的“旧消息覆盖新状态的风险”比 B 的“旧消息可能覆盖新状态的限制”更自然。整体效果接近，没有足以拉开差距的优势。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12187,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2041,
+    "reasoning_output_tokens": 1774
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "802f43a9fb7e9dc500efee141991340cba51958ab9fca41e4ca10c150c05bf71",
+  "stderr_lines": 18
+}

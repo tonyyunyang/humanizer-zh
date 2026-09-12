@@ -1,0 +1,23 @@
+{
+  "case_id": "r4-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 55.644,
+  "prompt_sha256": "3a695ad2f80282521c1fcc17ee0225edb22387ca26fc4d8923e8f3c27d63c7b6",
+  "output": "{\n  \"intended_effect\": \"让维护者和其他参与者了解作者连续查看批注时的键鼠切换不便，并就可能的改进提出意见，明白作者尚未选定方案或提出确定的实施要求。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都保留了具体使用场景、现有“下一条”的能力、备选方案、使用约束和未测试的范围，并以“也不一定要新增快捷键”“不急着定实现”维持征求意见的性质。B 的“如果采用快捷键”进一步限定了按键提示的适用条件；A 的“最好能让人发现这个功能”结合上下文也没有选定方案。两版中文都自然，说明程度贴切，没有无用铺垫或强行收尾，差异不足以形成明显偏好。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11474,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1594,
+    "reasoning_output_tokens": 1338
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b4ca555f96afe11064d4a01af0c8eee185859a1f245ce49f7253c38e65120d68",
+  "stderr_lines": 18
+}
