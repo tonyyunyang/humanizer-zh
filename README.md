@@ -55,6 +55,8 @@ npx skills add tonyyunyang/humanizer-zh --global
 
 按提示选择 Claude Code、Codex、Cursor 等工具。去掉 `--global` 就只装到当前项目。
 
+仓库安装读取 `main`；[精简安装包](https://github.com/tonyyunyang/humanizer-zh/releases/latest/download/humanizer-zh.zip)读取最新正式 release。推送仓库不会自动替换你已经安装的副本，更新后应核对实际安装的 `SKILL.md` 版本与内容。
+
 `npx skills` 是 [Vercel 的 skill 安装工具](https://github.com/vercel-labs/skills)：它把仓库里的 skill 放到对应目录。使用它需要安装 [Node.js](https://nodejs.org/)（当前 Skills CLI 要求 22.20.0 或更新版本），**你不需要发布或安装一个名叫 humanizer-zh 的 npm 包**。不想用 Node.js，可以用下面的插件或手动方式。
 
 ### Claude Code 插件
@@ -139,7 +141,7 @@ Claude Code 手动安装的普通 skill 用 `/humanizer-zh`；插件版用 `/hum
 
 ## 怎样持续更新
 
-最新发布版 **1.0.0**，已审阅并适配 **Blader Humanizer 3.0.0**，核对日期 **2026-09-11**。`main` 分支包含后续未发布的中文、混排及 Issue/PR 编辑改进；精简 ZIP 对应已发布版本。
+最新发布版 **1.1.0**，包含中文、混排及 Issue/PR 编辑改进，继续使用已认可的 178 行正文。精简 ZIP 与 `v1.1.0` 标签对应。已审阅的上游基线仍是 **Blader Humanizer 3.0.0**，核对日期 **2026-09-11**；本次发版没有推进上游审阅记录。
 
 专业依据与逐轮实际输出见[改进记录](docs/RSI.md)。第五、六轮继续保留已认可的 178 行正文；[第六轮](evals/runs/r6/README.md)的 71 行候选仅作实验，尚未替换当前 skill。本地定时精进任务已取消，后续按需发起。
 

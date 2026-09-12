@@ -43,7 +43,9 @@ By default, it returns one finished rewrite. It preserves technical terms, uncer
 
 ## Maintenance
 
-The latest release, **1.0.0**, adapts **Blader Humanizer 3.0.0**, reviewed on **2026-09-11**. Our version number tracks this Chinese edition independently. The `main` branch includes subsequent unreleased improvements for Chinese, mixed-language text, and issue/PR descriptions; the minimal ZIP contains the released version.
+The latest release, **1.1.0**, includes the Chinese, mixed-language, and issue/PR editing improvements while retaining the approved 178-line skill. The minimal ZIP matches the `v1.1.0` tag. The reviewed upstream baseline remains **Blader Humanizer 3.0.0**, reviewed on **2026-09-11**; this release does not advance that source record.
+
+Repository installation reads `main`; the [minimal package](https://github.com/tonyyunyang/humanizer-zh/releases/latest/download/humanizer-zh.zip) reads the latest formal release. Pushing the repository does not update an existing installation. After updating, check the version and content of the installed `SKILL.md`.
 
 The [improvement record](docs/RSI.md) links the research and recorded rounds of actual outputs. Rounds 5 and 6 retain the approved 178-line skill; the 71-line candidate in [round 6](evals/runs/r6/README.md) remains experimental and has not replaced it. The local scheduled improvement task has been deleted; further iterations are started on demand.
 

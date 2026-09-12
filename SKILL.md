@@ -6,7 +6,7 @@ description: >-
   按具体表达需要处理，保留事实、术语和作者立场；不用于判断文本是否由 AI 生成。
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Humanizer-zh
