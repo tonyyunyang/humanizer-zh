@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 23.404,
+  "prompt_sha256": "93027f86ab06dd6e83cddbf4fee135e5a31b0fbeb8bbb8c17a545fb64dba407c",
+  "output": "{\n  \"intended_effect\": \"将本地 Storybook 中可搜索 Select 按 Escape 关闭后焦点未返回触发按钮的问题，整理为准确的 issue 标题和中文正文，并保留指定的五个英文模板标题。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿准确保留复现步骤、同机三次观察、焦点记录、组件用法及版本和环境信息。鼠标选择成功、键盘确认未测试、VoiceOver 推测未验证及 gif 未附上等边界均清楚，未扩大故障范围或添加无依据的结论。标题聚焦实际问题，五个英文模板标题完整，内容便于团队理解和排查。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11375,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 648,
+    "reasoning_output_tokens": 449
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "24c4d5efab636a7ca7856df5512df154a712fba12560544ed6a622f46bc4affb",
+  "stderr_lines": 18
+}

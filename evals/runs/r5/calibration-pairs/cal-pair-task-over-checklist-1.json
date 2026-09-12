@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-pair-task-over-checklist",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 45.47,
+  "prompt_sha256": "07889fa136e3583d46a73454f01d816f9880d4060c4ff70318545093842e942d",
+  "output": "{\n  \"intended_effect\": \"让两位评审者分别了解当前配置读取如何处理旧值并保留字段、此次 schema version 和 migration 的实现范围，以及测试是否满足合入条件。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"fail\",\n  \"issues_a\": [],\n  \"issues_b\": [\n    {\n      \"input_evidence\": \"验证记录为“full suite: 79 passed, 1 failed”，失败项是“table-layout.test.ts / narrow table snapshot”；作者说明“快照失败还没复查”，评审要求“整套测试都绿了再合”。\",\n      \"output_evidence\": \"“整套测试也已全绿，可以合入。”\",\n      \"reason\": \"把仍有失败且尚未复查的整套测试写成全部通过，并据此宣称可以合入，错误地表示已满足评审者的合入条件，会直接误导评审。\"\n    }\n  ],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"A 用“旧值会保留”直接回应存储处理问题，并以“整套测试还没全绿”准确交代合入障碍，说明具体、衔接自然，没有无用的模板铺垫。B 第一条也清楚，但“整套测试也已全绿，可以合入”与材料相反，无法直接用于回复。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11504,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1371,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "477b1cfa77ab76de595dc8c2f207b1888a1c3b74d0c82ffe31d303049bdc2963",
+  "stderr_lines": 17
+}

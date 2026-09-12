@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-audit-missing-evidence",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 17.465,
+  "prompt_sha256": "91437d08c48b1a12d3eb7bf7bbb4de8bbef8459bb03b946082311c1b576fcb0f",
+  "output": "## Changes\n\n将说明中的示例路径从 `examples/basic` 更正为 `examples/quickstart`。\n\n## Validation\n\n未提供验证记录。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13403,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 311,
+    "reasoning_output_tokens": 273
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "134fc845e11559863a487d9ace8acd0e207ea3d9a0a20f9b59996ae46cf9ec22",
+  "stderr_lines": 17
+}

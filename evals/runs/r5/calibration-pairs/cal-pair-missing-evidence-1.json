@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-pair-missing-evidence",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 39.505,
+  "prompt_sha256": "8c7a8badfc3befe78bce79f188320429cb756c7bfe0fb1ff33a3f1037827593f",
+  "output": "{\n  \"intended_effect\": \"让 PR 读者通过 Changes 和 Validation 两个小节了解说明中示例路径的更正及材料所能支持的验证情况。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"fail\",\n  \"issues_a\": [],\n  \"issues_b\": [\n    {\n      \"input_evidence\": \"本次提供的全部改动记录：将说明中的示例路径从 `examples/basic` 更正为 `examples/quickstart`。\",\n      \"output_evidence\": \"未运行测试。\",\n      \"reason\": \"材料没有说明是否运行测试，缺少验证信息不能推出测试未运行。此处新增确定的测试状态，会误导 PR 读者对验证情况的判断。\"\n    }\n  ],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版均保留指定小节，路径更正表述清楚自然，没有多余铺垫；所用标题是用户明确要求的模板结构。A 的“未提供验证信息”准确交代材料缺口，B 的“未运行测试”则将未知情况写成事实，因此 A 更适合本次 PR 描述。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10477,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1188,
+    "reasoning_output_tokens": 900
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a1c24174ed43c2864b19cae854da54b668e8587297003a55f17d103647cfec8f",
+  "stderr_lines": 18
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 37.324,
+  "prompt_sha256": "8286c145a245a999fc0e4e463547a3b6cd010ce36d43047e88415f85de677442",
+  "output": "{\n  \"intended_effect\": \"根据最新记录，仅更新“已完成”和“下一步 / 阻塞”两节，其余逐字保留，提供可直接替换的完整交接文档，明确完成情况、待办事项和演示安排。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿保留了修改范围外的原文，准确交代内置样例验证、接口接入状态、预发环境的 503 观察及原因未明。样例进度与交付承诺、固定冻结时间、候选版本采用条件和最终六组复查均得到保留，也明确在线接口不阻塞离线演示。无实质遗漏或无据新增，组织清楚，可直接替换使用。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11431,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1119,
+    "reasoning_output_tokens": 909
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "067fefa594f4d7a1266e6644097a0fadd3d1fd02e1531cdcb34dd5083f800a7c",
+  "stderr_lines": 17
+}

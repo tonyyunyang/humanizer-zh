@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 21.536,
+  "prompt_sha256": "39dcca93d72a491be83141c380d3cf8cafeb385885cc3b279401afda29ffa9f8",
+  "output": "{\n  \"intended_effect\": \"提供可直接提交的 PR 标题和中文描述，使用指定的四个正文标题，说明 /admin/search 的两类竞态问题、实际修复、验证结果及影响范围。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿与4月9日最终实现及代码一致，准确说明请求版本判断如何限制结果写入和 loading 关闭，未沿用初稿中的合并、取消或缓存承诺。测试与手动验证均保留实际范围和限制，接口、请求数量及页面外入口的边界清楚。标题和四个指定正文标题齐全，内容可直接用于提交 PR。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11145,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 591,
+    "reasoning_output_tokens": 401
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "2663ad9f79aac03c318c44972e761c60483560a0fc61297783d14e77609770d0",
+  "stderr_lines": 18
+}

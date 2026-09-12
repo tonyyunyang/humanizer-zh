@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 27.319,
+  "prompt_sha256": "ad6fbccf5bf6e55bffdaea62495588a6fcf01bc047eb4f26f680e6f8f490ea48",
+  "output": "{\n  \"intended_effect\": \"将 CSV 导入的内部进展整理成可直接发群的正文，让同组同事一遍读懂完成情况、剩余阻塞及协作安排，同时保留作者口吻和指定感受句。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿保留了十二个样例中九个已在本地复现、修好并跑过对应用例，三个仍缺文件的关系；分支名及未合主线状态准确，周四 16:00 前交付文件与剩余修复时间待排的区别清楚。指定感受句原样保留，空列问题及审看九个变更、关注字段映射、PR 留言和下午集中查看的安排均完整。信息重组后层次清楚，口吻自然，可直接发群，无实质遗漏或无据新增。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10982,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 757,
+    "reasoning_output_tokens": 516
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "dc376de01f010e3123015719552c77de6541dd49545f5322644b79d3ba09f35d",
+  "stderr_lines": 18
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-audit-explicit-branch",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 27.189,
+  "prompt_sha256": "6a8b578059b11e5a7d6b78ee6e8b5a115b4868209b78497f2ebe26d0e148ed50",
+  "output": "{\n  \"intended_effect\": \"回复评审者，明确说明 `panel:prefs` 不存在时返回 `DEFAULT_PREFS` 的副本，以及解析失败不会修改 storage 中的旧值。\",\n  \"information_gate\": \"fail\",\n  \"task_fit\": \"needs_work\",\n  \"issues\": [\n    {\n      \"input_evidence\": \"用户要求“明确说明 `panel:prefs` 不存在时返回什么”；材料说明“当 getItem 返回 null 时，返回 DEFAULT_PREFS 的副本”。\",\n      \"output_evidence\": \"成稿仅写：“解析失败时返回默认值副本，旧值保留，不会写入 storage。”\",\n      \"reason\": \"遗漏了用户直接询问的键不存在时的返回结果。解析失败时的行为不能代替对键不存在这一条件的明确回答。\"\n    }\n  ],\n  \"template_issues\": [],\n  \"reason\": \"成稿正确说明了解析失败时返回默认值副本且不修改旧值，但漏答了另一项明确问题，回复不完整。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10195,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 756,
+    "reasoning_output_tokens": 511
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8ee6698cfddf5acb0eadc5648da8be82cba4bf063ef17407f70de73682d8acb3",
+  "stderr_lines": 18
+}

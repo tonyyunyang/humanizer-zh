@@ -1,0 +1,7 @@
+{
+  "source_run": "evals/runs/r5/baseline-development",
+  "skill_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+  "suite_sha256": "d65f19ab38106ff13dea2bd1df8142870ba8d082c2aca4b4b477a0fe7a171ed9",
+  "rubric_sha256": "b6f9f98f58476696b88a8fa404e70d51ccb9415f6cf5926a95fa7549fc0eec00",
+  "note": "Single-output audit, not a version comparison. Source metadata is excluded from judge prompts."
+}

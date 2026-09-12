@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 28.304,
+  "prompt_sha256": "f5f49aeb6e6dd1c8359468d48ff2beac3a03d91875865c090ece27d45e55ba2c",
+  "output": "{\n  \"intended_effect\": \"将手记和日志整理成可直接贴到 GitHub 的中文 issue，提供标题和指定六个栏目，帮助维护者排查断网重连后的同步停滞，并区分观察事实与待确认事项。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿准确区分两次约20分钟断网后的异常与五次短时断网未复现，保留计时不精确性、单机测试范围、手动重试恢复及本地文字保留的观察。原始日志、错误码和预期行为均准确呈现，未将错误码判定为根因，未沿用机器人摘要的未经核实结论，也未编造附件或数据完整性验证结果。标题和六个栏目符合要求，信息组织清楚，可供维护者排查。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11851,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 809,
+    "reasoning_output_tokens": 578
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "13515880b04004eb0c8a98de774cb57dad30adc1c1fd31eadcc771e26e28fa7b",
+  "stderr_lines": 18
+}

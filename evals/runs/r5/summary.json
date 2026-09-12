@@ -1,0 +1,427 @@
+{
+  "baseline_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+  "starting_state": "Local HEAD and remote main matched; worktree clean. Work then continued on the local codex/rsi-r5 branch.",
+  "accepted_skill_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+  "skill_changed": false,
+  "candidate_created": false,
+  "decision": "Keep the approved 178-line skill unchanged. Six fresh generated drafts passed the final single-output audits. Correct evaluator classification of unsupported additions and prevent generated checklists from imposing extra user requirements. These are evaluation-method improvements, not evidence that the skill writes better. A separate targeted drafting probe also retained the distinction between missing validation records and tests not run.",
+  "runtime": {
+    "lines": 178,
+    "bytes": 14480,
+    "sha256": "2b25ca5d6fbda113fb2241a1ab6f81b92b98bb63e70442c5c809f161a05533ef"
+  },
+  "case_commit": "6dfe6fa",
+  "final_rubric_commit": "b4497fc",
+  "calibrations": {
+    "calibration": {
+      "matched": 1,
+      "total": 2,
+      "cases": [
+        {
+          "case_id": "cal-audit-missing-evidence",
+          "expected": {
+            "information_gate": "fail"
+          },
+          "actual": {
+            "information_gate": "uncertain"
+          },
+          "matched": false,
+          "reason": "路径更正表述准确，结构、重点和语气符合简短 PR 描述的要求；两个小节是用户明确要求保留的，不属于无作用的模板表达。测试状态仍需确认。"
+        },
+        {
+          "case_id": "cal-audit-author-report",
+          "expected": {
+            "information_gate": "pass",
+            "task_fit": "adequate"
+          },
+          "actual": {
+            "information_gate": "pass",
+            "task_fit": "adequate"
+          },
+          "matched": true,
+          "reason": "成稿准确保留了命令 `pytest -q tests/test_slug.py`、12 个测试通过、未保存终端截图及浏览器手动操作尚未验证的信息。改写均为等义表达，未扩大验证范围；说明简短清楚，符合本次要求。"
+        }
+      ]
+    },
+    "calibration-v2": {
+      "matched": 2,
+      "total": 2,
+      "cases": [
+        {
+          "case_id": "cal-audit-missing-evidence",
+          "expected": {
+            "information_gate": "fail"
+          },
+          "actual": {
+            "information_gate": "fail"
+          },
+          "matched": true,
+          "reason": "成稿保留了指定小节，路径字符准确，重点、组织和语气适合此次 PR 描述；但验证部分新增了无材料支持的断言，信息关卡不通过。两个标题均有明确用途。"
+        },
+        {
+          "case_id": "cal-audit-author-report",
+          "expected": {
+            "information_gate": "pass",
+            "task_fit": "adequate"
+          },
+          "actual": {
+            "information_gate": "pass",
+            "task_fit": "adequate"
+          },
+          "matched": true,
+          "reason": "成稿完整保留了命令 `pytest -q tests/test_slug.py`、12 个测试通过、未保存终端截图及浏览器手动操作尚未验证的信息，未扩大验证范围或新增事实。表达简洁清楚，符合本次要求。"
+        }
+      ]
+    },
+    "calibration-v3": {
+      "matched": 3,
+      "total": 3,
+      "cases": [
+        {
+          "case_id": "cal-audit-missing-evidence",
+          "expected": {
+            "information_gate": "fail"
+          },
+          "actual": {
+            "information_gate": "fail"
+          },
+          "matched": true,
+          "reason": "成稿保留了指定小节，准确交代路径更正，组织和语气适合 PR 描述；但新增了材料不支持的测试执行状态，因此信息核对不通过。"
+        },
+        {
+          "case_id": "cal-audit-author-report",
+          "expected": {
+            "information_gate": "pass",
+            "task_fit": "adequate"
+          },
+          "actual": {
+            "information_gate": "pass",
+            "task_fit": "adequate"
+          },
+          "matched": true,
+          "reason": "成稿准确保留了 `pytest -q tests/test_slug.py`、12 个测试通过、未保存终端截图及浏览器手动操作尚未验证的信息。改写等义，未增加事实或扩大验证范围，表达简短清楚，适合作为 PR 验证说明。"
+        },
+        {
+          "case_id": "cal-audit-explicit-branch",
+          "expected": {
+            "information_gate": "fail"
+          },
+          "actual": {
+            "information_gate": "fail"
+          },
+          "matched": true,
+          "reason": "成稿正确说明了解析失败时返回默认值副本且不修改旧值，但漏答了另一项明确问题，回复不完整。"
+        }
+      ]
+    },
+    "calibration-pairs": {
+      "matched": 2,
+      "total": 2,
+      "cases": [
+        {
+          "case_id": "cal-pair-missing-evidence",
+          "expected": {
+            "gate_a": "pass",
+            "gate_b": "fail",
+            "preference": "A"
+          },
+          "actual": {
+            "gate_a": "pass",
+            "gate_b": "fail",
+            "preference": "A"
+          },
+          "matched": true,
+          "reason": "两版均保留指定小节，路径更正表述清楚自然，没有多余铺垫；所用标题是用户明确要求的模板结构。A 的“未提供验证信息”准确交代材料缺口，B 的“未运行测试”则将未知情况写成事实，因此 A 更适合本次 PR 描述。"
+        },
+        {
+          "case_id": "cal-pair-task-over-checklist",
+          "expected": {
+            "gate_a": "pass",
+            "gate_b": "fail",
+            "preference": "A"
+          },
+          "actual": {
+            "gate_a": "pass",
+            "gate_b": "fail",
+            "preference": "A"
+          },
+          "matched": true,
+          "reason": "A 用“旧值会保留”直接回应存储处理问题，并以“整套测试还没全绿”准确交代合入障碍，说明具体、衔接自然，没有无用的模板铺垫。B 第一条也清楚，但“整套测试也已全绿，可以合入”与材料相反，无法直接用于回复。"
+        }
+      ]
+    }
+  },
+  "audits": {
+    "audit-development": {
+      "source": {
+        "source_run": "evals/runs/r5/baseline-development",
+        "skill_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+        "suite_sha256": "d65f19ab38106ff13dea2bd1df8142870ba8d082c2aca4b4b477a0fe7a171ed9",
+        "rubric_sha256": "56dde3beb505ee06b0821b7d6dd43bfa3163a00eb93ccc6f485552c51e00e3ca",
+        "note": "Single-output audit, not a version comparison. Source metadata is excluded from judge prompts."
+      },
+      "information_counts": {
+        "pass": 3,
+        "fail": 0,
+        "uncertain": 0
+      },
+      "task_fit_counts": {
+        "adequate": 3,
+        "needs_work": 0,
+        "uncertain": 0
+      },
+      "cases": [
+        {
+          "case_id": "r5-dev-01",
+          "intended_effect": "为纸芽管理台 /admin/search 提供可直接提交的 PR 标题和中文描述，使用指定的四个正文标题，说明两个请求竞态问题、最终修改、验证结果和影响范围。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿保留了四个指定标题，准确说明旧结果覆盖和 loading 提前关闭的问题，递增版本号及写回判断与最终实现一致。两个测试通过、手动检查条件和观察范围、未记录具体版本及未跑整套回归均如实呈现。页面范围、toast 处理、接口协议和请求数量的边界明确，未沿用初稿中的合并、取消、缓存或过度承诺。内容具体、组织清楚，可直接用于 PR。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-dev-02",
+          "intended_effect": "将断网重连后同步停住、远端修改未及时出现及手动重试后恢复的记录，整理为可直接提交 GitHub 的中文 issue，按指定六节帮助维护者理解现象、核对证据并继续排查。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "标题和六个小节符合要求。成稿准确区分两次约20分钟断网后的异常与五次短时断网未复现，保留时间估计、单机测试范围、本地内容的观察结果及验证局限，日志原文完整。未将错误码或机器人摘要当作已确认结论，未编造图片内容、附件链接或环境信息。预期、实际、证据和待确认事项组织清楚，能够支持维护者排查。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-dev-03",
+          "intended_effect": "将 CSV 导入的内部进展整理成可直接发群的正文，让同组同事一遍读懂完成情况、阻塞条件、时间安排和审看请求，并保留作者口吻及真实感受。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿完整保留了12个样例中9个已本地复现、修复并跑过对应用例，3个仍缺合作方示例文件的关系；分支名 fix/import-edge-cases、未合主线状态及空列导致后续字段错位的含义均准确。阿璐承诺周四16:00前交文件，修复时间待拿到文件再排，两者没有混淆。审看9个变更、关注字段映射、PR留意见及下午集中查看的安排完整。指定感受句逐字保留，无实质遗漏或无据新增。分段清楚，团队交流口吻自然，可直接发送。",
+          "confidence": "high"
+        }
+      ]
+    },
+    "audit-holdout": {
+      "source": {
+        "source_run": "evals/runs/r5/baseline-holdout",
+        "skill_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+        "suite_sha256": "d65f19ab38106ff13dea2bd1df8142870ba8d082c2aca4b4b477a0fe7a171ed9",
+        "rubric_sha256": "56dde3beb505ee06b0821b7d6dd43bfa3163a00eb93ccc6f485552c51e00e3ca",
+        "note": "Single-output audit, not a version comparison. Source metadata is excluded from judge prompts."
+      },
+      "information_counts": {
+        "pass": 2,
+        "fail": 1,
+        "uncertain": 0
+      },
+      "task_fit_counts": {
+        "adequate": 2,
+        "needs_work": 1,
+        "uncertain": 0
+      },
+      "cases": [
+        {
+          "case_id": "r5-holdout-01",
+          "intended_effect": "整理一份中文 issue，聚焦可搜索 Select 按 Escape 关闭后未恢复触发按钮焦点的问题，保留五个指定英文模板标题，并区分实测结果、预期行为和未验证事项。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿保留了复现步骤、同机三次观察、BUTTON→INPUT→BODY 的焦点记录及准确的包名、版本和环境信息。鼠标选择成功、键盘确认未测、VoiceOver 未验证和 gif 未附等边界交代清楚，未虚构网址、根因或扩大已验证范围。五个英文标题完整，中文正文组织清晰，可用于提交 issue。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-holdout-02",
+          "intended_effect": "提供两条可直接回复评审者的编号中文回复，依据当前实现说明旧值处理、默认配置与字段保留规则，并准确交代 schema version、migration 和测试状态，保留尚未确认的事项。",
+          "information_gate": "fail",
+          "task_fit": "needs_work",
+          "issues": [
+            {
+              "input_evidence": "验收要点要求说明“读不到值、解析失败或结果不是普通对象时返回一份默认配置”；当前函数包含 `if (raw === null) return { ...DEFAULT_PREFS };`。",
+              "output_evidence": "第1条说明了“解析失败时返回 `DEFAULT_PREFS` 的副本”和“数组、`null` 等非普通对象会回退到默认值”，未交代没有存储值的情况。",
+              "reason": "遗漏了明确要求的无存储值分支。解析结果为 `null` 与 `panel:prefs` 不存在是不同情况；需补充该键不存在时也返回默认配置副本。"
+            }
+          ],
+          "template_issues": [],
+          "reason": "两条回复对应清楚、语气合适，其余实现行为、修改范围和测试状态均准确，也没有把字体猜测写成定论或擅自承诺 migration。补齐无存储值时的行为即可满足要求。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-holdout-03",
+          "intended_effect": "根据最新记录，仅更新“已完成”和“下一步 / 阻塞”两节，提供可直接替换的完整交接文档，明确完成状态、待办、冻结安排及在线候选版本的采用条件。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "两节之外的正文逐字保留。成稿准确区分内置样例验证、接口契约确认与前端尚未接入，保留预发环境两次 503 及原因未确认的限定。样例进度、小弥的交付承诺、叶舟确认的固定冻结时间、候选版本的恢复时限与检查条件、最终六组样例尚待复检均准确保留，并明确在线接口不阻塞离线演示。组织清楚，语气直接，无实质遗漏、无据增补或无效模板表达。",
+          "confidence": "high"
+        }
+      ]
+    },
+    "audit-development-v3": {
+      "source": {
+        "source_run": "evals/runs/r5/baseline-development",
+        "skill_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+        "suite_sha256": "d65f19ab38106ff13dea2bd1df8142870ba8d082c2aca4b4b477a0fe7a171ed9",
+        "rubric_sha256": "b6f9f98f58476696b88a8fa404e70d51ccb9415f6cf5926a95fa7549fc0eec00",
+        "note": "Single-output audit, not a version comparison. Source metadata is excluded from judge prompts."
+      },
+      "information_counts": {
+        "pass": 3,
+        "fail": 0,
+        "uncertain": 0
+      },
+      "task_fit_counts": {
+        "adequate": 3,
+        "needs_work": 0,
+        "uncertain": 0
+      },
+      "cases": [
+        {
+          "case_id": "r5-dev-01",
+          "intended_effect": "提供可直接提交的 PR 标题和中文描述，使用指定的四个正文标题，说明 /admin/search 的两类竞态问题、实际修复、验证结果及影响范围。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿与4月9日最终实现及代码一致，准确说明请求版本判断如何限制结果写入和 loading 关闭，未沿用初稿中的合并、取消或缓存承诺。测试与手动验证均保留实际范围和限制，接口、请求数量及页面外入口的边界清楚。标题和四个指定正文标题齐全，内容可直接用于提交 PR。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-dev-02",
+          "intended_effect": "将手记和日志整理成可直接贴到 GitHub 的中文 issue，提供标题和指定六个栏目，帮助维护者排查断网重连后的同步停滞，并区分观察事实与待确认事项。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿准确区分两次约20分钟断网后的异常与五次短时断网未复现，保留计时不精确性、单机测试范围、手动重试恢复及本地文字保留的观察。原始日志、错误码和预期行为均准确呈现，未将错误码判定为根因，未沿用机器人摘要的未经核实结论，也未编造附件或数据完整性验证结果。标题和六个栏目符合要求，信息组织清楚，可供维护者排查。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-dev-03",
+          "intended_effect": "将 CSV 导入的内部进展整理成可直接发群的正文，让同组同事一遍读懂完成情况、剩余阻塞及协作安排，同时保留作者口吻和指定感受句。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿保留了十二个样例中九个已在本地复现、修好并跑过对应用例，三个仍缺文件的关系；分支名及未合主线状态准确，周四 16:00 前交付文件与剩余修复时间待排的区别清楚。指定感受句原样保留，空列问题及审看九个变更、关注字段映射、PR 留言和下午集中查看的安排均完整。信息重组后层次清楚，口吻自然，可直接发群，无实质遗漏或无据新增。",
+          "confidence": "high"
+        }
+      ]
+    },
+    "audit-holdout-v3": {
+      "source": {
+        "source_run": "evals/runs/r5/baseline-holdout",
+        "skill_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+        "suite_sha256": "d65f19ab38106ff13dea2bd1df8142870ba8d082c2aca4b4b477a0fe7a171ed9",
+        "rubric_sha256": "b6f9f98f58476696b88a8fa404e70d51ccb9415f6cf5926a95fa7549fc0eec00",
+        "note": "Single-output audit, not a version comparison. Source metadata is excluded from judge prompts."
+      },
+      "information_counts": {
+        "pass": 3,
+        "fail": 0,
+        "uncertain": 0
+      },
+      "task_fit_counts": {
+        "adequate": 3,
+        "needs_work": 0,
+        "uncertain": 0
+      },
+      "cases": [
+        {
+          "case_id": "r5-holdout-01",
+          "intended_effect": "将本地 Storybook 中可搜索 Select 按 Escape 关闭后焦点未返回触发按钮的问题，整理为准确的 issue 标题和中文正文，并保留指定的五个英文模板标题。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿准确保留复现步骤、同机三次观察、焦点记录、组件用法及版本和环境信息。鼠标选择成功、键盘确认未测试、VoiceOver 推测未验证及 gif 未附上等边界均清楚，未扩大故障范围或添加无依据的结论。标题聚焦实际问题，五个英文模板标题完整，内容便于团队理解和排查。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-holdout-02",
+          "intended_effect": "提供两条可直接回复评审者的编号中文答复，解释当前实现对旧值和配置字段的处理，并说明 schema version、migration 的改动范围及测试状态，保持技术标识原样。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿依据当前函数，准确说明旧值保留、默认配置回退、对象合并及字段校验边界，未沿用早期笔记中的删写方案。明确本次不含 schema version 或 migration，未承诺排期；准确区分局部测试通过与整套仍有失败，并保留快照尚未复查、字体原因只是猜测的状态。未单独说明无存储值分支不影响回答评审问题。两条回复清楚、可直接使用，无实质信息错误。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r5-holdout-03",
+          "intended_effect": "根据最新记录，仅更新“已完成”和“下一步 / 阻塞”两节，其余逐字保留，提供可直接替换的完整交接文档，明确完成情况、待办事项和演示安排。",
+          "information_gate": "pass",
+          "task_fit": "adequate",
+          "issues": [],
+          "template_issues": [],
+          "reason": "成稿保留了修改范围外的原文，准确交代内置样例验证、接口接入状态、预发环境的 503 观察及原因未明。样例进度与交付承诺、固定冻结时间、候选版本采用条件和最终六组复查均得到保留，也明确在线接口不阻塞离线演示。无实质遗漏或无据新增，组织清楚，可直接替换使用。",
+          "confidence": "high"
+        }
+      ]
+    }
+  },
+  "criteria_adjudication": {
+    "case_id": "r5-holdout-02",
+    "initial_verdict": "fail",
+    "original_finding": "The reply did not describe the missing-storage-key branch.",
+    "request_only_probe": {
+      "intended_effect": "写出两条编号、可直接回复评审者的中文回复，保留技术标识，说明当前实现对旧值和配置字段的处理、本次 schema version 与 migration 的范围，以及实际测试状态，不承诺后续排期。",
+      "information_gate": "pass",
+      "task_fit": "adequate",
+      "issues": [],
+      "template_issues": [],
+      "reason": "成稿正确以当前完整读取函数为准，没有沿用三天前笔记中的删除旧值、写入默认值和加入 migration 的方案。只读、返回默认值副本、普通对象字段合并及不校验字段值等说明均与材料一致。测试结果和失败项准确，保留了失败尚未复查、字体原因仅为无证据猜测的限定，也未承诺 migration 排期。技术标识保持原样，两条回复分别回应对应评审，解释充分、语气合适，可直接使用。",
+      "confidence": "high"
+    },
+    "author_review": "evals/runs/r5/criteria-author-audit.md",
+    "author_review_scope": "Original case only; author did not read the generated reply or judge result.",
+    "resolution": "The branch was optional background for the requested review reply. The actual requirement to answer the full-suite status must remain mandatory. Original cases and judgments are retained; no rewrite was changed to satisfy the excessive checklist.",
+    "limitation": "One probe without checklist hints cannot by itself establish a causal effect; adjudication also relied on the original task and the case-author review."
+  },
+  "execution": {
+    "cli_model_runs": 29,
+    "valid_executions": 29,
+    "invalid_executions": 0,
+    "distinct_generated_drafts": 7,
+    "calibration_calls": 9,
+    "draft_audits": 12,
+    "criteria_probe_calls": 1,
+    "additional_case_author_criteria_reviews": 1,
+    "usage_sum_cli_only": {
+      "input_tokens": 335188,
+      "cached_input_tokens": 45056,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 35686,
+      "reasoning_output_tokens": 28315
+    },
+    "note": "29 CLI editing/judging calls plus one criteria-review task meet the 30-call editing/review ceiling. Initial case authoring is separate. Re-audits reuse the same six independent drafts. The seventh draft is a targeted probe on a calibration input; no retry or skill candidate.",
+    "independent_case_drafts": 6,
+    "targeted_probe_drafts": 1
+  },
+  "maintenance_checks": {
+    "package_validation": "passed",
+    "unit_tests": 29,
+    "diff_check": "passed",
+    "runtime_unchanged_from_baseline": true
+  },
+  "limitations": [
+    "Six synthetic source packets, three development and three holdout; one generation per case, no alternative skill candidate.",
+    "The same model family supplied generation and judging. There was no human author or professional editor review of the generated drafts.",
+    "Final grading followed an explicit evaluator correction after a questionable holdout verdict; initial verdicts and adjudication evidence remain visible.",
+    "Calibration is a small set of predefined checks, including a consumed draft in paired calibration, not an accuracy estimate or an unseen writing test.",
+    "No measured stylistic improvement, failure-rate reduction, review-time gain or comparison with an unassisted model.",
+    "Cases are consumed for future rounds. The original r5-holdout-02 checklist contains known excessive and weak requirements; review it against the source task before reuse.",
+    "No live repository investigation, file editing integration, publication behavior or other model family was tested in this text-only round."
+  ],
+  "targeted_editing_probe": {
+    "source": "evals/calibration/source-audit-fixtures.json",
+    "result": "evals/runs/r5/missing-evidence-edit-probe/cal-audit-missing-evidence-1.json",
+    "output": "## Changes\n\n将说明中的示例路径从 `examples/basic` 更正为 `examples/quickstart`。\n\n## Validation\n\n未提供验证记录。",
+    "maintaining_agent_verdict": "pass",
+    "reason": "Retains the required sections and exact paths, explicitly says validation records were not provided, and does not claim tests ran or did not run.",
+    "limitation": "Reuses a calibration input; not a new independent or held-out case. The editing prompt excludes the fixture output and expected verdicts."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 46.585,
+  "prompt_sha256": "969a36f157103fe28fb6b9f4094a016324d64c618a171f18f326362668bf533c",
+  "output": "{\n  \"intended_effect\": \"提供两条可直接回复评审者的编号中文答复，解释当前实现对旧值和配置字段的处理，并说明 schema version、migration 的改动范围及测试状态，保持技术标识原样。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿依据当前函数，准确说明旧值保留、默认配置回退、对象合并及字段校验边界，未沿用早期笔记中的删写方案。明确本次不含 schema version 或 migration，未承诺排期；准确区分局部测试通过与整套仍有失败，并保留快照尚未复查、字体原因只是猜测的状态。未单独说明无存储值分支不影响回答评审问题。两条回复清楚、可直接使用，无实质信息错误。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11162,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1355,
+    "reasoning_output_tokens": 1127
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "31c45b5e9394cbac9ec7f014b3ecf0cc04f06bae54eb6d1fa115fe51b522a86a",
+  "stderr_lines": 17
+}
