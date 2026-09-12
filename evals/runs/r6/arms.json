@@ -1,0 +1,23 @@
+{
+  "full": {
+    "skill_ref": "ce8cd106fb5df3312a6141e7972e0391f474277b",
+    "skill_sha256": "2b25ca5d6fbda113fb2241a1ab6f81b92b98bb63e70442c5c809f161a05533ef",
+    "lines": 178,
+    "characters": 5346,
+    "bytes": 14480
+  },
+  "short": {
+    "skill_ref": "3acd0c466504562ed57e9a5851f5d3ee5d821ce5",
+    "skill_sha256": "eae951da0cab0bdf5cbef4c90ff02cfbc0f16dff9213687c2063e1c97d3c2c35",
+    "lines": 71,
+    "characters": 2079,
+    "bytes": 5697
+  },
+  "none": {
+    "skill_ref": null,
+    "skill_sha256": null,
+    "lines": 0,
+    "characters": 0,
+    "bytes": 0
+  }
+}
