@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-28-explicit-removal",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 48.001,
+  "prompt_sha256": "82aa54aeeaf01042e41675d1a79a598505db043851ce1bfc6b1484a56a4b0a3e",
+  "output": "每次看到有人问“今年读了多少本书”，我都不知道该怎么接话。不是因为读得少而不好意思，而是我厌烦这种只剩下数量的交流方式。一本书放在桌上两个月，中间同一章读了三遍，在统计表里可能还只是一个未完成的项目。但对我来说，那些反复读的时间才是阅读。我不想把阅读也过成月底冲业绩。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13523,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1470,
+    "reasoning_output_tokens": 1364
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "07cdd5a4085e0fd41a713fbd80eb54f0f166156d1f1a28bccf6107389ee4e3e1",
+  "stderr_lines": 11
+}

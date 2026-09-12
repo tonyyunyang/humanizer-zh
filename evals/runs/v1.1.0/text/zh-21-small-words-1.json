@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-21-small-words",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 22.372,
+  "prompt_sha256": "14e2318d1c09797cf49e61db76b6826079e676c2047a9b33667a6db84a61482f",
+  "output": "我改了四遍才敢发给编辑。编辑只看过前两页，还没看完。我当时估计周一就能交稿。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13409,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 556,
+    "reasoning_output_tokens": 516
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "5a195e8c9958164c35f2e602741e238a162a796dfc1f0f2bbf614bdc6e5777b2",
+  "stderr_lines": 12
+}

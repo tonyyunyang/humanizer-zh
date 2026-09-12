@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-17-topic-flow",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 16.41,
+  "prompt_sha256": "f997482c134e438193b1684698e9822ed4bf64ee08679b8c837ecda48986b2bd",
+  "output": "周六我去了旧书店，买了一本地图集。封面已经破了，内页还完整。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13410,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 367,
+    "reasoning_output_tokens": 336
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e70a3d75deb92e3e9a4c3850c81c8e1b7181d144a8d74b970e2f771d0e113867",
+  "stderr_lines": 12
+}

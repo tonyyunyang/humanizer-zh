@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-15-traditional-chinese",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 8.461,
+  "prompt_sha256": "e883dda5cc7039af425d14dda75ebc65e6f483301dcdcb90751830b6f9aeca1b",
+  "output": "本次更新新增了搜尋功能，使用者現在可以依檔名查找文件。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13412,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 166,
+    "reasoning_output_tokens": 140
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8ebe836f245184f583afb0ea93914d55ac8c5252dfc18719ff9c8daa58a7f053",
+  "stderr_lines": 12
+}

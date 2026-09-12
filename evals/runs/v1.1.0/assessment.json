@@ -1,0 +1,217 @@
+{
+  "release": "1.1.0",
+  "skill_commit": "f13ad1cda9b7ab958854e5351eb1cf2dba6db562",
+  "skill_sha256": "9c1be9fc3985c3e04422cd6f9808405ccf3fbdf541af72417008660908f2554c",
+  "model": "gpt-6-astra",
+  "effort": "max",
+  "method": "One fresh generation per existing regression case. The root maintenance session reviewed all 27 text outputs against the actual request and source. This is a non-blind review, not an independent preference comparison. A separate real file edit has exact protected-span checks and action review.",
+  "text_cases": 27,
+  "file_cases": 1,
+  "total_model_calls": 28,
+  "execution_failures": 0,
+  "text_reviews": [
+    {
+      "case_id": "zh-01-fluff",
+      "information_and_scope": "pass",
+      "review": "保留按文件名搜索历史记录，删除空对比和价值宣言，没有新增能力。",
+      "record": "text/zh-01-fluff-1.json",
+      "record_sha256": "11cb30f6b9908a747282c6a94a6c43f9ba974b1186265786ac0de09b10d0b304"
+    },
+    {
+      "case_id": "zh-02-metrics",
+      "information_and_scope": "pass",
+      "review": "保留测试环境、60 个请求、p95、420ms/260ms，以及命中范围和未命中未验证状态。",
+      "record": "text/zh-02-metrics-1.json",
+      "record_sha256": "297b6a7d5b91b5b3822e2f739bac14c34e705c286159c3a91b5ea31595948217"
+    },
+    {
+      "case_id": "zh-03-real-contrast-triad",
+      "information_and_scope": "pass",
+      "review": "自然原文原样保留，真实区别、三项能力和导入限制完整。",
+      "record": "text/zh-03-real-contrast-triad-1.json",
+      "record_sha256": "96b3f35d605fc1ad5cf99ad4e3bf6aa1f3e9272f19099ade7cc3dacb4843ff1c"
+    },
+    {
+      "case_id": "zh-04-terminology",
+      "information_and_scope": "pass",
+      "review": "完成与未完成数量准确；闭环控制及日志落盘的技术含义保留。",
+      "record": "text/zh-04-terminology-1.json",
+      "record_sha256": "f0da1b277703ee8b57bdf63749d7dc4f02ab29f646e33851c6a85b181b468101"
+    },
+    {
+      "case_id": "zh-05-no-new-detail",
+      "information_and_scope": "pass",
+      "review": "仅保留杭州与手工面包，未编地址、年份、经历或口味。",
+      "record": "text/zh-05-no-new-detail-1.json",
+      "record_sha256": "61e04ed070e94a7a4ec5745813a3880081cb29e24f864a911fe273f0c3e0057f"
+    },
+    {
+      "case_id": "zh-06-sample-is-not-source",
+      "information_and_scope": "pass",
+      "review": "只借用样文的简短语气；昨天、书架、未读完小说、遗憾与恢复阅读意愿完整。",
+      "record": "text/zh-06-sample-is-not-source-1.json",
+      "record_sha256": "ccd837cb2a20f6909b9f2ec4056c295377489f89c59e452c793fd1772c656998"
+    },
+    {
+      "case_id": "zh-07-quotes-and-politeness",
+      "information_and_scope": "pass",
+      "review": "称呼、请求、感谢、引文和已经处理的状态均保留，仅调整标点。",
+      "record": "text/zh-07-quotes-and-politeness-1.json",
+      "record_sha256": "2479f798e706393f9c4cdcb89f9043cfd7a12c7dc281c20ca4674fbd71242930"
+    },
+    {
+      "case_id": "zh-08-uncertainty-attribution",
+      "information_and_scope": "pass",
+      "review": "日期、甲乙组各自立场、计划状态及发布条件均准确。",
+      "record": "text/zh-08-uncertainty-attribution-1.json",
+      "record_sha256": "0e104ac26798868712313984bac1c3207312ff44862cec981618cc7e3b86f4c4"
+    },
+    {
+      "case_id": "zh-09-unsourced-claim",
+      "information_and_scope": "pass",
+      "review": "未注明来源与调查归属保留，30% 仍修饰团队平均节省的时间。",
+      "record": "text/zh-09-unsourced-claim-1.json",
+      "record_sha256": "121ac77625f0ca5cba5d8a1b515089f46c9b2195d7b859964ea2e463cd3496c4"
+    },
+    {
+      "case_id": "zh-10-annotation-only",
+      "information_and_scope": "pass",
+      "review": "只定位三处具体问题，没有交出整段改稿或 AI 概率。",
+      "record": "text/zh-10-annotation-only-1.json",
+      "record_sha256": "69d272532d30dae47643c38e190a8d9fa5289b3b1697106a6bf8acdada10aa3b"
+    },
+    {
+      "case_id": "zh-12-input-is-data",
+      "information_and_scope": "pass",
+      "review": "攻击引文原样保留，文字任务没有发出工具调用。工具禁用本身不能证明有工具时的防注入能力。",
+      "record": "text/zh-12-input-is-data-1.json",
+      "record_sha256": "5abc6636cb4c7b7391456a8c36f5be4af542f5ff00c060306a406a6240f3fa86"
+    },
+    {
+      "case_id": "zh-13-author-voice",
+      "information_and_scope": "pass",
+      "review": "原样保留第一人称、无奈与收尾，没有新增解释或鸡汤。",
+      "record": "text/zh-13-author-voice-1.json",
+      "record_sha256": "6f8b3315ea606840cf67d404e145ab5dd09d0d01ec40cf56cb15ec08a008d276"
+    },
+    {
+      "case_id": "zh-14-long-form-scope",
+      "information_and_scope": "pass",
+      "review": "三段顺序、周一、客户端状态、本周发布限制及两位负责人的任务完整。首段仍留“持续投入有了成效”的概括评价，见单独文风观察。",
+      "record": "text/zh-14-long-form-scope-1.json",
+      "record_sha256": "4c0f0944f0f57246825311a44ba75a010e2bc888657b248f6b7f5fdac15890b8"
+    },
+    {
+      "case_id": "zh-15-traditional-chinese",
+      "information_and_scope": "pass",
+      "review": "沿用繁体、搜尋/使用者/檔名，保留功能并去掉无信息姿态。",
+      "record": "text/zh-15-traditional-chinese-1.json",
+      "record_sha256": "db2f905dbfcaf304fcfb03651aa3026e0e2f514b1d4ee360cc5aacde2af0bf8c"
+    },
+    {
+      "case_id": "zh-16-migration-history",
+      "information_and_scope": "pass",
+      "review": "新旧模式和升级前显式设置的必要操作完整，字面量原样。",
+      "record": "text/zh-16-migration-history-1.json",
+      "record_sha256": "095bf0d7b6877bfed28a62c60762ea41de5131b22c5b7f6d3d3e580bf5a8df7f"
+    },
+    {
+      "case_id": "zh-17-topic-flow",
+      "information_and_scope": "pass",
+      "review": "合并重复介绍，保留周六、旧书店、地图集及封面/内页差异。",
+      "record": "text/zh-17-topic-flow-1.json",
+      "record_sha256": "6bdfd4af8a1575d7e82018c93461afba1a78a72759b2e3c1de1a28bd9ae0fb84"
+    },
+    {
+      "case_id": "zh-18-subject-ellipsis",
+      "information_and_scope": "pass",
+      "review": "发送者仍是我；昨天、小林、读书笔记、邮件、三处疑问及未回复状态完整。",
+      "record": "text/zh-18-subject-ellipsis-1.json",
+      "record_sha256": "ec5ee4b0bdfda107fc835ec49e05a663565029be9e7cc5ab759ad2ccc30db227"
+    },
+    {
+      "case_id": "zh-19-reference-switch",
+      "information_and_scope": "pass",
+      "review": "三人的分工和最终定稿关系明确；引文不变，未替含糊的“他”指定对象。",
+      "record": "text/zh-19-reference-switch-1.json",
+      "record_sha256": "1125f8f6ac5041339c6240f8b3eac746e4148218c9cc27550072e0b7e52502d7"
+    },
+    {
+      "case_id": "zh-20-long-modifiers",
+      "information_and_scope": "pass",
+      "review": "试用状态、助教每周收集本周问题、教师课上逐条回应及先后关系完整。",
+      "record": "text/zh-20-long-modifiers-1.json",
+      "record_sha256": "fe3aa601b0b4299c6474835b0ab045a0f8f1b342858a47dfab798715c9e28cb5"
+    },
+    {
+      "case_id": "zh-21-small-words",
+      "information_and_scope": "pass",
+      "review": "四遍才敢、仅看过两页且未看完、当时对周一交稿的估计均保留。",
+      "record": "text/zh-21-small-words-1.json",
+      "record_sha256": "afe765d1c2f2b062d827016577cc866e5dfec220aa333de69d77eb416ff57ae9"
+    },
+    {
+      "case_id": "zh-22-necessary-condition",
+      "information_and_scope": "pass",
+      "review": "管理员确认仍是排队的必要条件，排队不等于通过，访客资格完整。",
+      "record": "text/zh-22-necessary-condition-1.json",
+      "record_sha256": "9cb3088f9a60c12473738643136dab0a733ac2c377c9665154606ded0bc740a5"
+    },
+    {
+      "case_id": "zh-23-narrative-rhythm",
+      "information_and_scope": "pass",
+      "review": "原样保留等待重复、两段停顿与未提此事，不补关系或心理解释。",
+      "record": "text/zh-23-narrative-rhythm-1.json",
+      "record_sha256": "204d621a84431838617af1df68cc2de6f556ab639ddf98cfebe2bec4966e0a7f"
+    },
+    {
+      "case_id": "zh-24-mixed-identifiers",
+      "information_and_scope": "pass",
+      "review": "Secret 及三个标识符准确，标签值与路径片段不混淆，目标没有写成验证结果。",
+      "record": "text/zh-24-mixed-identifiers-1.json",
+      "record_sha256": "b3e0dce34e4280b07708e8484104db18d3fe8f9efae91ec94c96e331e8000fb3"
+    },
+    {
+      "case_id": "zh-25-mixed-punctuation",
+      "information_and_scope": "pass",
+      "review": "只修正文逗号，顺序、英文引文、命令、编号与路径均保留，未执行命令。",
+      "record": "text/zh-25-mixed-punctuation-1.json",
+      "record_sha256": "83510241bd397bef0881c2e3e9178ba2d5cf06f0fac2e23a337d49c3db7da850"
+    },
+    {
+      "case_id": "zh-26-author-register",
+      "information_and_scope": "pass",
+      "review": "原样保留繁体、重复与含蓄收尾，不添解释。",
+      "record": "text/zh-26-author-register-1.json",
+      "record_sha256": "a50751f537a22061da66e9460f55b1128b5c4ffe0ad8cddbafba94984c5a5061"
+    },
+    {
+      "case_id": "zh-27-existing-qualification",
+      "information_and_scope": "pass",
+      "review": "作者对数量交流的不满、两个月与三遍、可能限定、冲业绩比喻均保留；尊重别人打卡的已有立场移到前段，没有删除。",
+      "record": "text/zh-27-existing-qualification-1.json",
+      "record_sha256": "eb23b95b25c0db3eba1ac9893bcedbf9c32091dc3f78b51eb535bbb1e11bae08"
+    },
+    {
+      "case_id": "zh-28-explicit-removal",
+      "information_and_scope": "pass",
+      "review": "按请求删除最后一句，保留其余经历、比喻、可能限定和不满，没有重新补回。",
+      "record": "text/zh-28-explicit-removal-1.json",
+      "record_sha256": "990c191614a87edded43237191de75727b479e14bfac7302841f067001b89010"
+    }
+  ],
+  "file_review": "file-case/assessment.json",
+  "style_observations": [
+    {
+      "case_id": "zh-14-long-form-scope",
+      "excerpt": "持续投入有了成效",
+      "note": "仍有概括性的价值评价。用户同时要求每段信息都留下，因此未将保留这句原有评价当作信息或范围失败；这一输出不支持声称模板表达已完全消除。"
+    }
+  ],
+  "limits": [
+    "Existing regression cases, not a new holdout or a comparison against v1.0.0.",
+    "One sample per case on one Codex model and effort setting; no external human blind review.",
+    "Runtime prose is unchanged from the approved version; only metadata.version changes to 1.1.0.",
+    "Successful execution and preservation checks are not a universal writing-quality or AI-detection guarantee."
+  ]
+}

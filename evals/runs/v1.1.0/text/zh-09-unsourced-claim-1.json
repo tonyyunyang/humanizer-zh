@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-09-unsourced-claim",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 18.904,
+  "prompt_sha256": "0ba0ec653cb6aec6fa5b730c901ada98453f8656b3c36211b60f71810dc16235",
+  "output": "一项未注明出处的调查称，使用这个方法的团队平均节省了 30% 的时间。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13386,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 514,
+    "reasoning_output_tokens": 484
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "f0948987e4dff6f34cc8bbd7f0f21969a75a9992f6542ffe545b2382f6d2b7d4",
+  "stderr_lines": 12
+}

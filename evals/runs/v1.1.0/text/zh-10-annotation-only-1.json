@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-10-annotation-only",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 22.137,
+  "prompt_sha256": "44f3bd19992b705832983567316fce7b33b51e699452f74f508186e2abe8b68c",
+  "output": "- “不仅……更是……”：对比主要用于抬高评价，没有展开具体差别。\n- “重塑行业格局的关键力量”：判断过大，文中缺少具体成果或行业影响的支撑，宣传腔较重。\n- “它的未来值得期待”：空泛收尾，没有说明期待什么、为什么值得期待。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13387,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 599,
+    "reasoning_output_tokens": 516
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "556e6237b1e54a248495e0266044e4d04dac20fbd19f5a109bf17343abf70119",
+  "stderr_lines": 12
+}

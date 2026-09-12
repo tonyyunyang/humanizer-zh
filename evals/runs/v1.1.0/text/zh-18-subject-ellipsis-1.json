@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-18-subject-ellipsis",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 16.683,
+  "prompt_sha256": "3888c519e44c490ede5ffc148581cb96bb3a5a09d4118a1d3226b43b847e30c8",
+  "output": "我昨天把读书笔记发给小林，在邮件里标了三处疑问，目前还没收到回复。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13398,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 407,
+    "reasoning_output_tokens": 375
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "ce8daa4f7c84ee8c0b872eb8887e3f09f9ff21dde16580ed45edb3908d2c4485",
+  "stderr_lines": 12
+}

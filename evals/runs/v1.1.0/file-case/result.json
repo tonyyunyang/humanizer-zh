@@ -1,0 +1,67 @@
+{
+  "case_id": "zh-11-file-protection",
+  "skill_commit": "f13ad1cda9b7ab958854e5351eb1cf2dba6db562",
+  "skill_sha256": "9c1be9fc3985c3e04422cd6f9808405ccf3fbdf541af72417008660908f2554c",
+  "model": "gpt-6-astra",
+  "effort": "max",
+  "profile": "isolated workspace-write file task; network disabled; host skills, memory, plugins and hooks disabled",
+  "elapsed_seconds": 41.635,
+  "exit_code": 0,
+  "timed_out": false,
+  "prompt_sha256": "5397909fbe6885e6ed91dde6da7d0593297618fb06596fd5883f89806c3d33f0",
+  "file_written": true,
+  "output": "已保存并润色 [guide.md]($CASE_DIR/guide.md)，精简了备份提示中的冗余铺垫。",
+  "actions": [
+    {
+      "type": "command_execution",
+      "command": "/bin/zsh -lc pwd",
+      "exit_code": 0
+    },
+    {
+      "type": "command_execution",
+      "command": "/bin/zsh -lc \"rg --files --hidden -g 'AGENTS.md' -g 'guide.md' -g 'SKILL.md' -g '\"'!'\"\\\\.git' -g '\"'!node_modules'\"'\"",
+      "exit_code": 1
+    },
+    {
+      "type": "file_change",
+      "changes": [
+        {
+          "path": "$CASE_DIR/guide.md",
+          "kind": "add"
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "type": "file_change",
+      "changes": [
+        {
+          "path": "$CASE_DIR/guide.md",
+          "kind": "update"
+        }
+      ],
+      "status": "completed"
+    },
+    {
+      "type": "command_execution",
+      "command": "/bin/zsh -lc 'cat guide.md'",
+      "exit_code": 0
+    }
+  ],
+  "completed": true,
+  "usage": {
+    "input_tokens": 44750,
+    "cached_input_tokens": 28928,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 984,
+    "reasoning_output_tokens": 464
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [
+    "command_execution",
+    "file_change"
+  ],
+  "stderr_sha256": "c03158fad6b424a2568cdc3a37d3564c976bb43ac2e9268ac979e33a4688083f",
+  "path_redaction": "Temporary workspace path replaced by $CASE_DIR in this public action record; guide.md unchanged."
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-25-mixed-punctuation",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 14.062,
+  "prompt_sha256": "f46dbc8e7c0644b50845f0653ca2e7c4393cd9f346f4f1f0d061add71c3e60fd",
+  "output": "查阅 API 文档，再运行 `tool --check`。屏幕上显示“Expected ',' before '}'”。记录编号为 `item_02`，文件路径是 `data/item_02.json`。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13421,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 274,
+    "reasoning_output_tokens": 224
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "580997dcafe9416049afff65c571f7b6d489bd6f17cb8d65f6fe9432add1d362",
+  "stderr_lines": 12
+}

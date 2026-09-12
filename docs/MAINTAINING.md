@@ -74,7 +74,7 @@ CI 在临时项目中使用固定版本 Skills CLI 安装本地 skill，核对�
 为手动安装提供精简 ZIP。把示例中的 tag 换成本次发布版本，生成后作为 Release 附件上传，保持文件名 `humanizer-zh.zip`，让 README 的下载地址继续有效：
 
 ```bash
-git archive --format=zip --prefix=humanizer-zh/ --output=humanizer-zh.zip v1.0.0 SKILL.md LICENSE THIRD_PARTY_NOTICES.md agents/openai.yaml
+git archive --format=zip --prefix=humanizer-zh/ --output=humanizer-zh.zip v1.1.0 SKILL.md LICENSE THIRD_PARTY_NOTICES.md agents/openai.yaml
 ```
 
 检查 ZIP 内的文件与 tag 一致，且包含完整许可；不要加入维护脚本或第二份 skill。

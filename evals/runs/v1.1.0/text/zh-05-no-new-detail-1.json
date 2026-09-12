@@ -1,0 +1,23 @@
+{
+  "case_id": "zh-05-no-new-detail",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 10.463,
+  "prompt_sha256": "ba0312c0bbbc86ef614f02cfed84c9866bcc536c64db311db95994afe54616c8",
+  "output": "这家店在杭州，主要卖手工面包。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13387,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 231,
+    "reasoning_output_tokens": 212
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8c3122536df3b5e8f619c03eb34286b60800268000d6878ff56c651ce80d8922",
+  "stderr_lines": 12
+}
