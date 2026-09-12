@@ -1,12 +1,15 @@
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["gate_a", "gate_b", "issues_a", "issues_b", "preference", "reason", "confidence"],
+  "required": ["intended_effect", "gate_a", "gate_b", "issues_a", "issues_b", "template_issues_a", "template_issues_b", "preference", "reason", "confidence"],
   "properties": {
+    "intended_effect": {"type": "string"},
     "gate_a": {"type": "string", "enum": ["pass", "fail", "uncertain"]},
     "gate_b": {"type": "string", "enum": ["pass", "fail", "uncertain"]},
     "issues_a": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
     "issues_b": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "template_issues_a": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "template_issues_b": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
     "preference": {"type": "string", "enum": ["A", "B", "tie", "uncertain"]},
     "reason": {"type": "string"},
     "confidence": {"type": "string", "enum": ["high", "medium", "low"]}
