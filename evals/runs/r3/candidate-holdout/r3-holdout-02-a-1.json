@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-02-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 33.6,
+  "prompt_sha256": "bda4d26205a579f0f37def8f55cc1474675c4cd66ad3883a3aa9340290528f6a",
+  "output": "老楼的楼梯间换了灯。过去走到二楼转角，我总要停一下，等眼睛适应暗处；现在上楼，脚下的台阶能一直看清。\n\n昨晚我提着菜回来，走到转角，还是习惯性地停了半步。灯亮着，菜袋碰到栏杆，响了一声。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13014,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 679,
+    "reasoning_output_tokens": 590
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b47a3776bc08625b60b54a69c07a97f0cea3417435dd3b134b660c2cadc1ee3b",
+  "stderr_lines": 18
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": "r3-holdout-02-b",
+  "repetition": 1,
+  "status": "invalid",
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 2.163,
+  "prompt_sha256": "7d49e1d9349f1d4949e23232350c82dce56199a196f109dcb0a3f51254c10385",
+  "output": null,
+  "completed": false,
+  "usage": null,
+  "errors": [
+    "Selected model is at capacity. Please try a different model.",
+    {
+      "message": "Selected model is at capacity. Please try a different model."
+    }
+  ],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "537d5ba10216fc7b3c0d5ce75e37788cd30fe9d4b47c850744e89b5030ee745d",
+  "stderr_lines": 18
+}

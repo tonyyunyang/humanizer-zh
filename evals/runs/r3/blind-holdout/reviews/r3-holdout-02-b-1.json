@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-02-b",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 82.635,
+  "prompt_sha256": "3f3a6c898faa912ee2f3ca82ea26797a67a3e7ac31209dd9d13f3b61fcf1c3c9",
+  "output": "{\n  \"intended_effect\": \"让读者在提菜走到转角仍停半步的瞬间，感受到灯已换亮、身体却还沿着旧习惯走，保留现场动静而不把它解释成道理。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都保留了必要的前后对照和现场信息，将“还是停了半步”独立成段，并删去“生活质量的跃迁”等抽象升华，让停顿本身承载意思。A 用“灯亮着，菜袋……”连住灯光与碰响，叙述自然连贯；B 用“灯亮着。菜袋……”在两者之间再停一拍。两种节奏都贴合这次目的，额外句号的收益不足以形成明显优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10900,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2130,
+    "reasoning_output_tokens": 1877
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "260f9c3ffa7385ac87ad612ba4ca5e41675d57dccb9aeb181eb34515cf69ebd3",
+  "stderr_lines": 18
+}

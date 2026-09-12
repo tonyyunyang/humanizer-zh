@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-01-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 73.311,
+  "prompt_sha256": "faf48e3dd958a89451f99f0e081b7d3dc581af6ba1b6c1bb580fede6fc0832a2",
+  "output": "{\n  \"intended_effect\": \"让今晚在家的同住者一眼知道两盆薄荷现在先别再浇水、晚上再观察靠门那盆，同时掌握必要的现状、浇水记录和挪动情况。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版都把暂不浇水和晚间观察放在开头，完整保留必要事实及原因未定的判断，中文自然，也没有无用的模板包装。略偏 A：“窗台上的两盆薄荷先别再浇水”一句交代清楚行动对象和范围；B 先说“薄荷”，下一段再补“窗台上这两盆薄荷”。A 将对象介绍直接融入行动交代，更贴合一眼读明白的需要，差距很小。\",\n  \"confidence\": \"medium\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10767,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2003,
+    "reasoning_output_tokens": 1755
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "4cdd40f1a0effb87dfc6a31751147170eaf1e33c0e040a5e10248d440eca07fa",
+  "stderr_lines": 19
+}

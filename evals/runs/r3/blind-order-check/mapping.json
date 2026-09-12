@@ -1,0 +1,10 @@
+{
+  "source": "evals/runs/r3/blind-holdout",
+  "cases": {
+    "r3-holdout-01-a": {
+      "original_preference": "A",
+      "expected_if_stable": "B"
+    }
+  },
+  "note": "Follow-up order check of every non-tie holdout preference; this mapping is not shown to judges."
+}

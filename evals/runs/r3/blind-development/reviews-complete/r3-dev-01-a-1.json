@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-dev-01-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 40.938,
+  "prompt_sha256": "14ab0870a295cc2e3a11410d0a6af83332f2228ae5705864923a258041894d8f",
+  "output": "{\n  \"intended_effect\": \"让已开始填资料但尚未付款的读者明白，享受早鸟价须在截止前完成付款，仅填写资料不会保留价格，同时了解付款后订单状态的更新时间，避免重复付款。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都以“请在 `9月18日 18:00` 前完成付款”明确读者要做什么，并保留未付款不保价、付款后下一个工作日更新状态及无需重复付款的信息，指定字符均准确。A把“早鸟价 `¥80`”放在付款要求旁，B用“票价由 `¥80` 调整为 `¥100`”集中交代价格变化，各有便利。两版中文直接连贯，都删去了原文关于体验优化、关注需求和有力支撑的空泛铺垫与收尾，没有新增宣传，整体效果相当。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10836,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 997,
+    "reasoning_output_tokens": 727
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e91179660b8ad7f2d536d65dda88f78a9a363bad8c0638a401111dac67f3ad06",
+  "stderr_lines": 18
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-01-b",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 36.0,
+  "prompt_sha256": "1a4904a3fd21835620c15c690046715002ceff7cde7fb82090dc4004ab8ef490",
+  "output": "{\n  \"intended_effect\": \"让只关心近况的人了解两盆薄荷的状态、我已做的调整和暂时的打算，并明白叶垂是否由日晒引起尚不确定。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都准确保留了观察、浇水情况、已挪位置和晚上再看的安排，并用“还不知道是不是晒的”说明判断边界。A 的“我暂时不打算再浇水”和 B 的“我打算先不浇水”都把提醒改成自己的暂时打算，符合向只关心近况的人交代情况的目的。原文已清楚平实，两版的小幅调整都自然有效，没有新增紧张感、养护知识或套话，无明显优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10745,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 903,
+    "reasoning_output_tokens": 655
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "4a0314bf36da0221a7e595669a43b3035e7e221199e8a41b874d3c959c82161e",
+  "stderr_lines": 18
+}

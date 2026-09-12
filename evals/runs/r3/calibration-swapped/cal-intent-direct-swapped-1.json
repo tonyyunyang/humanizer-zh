@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-intent-direct-swapped",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 32.053,
+  "prompt_sha256": "1acf2a5e2b173754ebf9f7196099b9662640a6cf860aead56febe68b183ac4cd",
+  "output": "{\n  \"intended_effect\": \"让读者迅速知道眼前雨已停、屋檐仍在滴水的状况。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"B 的“雨停了，屋檐仍在滴水”自然、直接地交代状况，“仍”保留了雨停后滴水持续的关系。A 的“一滴，一滴，落下来”通过连续停顿突出滴落节奏，让阅读变慢，不如 B 贴合“快速知道”“平直些”的要求。这是节奏取舍，不构成信息错误或模板问题。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10282,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 902,
+    "reasoning_output_tokens": 703
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9bec3f78141ec572d5c1186829b90d692afd8d2b166ac672844d627f16157a34",
+  "stderr_lines": 18
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-02-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 47.134,
+  "prompt_sha256": "17ff2a218112efc55f91dc383f8e9fa940ef265c831b1565eb6ea233ed055e5e",
+  "output": "{\n  \"intended_effect\": \"让同楼的人明白过去需在二楼转角停步适应暗处、换灯后上楼能一直看清台阶的具体变化，同时保留昨晚提菜时习惯性停了半步的实际经历。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版都先交代换灯前后的实际差别，再以“还是习惯性地停了半步”自然承接个人经历，删去了“生活质量的跃迁”等泛化升华，没有替住户表态或发出号召。A 的“一路都能看清”与 B 的“能一直看清”在此等义；B 补出“我”，A 的个人归属也能从上下文读出。这些差异没有形成明显的表达优劣。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10854,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1284,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "809d174c5b9cc40abde490ff4cd057248cf8999f64ae26d411242b7e85bb2e75",
+  "stderr_lines": 19
+}

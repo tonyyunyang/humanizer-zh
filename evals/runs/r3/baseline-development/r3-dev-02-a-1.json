@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-dev-02-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 49.718,
+  "prompt_sha256": "7c530dcd0da648059f5756cbf5219acb3e263249a3a5bd3b0c6173d8d8cbe403",
+  "output": "昨天我说话重了，这一点是我的问题，我向你道歉。\n\n我昨天把最后一版表格发给你，原本以为已经可以交了，等到晚上九点才知道有两页还没核对。临时要改，我确实有点急。\n\n你周一说过，会在周三下午前告诉我有没有问题，后来没有消息。今天上午我又花了两个小时重新对数，自己的那部分只能往后挪。\n\n我知道你这周临时接了别的事，也不觉得你是故意拖着。让我难受的是，我一直按我们说好的时间安排，最后却不知道该等多久。\n\n下次如果来不及，请在约定时间之前告诉我，哪怕只能先说还要多久也行。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12934,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1514,
+    "reasoning_output_tokens": 1335
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a619ff050f0a8c1f7ba87bd8783ec8231c052d1f1ba6285660c41bfddc45a817",
+  "stderr_lines": 19
+}

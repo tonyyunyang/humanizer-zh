@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-01-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 66.749,
+  "prompt_sha256": "7c92289c1dbf844c3800c5766d3767b8c7eb4f2023f84d7735cf4103af9eeba3",
+  "output": "{\n  \"intended_effect\": \"让今晚在家的同住者一眼明白两盆薄荷暂时别再浇水、晚上再观察靠门那盆，同时了解两盆的状态、浇水和挪动情况，以及叶垂原因尚未确定。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版首句都交代“先别再浇水”和“晚上再看看靠门那盆的叶子”，行动重点清楚，必要事实也完整保留。A 后文先说叶子状态，B 先说浇水记录，两种顺序都自然易懂。B 将“窗台上的两盆”提前，A 在下一段交代，对同住者理解行动没有明显影响。两版均无多余养护建议或模板包装，整体效果相当。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10765,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1957,
+    "reasoning_output_tokens": 1708
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "d27e8a5d04ab886445173d51ccec3f5913890b728f1f0a8c6c1ead2fcd4a601d",
+  "stderr_lines": 18
+}

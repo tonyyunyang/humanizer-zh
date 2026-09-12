@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-intent-pause",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 40.553,
+  "prompt_sha256": "ecf59fbb7691da9e8a318b9875ff4f4596a99e0e912e392ff99fc5ec72fbfaea",
+  "output": "{\n  \"intended_effect\": \"让读者在雨停后稍微停一停，听见屋檐上仍一滴滴落下的水。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版都保留了原场景，没有添加情节。A 的“仍在滴水”准确简洁，却压缩了原文逐滴落下的节奏。B 用“雨停了。”留出停顿，再以“一滴，一滴，落下来”放慢阅读节奏，更能让读者停下来听水。这些停顿和重复都有具体作用，没有空泛抒情或强行收尾。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10302,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1242,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "ccfd829562ae9f74ad1952820eded0377daf6a0326ad2febda6b973f3e0e6436",
+  "stderr_lines": 19
+}

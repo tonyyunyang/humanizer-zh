@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-dev-01-b",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 31.298,
+  "prompt_sha256": "0bbc3d6557798b429d8870f74cae57f738bd8e6ddc9945f3c91073f43e2aedec",
+  "output": "你已经付过款了，不用再付一次。订单目前显示 `Pending`，会在付款后的下一个工作日更新为 `Confirmed`。\n\n报名页面的 `Early Bird` 会在 `9月18日 18:00` 结束，随后票价从 `¥80` 调整为 `¥100`。尚未付款的订单不保留早鸟价格。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12892,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 912,
+    "reasoning_output_tokens": 823
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "912ff214e7c5a3b441f3d39c1d253d89b9be3b9953e18e98e098699f09e005b9",
+  "stderr_lines": 19
+}

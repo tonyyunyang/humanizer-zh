@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-dev-01-b",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 50.647,
+  "prompt_sha256": "7f97ed0bf701c69f97837aee5e0a34278f0b2127ab7030f1ac09604398878218",
+  "output": "{\n  \"intended_effect\": \"让已付款者先明白看到 `Pending` 无需再次付款、订单会在付款后的下一个工作日更新为 `Confirmed`，再了解早鸟截止、票价调整及未付款订单的价格规则。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均准确保留事实和反引号内容，先解答重复付款疑问，再另段交代截止与价格，不会把重心转成催付。A 用“页面还显示 `Pending` 也不用再付一次”直接回应困惑；B 先说“不用再付一次”，再接状态和更新时间，更快给出答案。两种承接都自然有效，也都删去了“提升大家的报名体验”“有力支撑”等无关套话，未添加客服姿态，效果相当。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10846,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1285,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "25c8032584b409193953d9b378774f191eb8bc9f734dfd953b858603c9d769d4",
+  "stderr_lines": 18
+}

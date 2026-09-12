@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-01-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 39.722,
+  "prompt_sha256": "524db9971b84e9bc9eec3de283e2cf330c784faf4c3b25e0f569436452f22b13",
+  "output": "薄荷先别再浇水，晚上再看看靠门那盆的叶子。\n\n窗台上这两盆薄荷，靠门那盆今天叶子有点垂，另一盆还是挺的。两盆昨天都浇过水，今天都还没浇。我把靠门那盆挪到了没有直射光的地方，现在还不知道是不是晒的。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12820,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1124,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "34eb4399ab930204bc7b4dfc64924e3e13c7604f58b93cba29fdb48861afcc97",
+  "stderr_lines": 19
+}

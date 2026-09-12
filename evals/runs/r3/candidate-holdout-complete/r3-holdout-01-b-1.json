@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-holdout-01-b",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 70.006,
+  "prompt_sha256": "1cd08a1db3894fa4f2aed79c8a9bf12aab8a8681f3b505e7440538cc77c76083",
+  "output": "窗台上有两盆薄荷，靠门那盆今天叶子有点垂，另一盆还是挺的。两盆昨天都浇过水，今天都还没浇。我把靠门那盆挪到了没有直射光的地方，晚上再看看。现在还不知道是不是晒的，我暂时不打算再浇水。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12934,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1542,
+    "reasoning_output_tokens": 1457
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b611eea912b9ddfafc497e50e706a16206c62679a86c37f71cd9cc9d833c20aa",
+  "stderr_lines": 19
+}

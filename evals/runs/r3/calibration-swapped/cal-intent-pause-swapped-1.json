@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-intent-pause-swapped",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 35.264,
+  "prompt_sha256": "3a48cdf2bcc524c253540f87459e8e8fd86c6a85ed7417ba72acc094eeb28334",
+  "output": "{\n  \"intended_effect\": \"让读者在雨停后稍微停一停，听见屋檐上还在滴落的水声。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"A 用“雨停了。”留出停顿，再以“一滴，一滴，落下来”让阅读节奏贴近滴水的间隔，呼应“停一停、听见”的要求。B 的“仍在滴水”自然准确，但将逐滴落下的过程压成概述，停留感较弱。两版都没有添加情节或无效模板表达，A 的停顿在这里有具体作用。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10302,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 957,
+    "reasoning_output_tokens": 748
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9c04b74702e51bfe88b06f533a47ac2e0fa07c0f422817e019495df1d36cdbd6",
+  "stderr_lines": 19
+}

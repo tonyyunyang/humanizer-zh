@@ -1,0 +1,22 @@
+{
+  "case_id": "r3-dev-01-a",
+  "repetition": 1,
+  "status": "invalid",
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_seconds": 3.083,
+  "prompt_sha256": "14ab0870a295cc2e3a11410d0a6af83332f2228ae5705864923a258041894d8f",
+  "output": null,
+  "completed": false,
+  "usage": null,
+  "errors": [
+    "Selected model is at capacity. Please try a different model.",
+    {
+      "message": "Selected model is at capacity. Please try a different model."
+    }
+  ],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "acec8b7b2697c4731095aeee6d68313aa25a08953cc9c1b1ccbb56b77143f953",
+  "stderr_lines": 18
+}

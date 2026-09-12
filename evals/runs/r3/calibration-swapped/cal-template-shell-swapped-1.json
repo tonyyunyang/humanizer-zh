@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-template-shell-swapped",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 48.634,
+  "prompt_sha256": "39a8c49c8b2ea81d0cd1edccde9f060347204708630664dc2213e4f94a94a914",
+  "output": "{\n  \"intended_effect\": \"让读者直接了解历史记录现已支持按文件名搜索，但暂不支持正文检索。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [\n    {\n      \"input_evidence\": \"现在可以按文件名搜索历史记录，暂不支持正文检索。\",\n      \"output_evidence\": \"值得注意的是，现在可以按文件名搜索历史记录。重要的是，暂不支持正文检索。总而言之，现在可以按文件名搜索历史记录，但暂不支持正文检索。\",\n      \"reason\": \"两项简明信息分别加上强调性提示语后，结尾又完整复述一遍。这些铺垫和总结没有补充信息或帮助理解，反而增加重复，背离去掉反复套话的要求。\"\n    }\n  ],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版均保留了功能变化及其限制。B 用一句话自然交代“现在可以”和“暂不支持”，直接满足说明目的；A 用“值得注意的是”“重要的是”“总而言之”反复强调并重述，拖慢阅读。原文已适合本次需要，B 不改也成立。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10297,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1232,
+    "reasoning_output_tokens": 916
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e2ff2ef9b6aaa96f9aeee9a7863c1994d816763278c801be9d723d2376a22feb",
+  "stderr_lines": 19
+}

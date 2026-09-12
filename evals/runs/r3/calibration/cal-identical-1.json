@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-identical",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 27.284,
+  "prompt_sha256": "2221de564a5cb502ce1ee1d54b93e27f2c793d5b1ea397b242cc564081d9d0ff",
+  "output": "{\n  \"intended_effect\": \"让对方在周四中午前回复，若来不及，则告知预计何时能确认。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"tie\",\n  \"reason\": \"两版均与原文完全一致。“周四中午前”明确回复时限，“如果来不及……就好”清楚交代替代安排，语气礼貌自然，没有多余的模板表达。原文已适合本次需要，保留符合“已经合适的地方不用动”的要求。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10302,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 696,
+    "reasoning_output_tokens": 516
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8db0ab2cf7394d93638db254bf0193416ebd8718a108420384b1f7a5d8274840",
+  "stderr_lines": 18
+}

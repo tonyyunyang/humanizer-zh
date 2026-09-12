@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-template-shell",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 46.349,
+  "prompt_sha256": "f94ef2a8d7a337a05362d7c6136c12ca00be556896af2cc2c54601370116c026",
+  "output": "{\n  \"intended_effect\": \"让读者直接知道历史记录现在支持按文件名搜索，但暂不支持正文检索。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [\n    {\n      \"input_evidence\": \"现在可以按文件名搜索历史记录，暂不支持正文检索。\",\n      \"output_evidence\": \"值得注意的是，现在可以按文件名搜索历史记录。重要的是，暂不支持正文检索。\",\n      \"reason\": \"给两项简明信息分别加上强调套语，未形成有用的重点区分，反而延缓读者获取功能变化与限制。\"\n    },\n    {\n      \"input_evidence\": \"现在可以按文件名搜索历史记录，暂不支持正文检索。\",\n      \"output_evidence\": \"总而言之，现在可以按文件名搜索历史记录，但暂不支持正文检索。\",\n      \"reason\": \"前两句已完整交代这些信息，此处没有需要归纳的复杂内容，重复全文形成多余收尾。\"\n    }\n  ],\n  \"preference\": \"A\",\n  \"reason\": \"两版均保留了功能范围和暂时限制。原文已经直接、自然地说明变化，A 保留原句即可满足要求；B 加入“值得注意的是”“重要的是”，又以“总而言之”复述全部信息，增加了用户要求去掉的反复套话。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10303,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1391,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "f8e079846ce62703d67ba607e2cd2eeeb9a0fb0bc4d296db4bb35a66c9e5ab0b",
+  "stderr_lines": 18
+}

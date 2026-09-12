@@ -1,0 +1,31 @@
+{
+  "first": {
+    "run": "evals/runs/r3/baseline-development",
+    "skill_commit": "97e6c215942e502c06c4c508c61e335b37237491"
+  },
+  "second": {
+    "run": "evals/runs/r3/candidate-development",
+    "skill_commit": "e4946cf2a3c5915c0bdc0b1b8d4d660a375b0ef0"
+  },
+  "seed": 2026091207,
+  "cases": {
+    "r3-dev-01-a": {
+      "A": "second",
+      "B": "first"
+    },
+    "r3-dev-01-b": {
+      "A": "second",
+      "B": "first"
+    },
+    "r3-dev-02-a": {
+      "A": "first",
+      "B": "second"
+    },
+    "r3-dev-02-b": {
+      "A": "second",
+      "B": "first"
+    }
+  },
+  "rubric_sha256": "1741e4356ed7739de767be2a78de4a53ea46018c1c5cf1ceb37d9d4901cd495b",
+  "note": "Keep this mapping out of all judge prompts; first/second identities are not in tasks.json."
+}

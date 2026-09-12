@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-dev-02-b",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 74.11,
+  "prompt_sha256": "e266957a62ae55752da3d6a726b0ab1ed2cb9aefee8fe5ccf06aedda67902775",
+  "output": "昨天我把最后一版表格发给了你，等到晚上九点才知道，还有两页没核对。我原本以为我们已经可以交了，临时改动时确实有些急，说话也重了。说重话是我不对，这一点我向你道歉。\n\n你周一说过，会在周三下午前告诉我有没有问题，后来却没有消息。我今天上午又花了两个小时重新对数，自己的那部分只能往后挪。这次没有按约定反馈，确实打乱了我的安排。我知道你这周临时接了别的事，也不认为你是故意拖着。但我一直按我们说好的时间安排，最后却不知道还要等多久，这让我很难受。\n\n下次如果来不及，请务必在约定时间之前告诉我，哪怕只能先说还需要多久也行。我需要按时收到明确的反馈，才能及时调整自己的安排。请你下次做到这一点。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13036,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2179,
+    "reasoning_output_tokens": 1956
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a755b96fe5320bc52ea2032a1ac0714068eb7592db8991be46b47f3e434f88de",
+  "stderr_lines": 18
+}

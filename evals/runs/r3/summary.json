@@ -1,0 +1,315 @@
+{
+  "accepted_skill_commit": "e4946cf2a3c5915c0bdc0b1b8d4d660a375b0ef0",
+  "baseline_skill_commit": "97e6c215942e502c06c4c508c61e335b37237491",
+  "decision": "Retain the explicit communicative-purpose revision as the baseline for the user-revised objective. No information or scope regression was found in this small test; a stylistic advantage was not established. Do not count the unstable slight preference as a confirmed gain.",
+  "runtime": {
+    "lines": 156,
+    "characters": 4529,
+    "bytes": 12301
+  },
+  "calibration": {
+    "matched": 7,
+    "total": 7,
+    "cases": [
+      {
+        "case_id": "cal-intent-direct",
+        "run": "calibration",
+        "expected": "A",
+        "actual": "A",
+        "matched": true
+      },
+      {
+        "case_id": "cal-intent-pause",
+        "run": "calibration",
+        "expected": "B",
+        "actual": "B",
+        "matched": true
+      },
+      {
+        "case_id": "cal-template-shell",
+        "run": "calibration",
+        "expected": "A",
+        "actual": "A",
+        "matched": true
+      },
+      {
+        "case_id": "cal-identical",
+        "run": "calibration",
+        "expected": "tie",
+        "actual": "tie",
+        "matched": true
+      },
+      {
+        "case_id": "cal-intent-direct-swapped",
+        "run": "calibration-swapped",
+        "expected": "B",
+        "actual": "B",
+        "matched": true
+      },
+      {
+        "case_id": "cal-intent-pause-swapped",
+        "run": "calibration-swapped",
+        "expected": "A",
+        "actual": "A",
+        "matched": true
+      },
+      {
+        "case_id": "cal-template-shell-swapped",
+        "run": "calibration-swapped",
+        "expected": "B",
+        "actual": "B",
+        "matched": true
+      }
+    ],
+    "note": "Fixed judging calibration authored by the maintaining agent; not independent skill-generation cases or general judge accuracy."
+  },
+  "comparisons": {
+    "blind-development": {
+      "first": {
+        "run": "evals/runs/r3/baseline-development",
+        "skill_commit": "97e6c215942e502c06c4c508c61e335b37237491"
+      },
+      "second": {
+        "run": "evals/runs/r3/candidate-development",
+        "skill_commit": "e4946cf2a3c5915c0bdc0b1b8d4d660a375b0ef0"
+      },
+      "reviews": "evals/runs/r3/blind-development/reviews-complete",
+      "preference_counts": {
+        "first": 0,
+        "second": 0,
+        "tie": 4,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "template_issue_counts": {
+        "first": 0,
+        "second": 0
+      },
+      "cases": [
+        {
+          "case_id": "r3-dev-01-a",
+          "intended_effect": "让已开始填资料但尚未付款的读者明白，享受早鸟价须在截止前完成付款，仅填写资料不会保留价格，同时了解付款后订单状态的更新时间，避免重复付款。",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版都以“请在 `9月18日 18:00` 前完成付款”明确读者要做什么，并保留未付款不保价、付款后下一个工作日更新状态及无需重复付款的信息，指定字符均准确。A把“早鸟价 `¥80`”放在付款要求旁，B用“票价由 `¥80` 调整为 `¥100`”集中交代价格变化，各有便利。两版中文直接连贯，都删去了原文关于体验优化、关注需求和有力支撑的空泛铺垫与收尾，没有新增宣传，整体效果相当。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r3-dev-01-b",
+          "intended_effect": "让已付款者先明白看到 `Pending` 无需再次付款、订单会在付款后的下一个工作日更新为 `Confirmed`，再了解早鸟截止、票价调整及未付款订单的价格规则。",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均准确保留事实和反引号内容，先解答重复付款疑问，再另段交代截止与价格，不会把重心转成催付。A 用“页面还显示 `Pending` 也不用再付一次”直接回应困惑；B 先说“不用再付一次”，再接状态和更新时间，更快给出答案。两种承接都自然有效，也都删去了“提升大家的报名体验”“有力支撑”等无关套话，未添加客服姿态，效果相当。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r3-dev-02-a",
+          "intended_effect": "让对方先收到对说话过重的认真道歉，再理解未按约反馈带来的影响和难受，知道下次应提前告知延误及预计所需时间，使双方能继续谈下去，同时保留不满、不宣告原谅。",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版都保留了关键事实和立场，将道歉单列开头，分段说明经过、影响和难受的缘由，最后单列具体请求，适合对方不易读进长段落的情况。A将“临时要改，我确实有点急”另成一句，经过与反应之间有清楚的停顿；B将“我向你道歉”独立成句，道歉更突出，后文用“所以”顺接着急的缘由。两者各有节奏上的收益，没有明显优劣。澄清对方并非故意拖延的否定都有实际作用，也都未添加空泛收尾，无须为去模板而继续删改。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r3-dev-02-b",
+          "intended_effect": "在真诚为说重话道歉的同时，让对方明白未按约定反馈对安排和感受造成的实际影响，并明确下次来不及时要在约定时间前告知。",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版均保留时间、两页、两个小时、工作后移及临时接事等事实，道歉真诚，也没有猜测动机或增加威胁。两版都先独立道歉，再从重新对数和工作后移说到“打乱了我的安排”，承接自然，力度有事实支撑。A用“按时收到明确的反馈”和“请你下次做到这一点”着重落实要求；B用“却连还要等多久都不知道”突出难受的缘由，末句“请你认真对待”更有告诫感，但仍指向已有约定。两种处理都符合认真把话说清、加重分量的目的，没有明显无效的模板铺垫或收尾，整体效果相当。",
+          "confidence": "high"
+        }
+      ]
+    },
+    "blind-holdout": {
+      "first": {
+        "run": "evals/runs/r3/baseline-holdout",
+        "skill_commit": "97e6c215942e502c06c4c508c61e335b37237491"
+      },
+      "second": {
+        "run": "evals/runs/r3/candidate-holdout-complete",
+        "skill_commit": "e4946cf2a3c5915c0bdc0b1b8d4d660a375b0ef0"
+      },
+      "reviews": "evals/runs/r3/blind-holdout/reviews",
+      "preference_counts": {
+        "first": 0,
+        "second": 1,
+        "tie": 3,
+        "uncertain": 0
+      },
+      "gates": {
+        "first": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        },
+        "second": {
+          "pass": 4,
+          "fail": 0,
+          "uncertain": 0
+        }
+      },
+      "template_issue_counts": {
+        "first": 0,
+        "second": 0
+      },
+      "cases": [
+        {
+          "case_id": "r3-holdout-01-a",
+          "intended_effect": "让今晚在家的同住者一眼知道两盆薄荷现在先别再浇水、晚上再观察靠门那盆，同时掌握必要的现状、浇水记录和挪动情况。",
+          "preferred": "second",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版都把暂不浇水和晚间观察放在开头，完整保留必要事实及原因未定的判断，中文自然，也没有无用的模板包装。略偏 A：“窗台上的两盆薄荷先别再浇水”一句交代清楚行动对象和范围；B 先说“薄荷”，下一段再补“窗台上这两盆薄荷”。A 将对象介绍直接融入行动交代，更贴合一眼读明白的需要，差距很小。",
+          "confidence": "medium"
+        },
+        {
+          "case_id": "r3-holdout-01-b",
+          "intended_effect": "让只关心近况的人了解两盆薄荷的状态、我已做的调整和暂时的打算，并明白叶垂是否由日晒引起尚不确定。",
+          "preferred": "tie",
+          "gates": {
+            "second": "pass",
+            "first": "pass"
+          },
+          "reason": "两版都准确保留了观察、浇水情况、已挪位置和晚上再看的安排，并用“还不知道是不是晒的”说明判断边界。A 的“我暂时不打算再浇水”和 B 的“我打算先不浇水”都把提醒改成自己的暂时打算，符合向只关心近况的人交代情况的目的。原文已清楚平实，两版的小幅调整都自然有效，没有新增紧张感、养护知识或套话，无明显优劣。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r3-holdout-02-a",
+          "intended_effect": "让同楼的人明白过去需在二楼转角停步适应暗处、换灯后上楼能一直看清台阶的具体变化，同时保留昨晚提菜时习惯性停了半步的实际经历。",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版都先交代换灯前后的实际差别，再以“还是习惯性地停了半步”自然承接个人经历，删去了“生活质量的跃迁”等泛化升华，没有替住户表态或发出号召。A 的“一路都能看清”与 B 的“能一直看清”在此等义；B 补出“我”，A 的个人归属也能从上下文读出。这些差异没有形成明显的表达优劣。",
+          "confidence": "high"
+        },
+        {
+          "case_id": "r3-holdout-02-b",
+          "intended_effect": "让读者在提菜走到转角仍停半步的瞬间，感受到灯已换亮、身体却还沿着旧习惯走，保留现场动静而不把它解释成道理。",
+          "preferred": "tie",
+          "gates": {
+            "first": "pass",
+            "second": "pass"
+          },
+          "reason": "两版都保留了必要的前后对照和现场信息，将“还是停了半步”独立成段，并删去“生活质量的跃迁”等抽象升华，让停顿本身承载意思。A 用“灯亮着，菜袋……”连住灯光与碰响，叙述自然连贯；B 用“灯亮着。菜袋……”在两者之间再停一拍。两种节奏都贴合这次目的，额外句号的收益不足以形成明显优劣。",
+          "confidence": "high"
+        }
+      ]
+    }
+  },
+  "order_checks": [
+    {
+      "case_id": "r3-holdout-01-a",
+      "original_preferred": "second",
+      "swapped_preferred": "tie",
+      "preference_reproduced": false,
+      "reason": "两版首句都交代“先别再浇水”和“晚上再看看靠门那盆的叶子”，行动重点清楚，必要事实也完整保留。A 后文先说叶子状态，B 先说浇水记录，两种顺序都自然易懂。B 将“窗台上的两盆”提前，A 在下一段交代，对同住者理解行动没有明显影响。两版均无多余养护建议或模板包装，整体效果相当。",
+      "interpretation": "Treat the initial slight candidate preference as unstable, not a confirmed win."
+    }
+  ],
+  "execution": {
+    "model_attempts": 36,
+    "valid_executions": 32,
+    "invalid_executions": 4,
+    "invalid_records": [
+      {
+        "path": "evals/runs/r3/blind-development/reviews/r3-dev-01-a-1.json",
+        "status": "invalid",
+        "usage": null,
+        "errors": [
+          "Selected model is at capacity. Please try a different model.",
+          {
+            "message": "Selected model is at capacity. Please try a different model."
+          }
+        ]
+      },
+      {
+        "path": "evals/runs/r3/blind-development/reviews/r3-dev-01-b-1.json",
+        "status": "invalid",
+        "usage": null,
+        "errors": [
+          "Selected model is at capacity. Please try a different model.",
+          {
+            "message": "Selected model is at capacity. Please try a different model."
+          }
+        ]
+      },
+      {
+        "path": "evals/runs/r3/blind-development/reviews/r3-dev-02-a-1.json",
+        "status": "invalid",
+        "usage": null,
+        "errors": [
+          "Selected model is at capacity. Please try a different model.",
+          {
+            "message": "Selected model is at capacity. Please try a different model."
+          }
+        ]
+      },
+      {
+        "path": "evals/runs/r3/candidate-holdout/r3-holdout-02-b-1.json",
+        "status": "invalid",
+        "usage": null,
+        "errors": [
+          "Selected model is at capacity. Please try a different model.",
+          {
+            "message": "Selected model is at capacity. Please try a different model."
+          }
+        ]
+      }
+    ],
+    "usage_sum": {
+      "input_tokens": 377149,
+      "cached_input_tokens": 62464,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 42866,
+      "reasoning_output_tokens": 36945
+    },
+    "note": "Counts source batches only; derived views are selections, not additional calls. Four capacity failures were retried with unchanged settings and prompts. Successful outputs were never replaced."
+  },
+  "maintenance_checks": {
+    "package_validation": "passed",
+    "unit_tests": 27,
+    "behavioral_checks": "16 generated outputs, eight primary anonymous comparisons, one swapped-order follow-up; calibration tracked separately.",
+    "skill_creator_validation": "passed"
+  },
+  "limitations": [
+    "Four independent synthetic source families, eight task variants; only two families were held out.",
+    "User requests state the intended effect explicitly, so evidence for inferring intent from sparse context is limited.",
+    "One generation per version and task; no reliable improvement or failure rate estimate.",
+    "Same model family generated and judged outputs; no human author or professional Chinese editor blind review was conducted.",
+    "The rain example calibrates judging and appears in the runtime example; it is not an unseen skill evaluation.",
+    "All R3 cases are consumed for future rounds. Packaging and unit checks are not behavioral passes.",
+    "Text-only tests do not revalidate file editing, all 28 permanent cases, other models or all varieties of Chinese."
+  ],
+  "next_evidence": [
+    "Use fresh material where intent must be inferred from context and sentence function, with plainness and expressiveness in the same passage.",
+    "Review voice and rhetorical patterns across outputs, not only compliance with explicit requests.",
+    "Prefer actual user revision feedback or independent Chinese editorial review when available; never invent external review."
+  ]
+}

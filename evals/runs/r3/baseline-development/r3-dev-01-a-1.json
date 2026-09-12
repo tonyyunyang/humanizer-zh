@@ -1,0 +1,23 @@
+{
+  "case_id": "r3-dev-01-a",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 39.159,
+  "prompt_sha256": "e22e805829b1062e199fc9ad1b107eb2938b24869324f386b614950e086dfe5b",
+  "output": "想按早鸟价报名，请在 `9月18日 18:00` 前完成付款。届时，报名页面中的 `Early Bird` 将结束，票价由 `¥80` 调整为 `¥100`。尚未付款的订单不保留早鸟价格。\n\n如果已经付款，但页面仍显示 `Pending`，订单会在付款后的下一个工作日更新为 `Confirmed`，无需重复付款。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 12878,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1132,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "eb9658d1ec813056a275783858b4e8efe0438b61575e7f56841a549ed7353e8d",
+  "stderr_lines": 19
+}
