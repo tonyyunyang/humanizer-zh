@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-audit-author-report",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 23.881,
+  "prompt_sha256": "e28b8324e6d2155a803b97b8f8444e69420975e4fd95c277c121aa3812eb501a",
+  "output": "{\n  \"intended_effect\": \"将记录整理为简短的 PR 验证说明，交代本地测试及结果、未保存截图和浏览器手动操作尚未验证的状态。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿完整保留了命令 `pytest -q tests/test_slug.py`、12 个测试通过、未保存终端截图及浏览器手动操作尚未验证的信息，未扩大验证范围或新增事实。表达简洁清楚，符合本次要求。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10112,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 630,
+    "reasoning_output_tokens": 474
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "e7c4a0e722ac7e9e7eb7899a2ca07a7490fe80907ea7c300bc044cbf0e6cb440",
+  "stderr_lines": 17
+}

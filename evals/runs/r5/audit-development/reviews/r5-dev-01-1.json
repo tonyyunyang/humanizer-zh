@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 32.231,
+  "prompt_sha256": "c6207fabd48a0ef5f8d62d9295d42e070c2d9ef7d3ebbd354b0f2cdb22c2f0e0",
+  "output": "{\n  \"intended_effect\": \"为纸芽管理台 /admin/search 提供可直接提交的 PR 标题和中文描述，使用指定的四个正文标题，说明两个请求竞态问题、最终修改、验证结果和影响范围。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿保留了四个指定标题，准确说明旧结果覆盖和 loading 提前关闭的问题，递增版本号及写回判断与最终实现一致。两个测试通过、手动检查条件和观察范围、未记录具体版本及未跑整套回归均如实呈现。页面范围、toast 处理、接口协议和请求数量的边界明确，未沿用初稿中的合并、取消、缓存或过度承诺。内容具体、组织清楚，可直接用于 PR。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11058,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 865,
+    "reasoning_output_tokens": 648
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "40915bfed88c090031c7db182cfe1ced71e0cd281ef65830777045cb8bca074b",
+  "stderr_lines": 18
+}

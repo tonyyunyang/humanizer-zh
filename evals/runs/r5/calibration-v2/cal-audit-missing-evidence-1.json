@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-audit-missing-evidence",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 42.596,
+  "prompt_sha256": "d1106979c5372c1a5ba82c4b999bc62a1e21ccbb3fbd0939de8aaa6356d97591",
+  "output": "{\n  \"intended_effect\": \"按项目模板整理 PR 描述，保留 Changes 和 Validation 两节，准确说明示例路径更正，验证情况须依据已有材料。\",\n  \"information_gate\": \"fail\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [\n    {\n      \"input_evidence\": \"全部改动记录仅为“将说明中的示例路径从 `examples/basic` 更正为 `examples/quickstart`”，未提供测试执行情况。\",\n      \"output_evidence\": \"## Validation\\n\\n未运行测试。\",\n      \"reason\": \"未提及测试不能推出未运行测试。这是材料不支持的确定事实；要求保留 Validation 小节也不意味着可以补写测试状态，可改为“未提供验证信息”。\"\n    }\n  ],\n  \"template_issues\": [],\n  \"reason\": \"成稿保留了指定小节，路径字符准确，重点、组织和语气适合此次 PR 描述；但验证部分新增了无材料支持的断言，信息关卡不通过。两个标题均有明确用途。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10110,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1287,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "c5da63d5afe5bafb5f96df627f52fe12c097a946ae66bf5e1daadb1d25ca9da4",
+  "stderr_lines": 17
+}

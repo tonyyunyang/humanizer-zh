@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 38.097,
+  "prompt_sha256": "03db6d52fd1398c6f7a7e152ddcf20225d72315f401754ebc840160d07486347",
+  "output": "{\n  \"intended_effect\": \"将 CSV 导入的内部进展整理成可直接发群的正文，让同组同事一遍读懂完成情况、阻塞条件、时间安排和审看请求，并保留作者口吻及真实感受。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿完整保留了12个样例中9个已本地复现、修复并跑过对应用例，3个仍缺合作方示例文件的关系；分支名 fix/import-edge-cases、未合主线状态及空列导致后续字段错位的含义均准确。阿璐承诺周四16:00前交文件，修复时间待拿到文件再排，两者没有混淆。审看9个变更、关注字段映射、PR留意见及下午集中查看的安排完整。指定感受句逐字保留，无实质遗漏或无据新增。分段清楚，团队交流口吻自然，可直接发送。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10895,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1127,
+    "reasoning_output_tokens": 863
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "37ddd698d1bfc6ffbcf1e8bbbd0f1e6bbcd110dbb0840afcf0aae31e2b053675",
+  "stderr_lines": 17
+}

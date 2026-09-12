@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 44.021,
+  "prompt_sha256": "8f8aea3a6e827a54053fcbabb79304e77531f6180c1b588a426c03d22eecd9f2",
+  "output": "修复 /admin/search 旧请求覆盖结果和提前关闭 loading 的问题\n\n### 问题\n\n纸芽管理台搜索时，先输入 `mu`，再快速输入 `mug`，如果 `mug` 的请求先返回，随后返回的 `mu` 结果会覆盖列表。旧请求先结束时，还会提前关闭仍在等待的新请求的 loading。\n\n### 修改\n\n为每次搜索分配递增版本号，只有最新一次请求可以写入结果和关闭 loading。控制逻辑仅限当前页面，失败后的 toast 仍由原调用方处理。\n\n### 验证\n\n- `admin-search.test.ts` 的 2 项测试通过，覆盖旧响应较晚返回时不覆盖最新结果、旧请求先结束时保持新请求的 loading。\n- 4 月 9 日在 macOS 的 Chromium 中开启网络限速，快速切换输入 5 次，未再观察到旧结果覆盖。未记录浏览器和系统的具体版本。\n- 未跑整套回归。\n\n### 影响\n\n保留原有调用方式，每次输入仍会发起请求，接口协议和请求数量不变。页面外的搜索入口未改动。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13825,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1297,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "156503fd8335d2859c90dca945388ed6acc9f9706b6fe01f59c6f24c6634c17a",
+  "stderr_lines": 16
+}

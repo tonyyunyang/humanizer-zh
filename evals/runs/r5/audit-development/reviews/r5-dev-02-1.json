@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 30.308,
+  "prompt_sha256": "8fa1fb7cf60c60ce530571ad47226c92b5a1d46ec233c6129645e8b01087dea7",
+  "output": "{\n  \"intended_effect\": \"将断网重连后同步停住、远端修改未及时出现及手动重试后恢复的记录，整理为可直接提交 GitHub 的中文 issue，按指定六节帮助维护者理解现象、核对证据并继续排查。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"标题和六个小节符合要求。成稿准确区分两次约20分钟断网后的异常与五次短时断网未复现，保留时间估计、单机测试范围、本地内容的观察结果及验证局限，日志原文完整。未将错误码或机器人摘要当作已确认结论，未编造图片内容、附件链接或环境信息。预期、实际、证据和待确认事项组织清楚，能够支持维护者排查。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11760,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 879,
+    "reasoning_output_tokens": 652
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "d03c716764ddacd2dc7e667bc2231bba119f1ab0c804de1fc724ff2ada309ae0",
+  "stderr_lines": 17
+}

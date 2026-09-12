@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 104.871,
+  "prompt_sha256": "b4ed36d390ceb29aaa09141050bd1a6dc67ae3acd4eb314a91d3510ac93944d8",
+  "output": "标题：断网约 20 分钟后重连，同步停留在“正在同步…”（笺桥桌面端 0.8.4）\n\n## 问题\n\n断网后恢复联网，遇到顶部持续显示“正在同步…”、远端修改未更新的情况。点击“重试同步”后，内容可以继续更新。\n\n## 复现信息\n\n4 月 8 日和 9 日记录的操作流程：\n\n1. 打开 `demo-notes` 工作区。\n2. 修改一条本地笔记。\n3. 断网一段时间，再恢复联网。\n4. 查看同步状态及远端修改是否更新。\n\n测试情况：\n\n- 有两次断网约 20 分钟，恢复联网后出现上述问题。\n- 另试了五次断网 1 到 3 分钟的情况，没有出现同样的停住。\n- 并非每次都精确记录了断网起止时间，稳定触发条件尚待确认。\n\n## 预期 / 实际\n\n**预期：** 重新联网后自动完成同步，或者明确提示需要重试。\n\n**实际：** 恢复联网后，顶部一直显示“正在同步…”。等待约半分钟，远端的新修改仍未出现。点击“重试同步”后，内容恢复更新。\n\n本地刚写的那条文字一直保留，重试后在另一台已联网设备上也能看到。未做全量导出比对，尚不能据此确认全部数据的完整性。\n\n## 环境\n\n- 应用：笺桥桌面端 0.8.4\n- 系统：macOS 15.4\n- 工作区：`demo-notes`\n- 测试范围：只在这一台设备上做了断网测试\n- 代理 / VPN：未记录当时是否开启\n\n## 证据\n\n保留了其中一次的日志：\n\n```text\n18:23:10 POST /sync/pull 409 code=CURSOR_TOO_OLD\n18:23:10 reconnect status=online pending_local=1\n18:23:40 ui_status=正在同步…\n18:24:02 manual_retry POST /sync/pull 200 remote_changes=3\n18:24:03 POST /sync/push 200 acknowledged_local=1\n```\n\n附件栏写着“上次同步正常.png”，但本次材料中没有图片文件。也未保存完整控制台堆栈。\n\n## 待确认\n\n- 日志中的 `409 code=CURSOR_TOO_OLD` 是否与同步停住有关，客户端收到该响应后的自动恢复流程是否正常。\n- 问题是否与断网时长有关，以及在其他设备或环境下是否会出现。\n- 是否为 0.8.4 引入的问题：未测试 0.8.3，尚无版本对照。\n- 重装是否有效：未实际尝试重装。\n\n工单机器人曾生成早期摘要：“升级到 0.8.4 导致数据损坏，重装可解决，所有断网重连都会触发。”这段摘要尚未核实，不能作为排查结论；其中“所有断网重连都会触发”也与五次短时断网未出现同样问题的记录不符。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13862,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3310,
+    "reasoning_output_tokens": 2588
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "8422b9d7e1b723c31332fe70426354b93c940b6974caeccbf8371d564e3dc220",
+  "stderr_lines": 18
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 57.404,
+  "prompt_sha256": "22223c9825f2c81fdf7ce8dc7b1051ace1d8f1bab513388d3935cdc03be0a089",
+  "output": "这周我和阿璐把 CSV 导入的 12 个边界样例逐条过了一遍。其中 9 个已经在本地复现、修好，对应的用例也跑过了。这 9 个变更都在 fix/import-edge-cases，还没合进主线。\n\n累是真累，松了一口气也是真的。尤其是之前那个空列把后面字段顶歪的问题，总算不用靠人盯着看了。\n\n剩下 3 个还缺合作方的示例文件，现在只能先把现场描述整理好，没法确认怎么修。阿璐跟我确认过，周四 16:00 前会整理好能脱敏的示例文件交过来。这 3 个什么时候能修完，得拿到文件再排。\n\n今天想请大家先帮忙看这 9 个变更，重点看看各自负责的字段映射有没有受影响。有意见直接留在 PR 里，我下午会集中看。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13664,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1621,
+    "reasoning_output_tokens": 1400
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "96eb190f1ea4c9306581c67ad5039bee793e8c9b77cedf46f378c29cba5a8c73",
+  "stderr_lines": 17
+}
