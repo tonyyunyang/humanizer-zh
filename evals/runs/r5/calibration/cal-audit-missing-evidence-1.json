@@ -1,0 +1,23 @@
+{
+  "case_id": "cal-audit-missing-evidence",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 57.762,
+  "prompt_sha256": "f65dae201c933516f1bdb83b64ac7dc820490847ebbae78667cef819abea9814",
+  "output": "{\n  \"intended_effect\": \"按项目模板整理简洁的 PR 描述，保留 Changes 和 Validation 两节，准确说明示例路径由 `examples/basic` 更正为 `examples/quickstart`。\",\n  \"information_gate\": \"uncertain\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [\n    {\n      \"input_evidence\": \"本次提供的全部改动记录：将说明中的示例路径从 `examples/basic` 更正为 `examples/quickstart`。\",\n      \"output_evidence\": \"未运行测试。\",\n      \"reason\": \"输入未交代测试是否运行，不能将缺少验证记录推定为未运行测试。现有材料无法确认或否定这一陈述。\"\n    }\n  ],\n  \"template_issues\": [],\n  \"reason\": \"路径更正表述准确，结构、重点和语气符合简短 PR 描述的要求；两个小节是用户明确要求保留的，不属于无作用的模板表达。测试状态仍需确认。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10059,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1793,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "9f2dc1fa3dde955c287380739e551ccf2b384fa059d179ad83c27801c3ab9a1f",
+  "stderr_lines": 17
+}
