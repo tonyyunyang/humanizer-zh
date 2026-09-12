@@ -17,7 +17,7 @@
 
 去掉中文里的套话和模板感，保留事实，也保留你的语气。
 
-Humanizer-zh 是一个中文写作 skill，适用于文章、邮件、工作同步和技术文档。**持续跟进 [Blader Humanizer](https://github.com/blader/humanizer)，把适合中文的经验认真改写进来。** 同时吸收[说人话](https://github.com/MrGeDiao/shuorenhua)的中文实践，参考[早期 Humanizer-zh](https://github.com/op7418/Humanizer-zh) 的整理。
+Humanizer-zh 润色中文及中英混排，按这次表达的目的处理措辞、结构和节奏。**持续跟进 [Blader Humanizer](https://github.com/blader/humanizer)，把适合中文的经验认真改写进来。** 同时吸收[说人话](https://github.com/MrGeDiao/shuorenhua)的中文实践，参考[早期 Humanizer-zh](https://github.com/op7418/Humanizer-zh) 的整理。
 
 核心只有一个 [SKILL.md](SKILL.md)。没有运行服务，不需要本项目的 API key；装进你已有的 AI 工具就能用。
 
@@ -139,7 +139,9 @@ Claude Code 手动安装的普通 skill 用 `/humanizer-zh`；插件版用 `/hum
 
 ## 怎样持续更新
 
-当前版本 **1.0.0**，已审阅并适配 **Blader Humanizer 3.0.0**，核对日期 **2026-09-11**。
+最新发布版 **1.0.0**，已审阅并适配 **Blader Humanizer 3.0.0**，核对日期 **2026-09-11**。`main` 分支包含后续未发布的中文、混排及 Issue/PR 编辑改进；精简 ZIP 对应已发布版本。
+
+专业依据与四轮实际输出见[改进记录](docs/RSI.md)。当前版本已确认为后续 RSI 基线，本地定时精进任务已取消，后续按需发起。
 
 仓库包含每日运行的 [Upstream watch](.github/workflows/upstream.yml)：检查三个参考项目的指定文件，有变化时创建或更新一条待评审 Issue。它比较文件版本，提供提交与差异链接，不调用模型，也不自动覆盖中文规则。
 
@@ -154,7 +156,8 @@ Claude Code 手动安装的普通 skill 用 `/humanizer-zh`；插件版用 `/hum
 | 先看句子和段落，再看词 | 不把“此外”“重要”之类正常词语当禁词 |
 | 保留事实、条件、数字和责任主体 | 不靠编故事、补数据来制造“人味” |
 | 保留正常的中文引号和破折号 | 英文标点习惯不能直接套到中文 |
-| 按场景和样文调整 | 技术文档不需要变成聊天；个人文章也不需要变成公文 |
+| 按表达目的、上下文和样文调整 | 平直、含蓄和表现力都按当前需要取舍 |
+| Issue 与 PR 服务于定位、讨论和审阅 | 保留必要细节，篇幅随实际需要而定 |
 | 默认给一版终稿 | 日常改写用得上，审稿说明按需提供 |
 
 这是独立维护的中文改编项目，不代表三个参考项目的官方立场。我们关注文字质量，不判断作者身份，也不保证 AI 检测器的结果。

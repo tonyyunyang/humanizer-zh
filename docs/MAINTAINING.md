@@ -11,7 +11,7 @@
 | `agents/openai.yaml` | Codex 展示名称与默认提示 |
 | `README.md` / `README.en.md` | 使用与安装说明 |
 | `upstream.lock.json` / `docs/UPSTREAM.md` | 文件版本基线与中文适配决策 |
-| `evals/` | 人工行为回归样例和验收方式 |
+| `evals/` | 行为回归样例、原始模型输出和评审记录 |
 | `scripts/` / `tests/` / `.github/` | 仓库校验和上游变化提醒，不参与改稿 |
 
 不要增加第二份 `SKILL.md`、默认要求读完所有维护文档，或为了打包引入 npm runtime。改变安装结构时，先在临时目录里验证，避免覆盖自己的已装 skill。
