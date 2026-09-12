@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 20.918,
+  "prompt_sha256": "a86ed6958585e844a2c7504b15314dabaebb185a220e1cf121748b6c30e97f05",
+  "output": "本周六上午9点至12点，社区阅览室因更换入口地垫暂停开放。已预约这一时段自习座位的读者可免费改约其他时段；如需取消预约，请在小程序内操作。12点后恢复正常开放。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11122,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 469,
+    "reasoning_output_tokens": 401
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a34f8cedb1d2a7541c944382fc609e5fe69ea8134dc95722d4d72bba8fd6d644",
+  "stderr_lines": 12
+}

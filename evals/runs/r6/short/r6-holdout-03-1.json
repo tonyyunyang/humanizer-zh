@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 36.148,
+  "prompt_sha256": "af9b34ed5ed6c5121b8c933752b61faf758f51712e3ea50e381c6f45091ed29d",
+  "output": "上周一到周四，我们在帮助中心新增了退款入口，仅从订单页进入的用户可见。四天内有 38 人点击，其中 11 人提交了申请。\n\n客服反馈退款咨询少了一些，但入口位置也同时调整了，分类数据还没拉取，目前只能确认入口有人用，还不能判断是否减少了咨询量。下一步准备按问题类型整理客服工单，再看退款相关咨询的变化。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11167,
+    "cached_input_tokens": 7424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1049,
+    "reasoning_output_tokens": 949
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "1bf11622072de17d2054a3cc29d731e6b60431de7f37665169d4cd1bd723cde7",
+  "stderr_lines": 11
+}

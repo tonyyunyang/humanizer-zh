@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 35.92,
+  "prompt_sha256": "fab9d8735fd2c0786fe4370f7957c0eeddde6821bd67caaf8dd3f341dbc499a4",
+  "output": "你说得对，我之前只测了点击一次保存按钮的情况，漏了连续点击这个场景。把按钮 disable 掉，应该能挡住当前页面内的重复提交，但用户开两个页面时，仍然可以重复提交。\n\n这个 PR 我想先补上按钮状态控制和提交失败后的状态恢复。接口幂等需要另外改服务端，我会单独开 issue 跟进。你看这样拆分可以吗？",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11148,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 937,
+    "reasoning_output_tokens": 834
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "12c7c5c734035c3f418aecfaf6c5d4bff4c0382ff179c7793b40e8982fe58ff9",
+  "stderr_lines": 12
+}

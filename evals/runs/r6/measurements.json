@@ -1,0 +1,247 @@
+{
+  "arms": {
+    "full": {
+      "rows": [
+        {
+          "case_id": "r6-dev-01",
+          "elapsed_seconds": 20.345,
+          "output_characters": 82,
+          "usage": {
+            "input_tokens": 13445,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 529,
+            "reasoning_output_tokens": 458
+          }
+        },
+        {
+          "case_id": "r6-dev-02",
+          "elapsed_seconds": 19.621,
+          "output_characters": 80,
+          "usage": {
+            "input_tokens": 13436,
+            "cached_input_tokens": 3328,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 523,
+            "reasoning_output_tokens": 455
+          }
+        },
+        {
+          "case_id": "r6-dev-03",
+          "elapsed_seconds": 26.575,
+          "output_characters": 214,
+          "usage": {
+            "input_tokens": 13482,
+            "cached_input_tokens": 7424,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 711,
+            "reasoning_output_tokens": 589
+          }
+        },
+        {
+          "case_id": "r6-holdout-01",
+          "elapsed_seconds": 35.591,
+          "output_characters": 143,
+          "usage": {
+            "input_tokens": 13460,
+            "cached_input_tokens": 7424,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1020,
+            "reasoning_output_tokens": 919
+          }
+        },
+        {
+          "case_id": "r6-holdout-02",
+          "elapsed_seconds": 13.852,
+          "output_characters": 93,
+          "usage": {
+            "input_tokens": 13441,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 318,
+            "reasoning_output_tokens": 246
+          }
+        },
+        {
+          "case_id": "r6-holdout-03",
+          "elapsed_seconds": 37.502,
+          "output_characters": 146,
+          "usage": {
+            "input_tokens": 13477,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1072,
+            "reasoning_output_tokens": 972
+          }
+        }
+      ],
+      "mean_input_tokens": 13456.833333333334,
+      "median_elapsed_seconds": 23.46,
+      "total_output_tokens": 4173
+    },
+    "short": {
+      "rows": [
+        {
+          "case_id": "r6-dev-01",
+          "elapsed_seconds": 25.514,
+          "output_characters": 83,
+          "usage": {
+            "input_tokens": 11129,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 715,
+            "reasoning_output_tokens": 644
+          }
+        },
+        {
+          "case_id": "r6-dev-02",
+          "elapsed_seconds": 20.918,
+          "output_characters": 80,
+          "usage": {
+            "input_tokens": 11122,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 469,
+            "reasoning_output_tokens": 401
+          }
+        },
+        {
+          "case_id": "r6-dev-03",
+          "elapsed_seconds": 31.549,
+          "output_characters": 220,
+          "usage": {
+            "input_tokens": 11170,
+            "cached_input_tokens": 7424,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 837,
+            "reasoning_output_tokens": 715
+          }
+        },
+        {
+          "case_id": "r6-holdout-01",
+          "elapsed_seconds": 35.92,
+          "output_characters": 152,
+          "usage": {
+            "input_tokens": 11148,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 937,
+            "reasoning_output_tokens": 834
+          }
+        },
+        {
+          "case_id": "r6-holdout-02",
+          "elapsed_seconds": 17.065,
+          "output_characters": 93,
+          "usage": {
+            "input_tokens": 11133,
+            "cached_input_tokens": 2304,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 419,
+            "reasoning_output_tokens": 347
+          }
+        },
+        {
+          "case_id": "r6-holdout-03",
+          "elapsed_seconds": 36.148,
+          "output_characters": 151,
+          "usage": {
+            "input_tokens": 11167,
+            "cached_input_tokens": 7424,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1049,
+            "reasoning_output_tokens": 949
+          }
+        }
+      ],
+      "mean_input_tokens": 11144.833333333334,
+      "median_elapsed_seconds": 28.5315,
+      "total_output_tokens": 4426
+    },
+    "none": {
+      "rows": [
+        {
+          "case_id": "r6-dev-01",
+          "elapsed_seconds": 23.027,
+          "output_characters": 82,
+          "usage": {
+            "input_tokens": 9567,
+            "cached_input_tokens": 3328,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 542,
+            "reasoning_output_tokens": 473
+          }
+        },
+        {
+          "case_id": "r6-dev-02",
+          "elapsed_seconds": 32.111,
+          "output_characters": 80,
+          "usage": {
+            "input_tokens": 9560,
+            "cached_input_tokens": 2304,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 865,
+            "reasoning_output_tokens": 797
+          }
+        },
+        {
+          "case_id": "r6-dev-03",
+          "elapsed_seconds": 19.511,
+          "output_characters": 245,
+          "usage": {
+            "input_tokens": 9610,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 510,
+            "reasoning_output_tokens": 375
+          }
+        },
+        {
+          "case_id": "r6-holdout-01",
+          "elapsed_seconds": 32.35,
+          "output_characters": 155,
+          "usage": {
+            "input_tokens": 9584,
+            "cached_input_tokens": 2304,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 814,
+            "reasoning_output_tokens": 706
+          }
+        },
+        {
+          "case_id": "r6-holdout-02",
+          "elapsed_seconds": 16.311,
+          "output_characters": 93,
+          "usage": {
+            "input_tokens": 9563,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 393,
+            "reasoning_output_tokens": 321
+          }
+        },
+        {
+          "case_id": "r6-holdout-03",
+          "elapsed_seconds": 21.636,
+          "output_characters": 141,
+          "usage": {
+            "input_tokens": 9607,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 557,
+            "reasoning_output_tokens": 460
+          }
+        }
+      ],
+      "mean_input_tokens": 9581.833333333334,
+      "median_elapsed_seconds": 22.3315,
+      "total_output_tokens": 3681
+    }
+  },
+  "full_to_short_total_input_reduction": 0.17180862263286312,
+  "incremental_guidance_tokens": {
+    "full": 3875.0,
+    "short": 1563.0
+  },
+  "note": "Six matched cases per arm. Token figures are reported by the CLI; differences include the editing-guidance wrapper and metadata. Elapsed time includes process and service variability and is not a general speed or pricing claim."
+}

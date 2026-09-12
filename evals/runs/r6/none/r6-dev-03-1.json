@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 19.511,
+  "prompt_sha256": "4cc56bd755bcde43f0678d83a1e4d19bcd903c073b991b8a2d3cfa1919b2920b",
+  "output": "在本地启动 worker，按以下步骤操作：\n\n1. 将 `.env.example` 复制为 `.env`，并将 `QUEUE_URL` 设置为开发环境的队列地址。\n2. 运行 `pnpm install` 安装依赖。\n3. 依赖安装完成后，运行 `pnpm dev:worker` 启动 worker。\n\n日志中出现 `ready` 表示 worker 已连接到队列，不代表任务已执行完成。\n\n去重记录的有效期为 30 分钟。在有效期内，相同 `jobId` 的任务再次投递时会跳过执行。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 9610,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 510,
+    "reasoning_output_tokens": 375
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "12c90aff9ee945f7778221aeaf3422efbd2158ae643e91afe915426989fdd5b3",
+  "stderr_lines": 12
+}

@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 20.345,
+  "prompt_sha256": "49818959e8c022eadd035d10c934e56baa74f3384841fb14b4e1c3718a2fbd8c",
+  "output": "周末终于把家里那盆绿萝搬到了窗边。过去三个月，我一直坚信它是在适应环境，直到今天查了养护说明，才发现需要适应的可能是我。浇完水，我俩都精神了点。它是真的，我是装的。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13445,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 529,
+    "reasoning_output_tokens": 458
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "09338f194ab93b6bdd2de3268e7463fc24d2b739abf47f596383df8da9ffee49",
+  "stderr_lines": 12
+}

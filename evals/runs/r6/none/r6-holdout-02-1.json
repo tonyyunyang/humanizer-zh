@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 16.311,
+  "prompt_sha256": "ef4b285cea6311a7400234de35d26eb08bd80c29af1cc2a8c1a5e257ffa387bf",
+  "output": "您好，蓝灰色这一批预计周五到仓，验货后会按订单顺序发出。如果您周日前必须收到，建议先别等这一批，我们目前不能保证能赶上。已经下单的话，可以继续保留订单，也可以直接申请退款。给您添麻烦了。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 9563,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 393,
+    "reasoning_output_tokens": 321
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "a732c6a9575a8e67391dd6ba8181a93480f9894537a09beb2277c17dd7dcb447",
+  "stderr_lines": 12
+}

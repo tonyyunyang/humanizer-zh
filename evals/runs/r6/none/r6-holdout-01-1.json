@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 32.35,
+  "prompt_sha256": "ca054fe6767a5f4c6da8b74f3d58b13c48c17cd7feff6b2873ffbba94510edc8",
+  "output": "你说得对，我之前只验证了点击一次保存的情况，漏掉了连续点击的场景。保存过程中禁用按钮，可以避免当前页面因连续点击而重复提交，但用户同时打开多个页面时，仍然可能重复提交。\n\n这个 PR 我想先补上保存时禁用按钮、提交失败后恢复可点击的逻辑。接口幂等需要改服务端，我会单独开 issue 跟进。你看这样拆分可以吗？",
+  "completed": true,
+  "usage": {
+    "input_tokens": 9584,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 814,
+    "reasoning_output_tokens": 706
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "fea538bd513650f7f04fe65748c9219878b703c2b0c14696fb5d0b55eb9ce1a7",
+  "stderr_lines": 12
+}
