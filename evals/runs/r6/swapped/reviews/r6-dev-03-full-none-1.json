@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-03-full-none",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 45.045,
+  "prompt_sha256": "2b7a68a0d45cbc118bd855eafe2cfc3567b8a2217b85a623a31112e182491c91",
+  "output": "{\n  \"intended_effect\": \"让新同事能按顺序在本地启动 worker，并正确理解 ready 日志的含义和重复任务跳过执行的条件。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版均保留了准确的操作步骤、技术标识、ready 不代表任务完成的说明，以及去重记录的 30 分钟有效期。A 略优：配置、安装、启动分别编号，并用“依赖安装完成后”明确承接，方便新同事逐步执行和回查。B 的“然后……完成后再……”也自然顺畅，只是操作集中在一段里，查阅稍逊。两版都没有无用的模板铺垫。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10862,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1257,
+    "reasoning_output_tokens": 1032
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b9583190247b275e25d88b69e12995f2a99d262a97b2d912d6f0315938c71665",
+  "stderr_lines": 11
+}

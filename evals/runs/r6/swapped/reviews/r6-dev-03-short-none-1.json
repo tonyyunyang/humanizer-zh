@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-dev-03-short-none",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 38.965,
+  "prompt_sha256": "4a85841becb90f829fd47b2e73c5088030f70fb46a4540d514d633d8ac6fb2c6",
+  "output": "{\n  \"intended_effect\": \"让新同事能按顺序完成 worker 的本地配置、依赖安装和启动，并正确理解 ready 的含义及去重的有效期限制。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版都准确保留了操作顺序、ready 不代表任务完成，以及去重受 30 分钟有效期限制的含义，中文自然，没有无效套话。A 将操作拆成三个编号步骤，并把“日志中出现 `ready`”和“去重记录的有效期为 30 分钟”各自成段，更便于新同事照做和回查；B 用“然后执行”“安装完成后再运行”串联也很顺畅，但操作层次稍弱，因此略偏好 A。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10856,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1118,
+    "reasoning_output_tokens": 881
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "f9dcd5e7ba6001b7ff4c714ae24ee5a374d682675ca81f2a4141f01a276a742c",
+  "stderr_lines": 11
+}

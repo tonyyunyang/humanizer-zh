@@ -1,0 +1,886 @@
+{
+  "status": "complete",
+  "decision": "Retain the approved 178-line skill as the runtime default. Preserve the 71-line candidate only at its immutable Git commit; do not claim equivalence or a general advantage from this pilot.",
+  "runtime_sha256": "2b25ca5d6fbda113fb2241a1ab6f81b92b98bb63e70442c5c809f161a05533ef",
+  "calls": {
+    "primary_edits": 18,
+    "primary_judgments": 18,
+    "swapped_order_judgments": 5,
+    "repeat_edits": 3,
+    "repeat_judgments": 3,
+    "total": 47,
+    "valid_executions": 47,
+    "execution_failures": 0,
+    "budget": 48
+  },
+  "manifests": [
+    {
+      "path": "evals/runs/r6/blind-full-none/reviews/manifest.json",
+      "total_runs": 6,
+      "valid_runs": 6
+    },
+    {
+      "path": "evals/runs/r6/blind-full-short/reviews/manifest.json",
+      "total_runs": 6,
+      "valid_runs": 6
+    },
+    {
+      "path": "evals/runs/r6/blind-short-none/reviews/manifest.json",
+      "total_runs": 6,
+      "valid_runs": 6
+    },
+    {
+      "path": "evals/runs/r6/full/manifest.json",
+      "total_runs": 6,
+      "valid_runs": 6
+    },
+    {
+      "path": "evals/runs/r6/none/manifest.json",
+      "total_runs": 6,
+      "valid_runs": 6
+    },
+    {
+      "path": "evals/runs/r6/repeat-blind/reviews/manifest.json",
+      "total_runs": 3,
+      "valid_runs": 3
+    },
+    {
+      "path": "evals/runs/r6/repeat-full/manifest.json",
+      "total_runs": 1,
+      "valid_runs": 1
+    },
+    {
+      "path": "evals/runs/r6/repeat-none/manifest.json",
+      "total_runs": 1,
+      "valid_runs": 1
+    },
+    {
+      "path": "evals/runs/r6/repeat-short/manifest.json",
+      "total_runs": 1,
+      "valid_runs": 1
+    },
+    {
+      "path": "evals/runs/r6/short/manifest.json",
+      "total_runs": 6,
+      "valid_runs": 6
+    },
+    {
+      "path": "evals/runs/r6/swapped/reviews/manifest.json",
+      "total_runs": 5,
+      "valid_runs": 5
+    }
+  ],
+  "primary_preferences": {
+    "full-short": {
+      "tie": 5,
+      "full": 1
+    },
+    "full-none": {
+      "tie": 4,
+      "none": 1,
+      "full": 1
+    },
+    "short-none": {
+      "tie": 4,
+      "none": 2
+    }
+  },
+  "identical_across_all_arms": [
+    "r6-dev-02",
+    "r6-holdout-02"
+  ],
+  "primary": [
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-01",
+      "pair": "full-short",
+      "preference": "tie",
+      "gates": {
+        "short": "pass",
+        "full": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-short/reviews/r6-dev-01-1.json",
+      "review_sha256": "88da4eb85d416d830605ab22edef207e73bb78006c868cdc9b1772f669cb035e"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-02",
+      "pair": "full-short",
+      "preference": "tie",
+      "gates": {
+        "full": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-short/reviews/r6-dev-02-1.json",
+      "review_sha256": "042e822ba5d70ffcaba81b9c32dcaf469cf05cc728805f6005a3fe7a76f224c8"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-03",
+      "pair": "full-short",
+      "preference": "tie",
+      "gates": {
+        "full": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-short/reviews/r6-dev-03-1.json",
+      "review_sha256": "fe009216b934dae3cbe4bb2fa5a9a855e461d7633ae10b2163d2194cb8058a28"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-01",
+      "pair": "full-short",
+      "preference": "full",
+      "gates": {
+        "short": "pass",
+        "full": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-short/reviews/r6-holdout-01-1.json",
+      "review_sha256": "37e574f7d308c878f3b8ec7861fa385bf1367ba16ee1bcbf60251002147366d6"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-02",
+      "pair": "full-short",
+      "preference": "tie",
+      "gates": {
+        "full": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-short/reviews/r6-holdout-02-1.json",
+      "review_sha256": "6cd1f5c014592f5325fcab6c2f7fdda7d10dfe94233e4995103a582f4bfe0ca0"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-03",
+      "pair": "full-short",
+      "preference": "tie",
+      "gates": {
+        "short": "pass",
+        "full": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-short/reviews/r6-holdout-03-1.json",
+      "review_sha256": "cfff37e3010f16ec7e995139e83c2948c64f8f2a78fcf54a7c5e17e4a5bd8bc0"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-01",
+      "pair": "full-none",
+      "preference": "tie",
+      "gates": {
+        "full": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-none/reviews/r6-dev-01-1.json",
+      "review_sha256": "1584e99fdf740cfa1c0b90ab58cb02767a374a34aa90d11d0c701ccb90ca0167"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-02",
+      "pair": "full-none",
+      "preference": "tie",
+      "gates": {
+        "none": "pass",
+        "full": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-none/reviews/r6-dev-02-1.json",
+      "review_sha256": "51c5c4bd30f5ba2524d612f3629abd66aeba944800f80acb5666d22a9dd11f50"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-03",
+      "pair": "full-none",
+      "preference": "none",
+      "gates": {
+        "full": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-none/reviews/r6-dev-03-1.json",
+      "review_sha256": "bf8be578b62fe72646d8bd1f91233dbaf9d1e56e2bccf73e62702a5b715f40ea"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-01",
+      "pair": "full-none",
+      "preference": "full",
+      "gates": {
+        "none": "fail",
+        "full": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-none/reviews/r6-holdout-01-1.json",
+      "review_sha256": "b99aa78a0bbc79924091ad9d33b3baf5eec038e39119f701e832db498a47fd10"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-02",
+      "pair": "full-none",
+      "preference": "tie",
+      "gates": {
+        "full": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-none/reviews/r6-holdout-02-1.json",
+      "review_sha256": "442ed7991d44cfa60123b49578d22efdbe9a77abda77cfc616c438f11ce31aa7"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-03",
+      "pair": "full-none",
+      "preference": "tie",
+      "gates": {
+        "full": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-full-none/reviews/r6-holdout-03-1.json",
+      "review_sha256": "f24eab0d5bbf89cbd33e49e246459ade567b671e58f014c88e256aa30125c6b3"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-01",
+      "pair": "short-none",
+      "preference": "tie",
+      "gates": {
+        "short": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-short-none/reviews/r6-dev-01-1.json",
+      "review_sha256": "328e21e133a052d755e3db5bcaa52f27a2de6f6aaa122c9e5eb96fabf925120f"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-02",
+      "pair": "short-none",
+      "preference": "tie",
+      "gates": {
+        "short": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-short-none/reviews/r6-dev-02-1.json",
+      "review_sha256": "79a7b68b2260eb67dc4cc29b2b3f4a711fdb88f2f28f7b1465de86379023366c"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-dev-03",
+      "pair": "short-none",
+      "preference": "none",
+      "gates": {
+        "short": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-short-none/reviews/r6-dev-03-1.json",
+      "review_sha256": "5ca133702f150b23cdafda185570256be3a23d0aab6e5952e36f2f6362817f5f"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-01",
+      "pair": "short-none",
+      "preference": "none",
+      "gates": {
+        "none": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-short-none/reviews/r6-holdout-01-1.json",
+      "review_sha256": "57a8b34fbdc01eec55cc08bf707600d51c8015ee907375636934ab1542ed3c86"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-02",
+      "pair": "short-none",
+      "preference": "tie",
+      "gates": {
+        "short": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-short-none/reviews/r6-holdout-02-1.json",
+      "review_sha256": "0971140ff2da264e69cf4ae33317b158ce8f87ee50d9d71240741e6a991d5350"
+    },
+    {
+      "stage": "primary",
+      "case_id": "r6-holdout-03",
+      "pair": "short-none",
+      "preference": "tie",
+      "gates": {
+        "none": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/blind-short-none/reviews/r6-holdout-03-1.json",
+      "review_sha256": "32911faf23741f28b0e6cbf4996b3649e396b2b6edc992f33cda52cb6276f754"
+    }
+  ],
+  "swapped_order": [
+    {
+      "stage": "swapped_order",
+      "case_id": "r6-holdout-01",
+      "pair": "full-none",
+      "preference": "none",
+      "gates": {
+        "full": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/swapped/reviews/r6-holdout-01-full-none-1.json",
+      "review_sha256": "d96373b7894e5da42202f5227fb2906dd7d895683b0c1ddab1523995a7ba7005"
+    },
+    {
+      "stage": "swapped_order",
+      "case_id": "r6-holdout-01",
+      "pair": "short-none",
+      "preference": "none",
+      "gates": {
+        "short": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/swapped/reviews/r6-holdout-01-short-none-1.json",
+      "review_sha256": "50c7ce72a78b564aa5ad2ceef8fd031726a0544d5641588a7284d787aa6aded1"
+    },
+    {
+      "stage": "swapped_order",
+      "case_id": "r6-dev-03",
+      "pair": "full-none",
+      "preference": "none",
+      "gates": {
+        "none": "pass",
+        "full": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/swapped/reviews/r6-dev-03-full-none-1.json",
+      "review_sha256": "19957364bf9b0a8056570893f84feb496909ecaf56ffe595b6c799533978c5ac"
+    },
+    {
+      "stage": "swapped_order",
+      "case_id": "r6-dev-03",
+      "pair": "short-none",
+      "preference": "none",
+      "gates": {
+        "none": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/swapped/reviews/r6-dev-03-short-none-1.json",
+      "review_sha256": "ef2203813e6a44ffd01f3328f41d95fc769f9277f8cfb12b591ecb409297bb6f"
+    },
+    {
+      "stage": "swapped_order",
+      "case_id": "r6-holdout-01",
+      "pair": "full-short",
+      "preference": "full",
+      "gates": {
+        "full": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/swapped/reviews/r6-holdout-01-full-short-1.json",
+      "review_sha256": "960108abdea28b1c08e74aef89b6b2cca5b59824496ad402b39e616b9959cafe"
+    }
+  ],
+  "swap_consistency": [
+    {
+      "case_id": "r6-holdout-01",
+      "pair": "full-none",
+      "primary_preference": "full",
+      "swapped_preference": "none",
+      "same_preference": false,
+      "same_gates": false
+    },
+    {
+      "case_id": "r6-holdout-01",
+      "pair": "short-none",
+      "primary_preference": "none",
+      "swapped_preference": "none",
+      "same_preference": true,
+      "same_gates": true
+    },
+    {
+      "case_id": "r6-dev-03",
+      "pair": "full-none",
+      "primary_preference": "none",
+      "swapped_preference": "none",
+      "same_preference": true,
+      "same_gates": true
+    },
+    {
+      "case_id": "r6-dev-03",
+      "pair": "short-none",
+      "primary_preference": "none",
+      "swapped_preference": "none",
+      "same_preference": true,
+      "same_gates": true
+    },
+    {
+      "case_id": "r6-holdout-01",
+      "pair": "full-short",
+      "primary_preference": "full",
+      "swapped_preference": "full",
+      "same_preference": true,
+      "same_gates": true
+    }
+  ],
+  "repeat": [
+    {
+      "stage": "repeat",
+      "case_id": "r6-holdout-01",
+      "pair": "full-short",
+      "preference": "full",
+      "gates": {
+        "full": "pass",
+        "short": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/repeat-blind/reviews/r6-repeat-01-1.json",
+      "review_sha256": "e265540e7c2315c88e2e4248849968d5b81b2c4e22daa220f02e43338bdeb2a7"
+    },
+    {
+      "stage": "repeat",
+      "case_id": "r6-holdout-01",
+      "pair": "full-none",
+      "preference": "none",
+      "gates": {
+        "full": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/repeat-blind/reviews/r6-repeat-02-1.json",
+      "review_sha256": "a1b9265ad831e7911c107ca92d391fcc816d27289e7631e9159c7340a550ed9d"
+    },
+    {
+      "stage": "repeat",
+      "case_id": "r6-holdout-01",
+      "pair": "short-none",
+      "preference": "none",
+      "gates": {
+        "short": "pass",
+        "none": "pass"
+      },
+      "template_issue_count": 0,
+      "review_path": "evals/runs/r6/repeat-blind/reviews/r6-repeat-03-1.json",
+      "review_sha256": "c6034efba1a764f437937b33b4d1459d1d8dfbc7f96b8399e3fe041a4de1921a"
+    }
+  ],
+  "unique_primary_draft_gate_observations": [
+    {
+      "case_id": "r6-dev-01",
+      "arm": "full",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-01",
+      "arm": "none",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-01",
+      "arm": "short",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-02",
+      "arm": "full",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-02",
+      "arm": "none",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-02",
+      "arm": "short",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-03",
+      "arm": "full",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "full-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-03",
+      "arm": "none",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-dev-03",
+      "arm": "short",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-01",
+      "arm": "full",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "full-short",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-01",
+      "arm": "none",
+      "distinct_gates": [
+        "fail",
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "fail"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-01",
+      "arm": "short",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "short-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "swapped_order",
+          "pair": "full-short",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-02",
+      "arm": "full",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-02",
+      "arm": "none",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-02",
+      "arm": "short",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-03",
+      "arm": "full",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-03",
+      "arm": "none",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-none",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    },
+    {
+      "case_id": "r6-holdout-03",
+      "arm": "short",
+      "distinct_gates": [
+        "pass"
+      ],
+      "observations": [
+        {
+          "stage": "primary",
+          "pair": "full-short",
+          "gate": "pass"
+        },
+        {
+          "stage": "primary",
+          "pair": "short-none",
+          "gate": "pass"
+        }
+      ]
+    }
+  ],
+  "gate_note": "The same original no-skill review reply received pass and fail. Seventeen other primary drafts received only pass judgments. Root semantic review flags the certainty change but is non-blind; do not erase disagreement or treat duplicated ratings of the same output as independent observations.",
+  "source_review": "evals/runs/r6/source-review.json",
+  "template_issues_found_by_judges": 0,
+  "limitations": [
+    "Six independent synthetic sources, mostly short and already understandable; no long template-heavy essay or demanding literary passage.",
+    "One initial draw per arm; the three extra drafts repeat one already-observed case, not fresh holdout data.",
+    "Same Codex foundation and gpt-6-astra/max model for editing and independent judging may share preferences; no external human blind review.",
+    "Swapping order also starts a new stochastic judgment, so a reversal cannot be uniquely attributed to position bias.",
+    "The no-skill arm still includes Codex base instructions and the common task wrapper.",
+    "The short candidate is shorter in aggregate; the study does not isolate the causal value of any one example or instruction.",
+    "Text-only explicit loading; no claim about skill activation, file editing, other models, universal latency, pricing, or AI detection."
+  ],
+  "measurements": "evals/runs/r6/measurements.json"
+}

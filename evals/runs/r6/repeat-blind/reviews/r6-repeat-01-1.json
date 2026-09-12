@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-repeat-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 57.611,
+  "prompt_sha256": "a537da1b9cd137c351bca90c2d14817e6bc9e285bcbfdf1f30b18103b4da4dc5",
+  "output": "{\n  \"intended_effect\": \"向评审承认漏测连续点击，说明按钮处理的能力边界和本次 PR 的拟议范围，并征求对方对另开 issue 跟进服务端幂等这一拆分安排的意见。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版都保留了漏测事实、跨页面重复提交的风险、拟议修改范围和后续安排，承认问题与征求意见也都自然。A 的“提交失败后的状态恢复”比 B 的“失败后的恢复逻辑”更清楚地交代恢复对象，分段呈现问题边界和处理提议，也便于评审判断拆分是否合适，因此略优。两版均无明显模板赘语。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10772,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1426,
+    "reasoning_output_tokens": 1191
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "427ba505c6ac3ff9b0f35cc1f503115e9f26ffb4b6b2f39fb29da419483c4783",
+  "stderr_lines": 12
+}

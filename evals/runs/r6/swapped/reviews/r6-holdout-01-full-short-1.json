@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01-full-short",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 48.134,
+  "prompt_sha256": "7775f795e5bf4ca19b3ad8d308cb53cb2709d43117934927f7ff47faa40d1251",
+  "output": "{\n  \"intended_effect\": \"让评审者了解此前漏测连续点击、按钮禁用的作用与局限，以及本次 PR 和服务端改动的拆分计划，并就这个安排继续讨论。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"A\",\n  \"reason\": \"两版都保留了漏测情况、处理边界、拟议范围和后续安排，并以“你看这样拆分可以吗”邀请讨论，无明显模板问题。略偏 A：“只测了单次点击保存”比 B 的“只测了点击一次保存按钮的情况”更顺畅；“提交失败后恢复按钮状态”直接点明恢复对象，更贴合这次把技术回复说清楚的目的。B 同样准确、合作，差距很小。\",\n  \"confidence\": \"medium\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10785,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1395,
+    "reasoning_output_tokens": 1163
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "74e5aacfd3d567f96193da4aa8d57c959cecf4f043ca34adbebaf5764b07e2df",
+  "stderr_lines": 11
+}

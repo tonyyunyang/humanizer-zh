@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-repeat-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 47.031,
+  "prompt_sha256": "67e1bc0e49af3f83c0a46e227492afa514591fd9b54c32e9b0c01f4073874551",
+  "output": "{\n  \"intended_effect\": \"让评审者理解此前漏测了连续点击、本次 PR 拟补的按钮处理及其局限，并对服务端幂等另开 issue 跟进的拆分方案提出意见。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版都保留了漏测事实、处理边界、拟议范围和征询意见，没有把计划写成完成。B 将 A 的“按钮状态和失败后的恢复逻辑”具体写为“提交时禁用按钮、请求失败后恢复按钮可用状态”，更便于评审确认修改内容；随后交代跨页面场景和服务端安排，衔接自然。“感谢提醒”回应了具体疏漏，使语气更合作，并非无效套话。A 也清楚顺畅，但对按钮行为的说明略概括。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10786,
+    "cached_input_tokens": 7680,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 969,
+    "reasoning_output_tokens": 715
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "71917492ced9a5b21eb00ff91283fc7abd2c2eb1e57a4d063974eeb6b44a5907",
+  "stderr_lines": 12
+}

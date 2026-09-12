@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-holdout-01-short-none",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 96.009,
+  "prompt_sha256": "385a79438558b51836213930970e09b0bad597bc3ec9900173dc68b45f887681",
+  "output": "{\n  \"intended_effect\": \"让评审者了解此前漏测的连续点击场景、本次 PR 拟补充的按钮处理及其局限、服务端幂等另开 issue 跟进的安排，并就这样拆分征求意见。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版都保留了漏测说明、拟议范围、跨页面限制和后续安排，没有声称修改或测试已经完成。B 将 A 的“按钮状态控制”和“状态恢复”具体写成“保存时禁用按钮”“提交失败后恢复可点击”，并用“因连续点击”说明所覆盖的重复提交场景，更便于对方判断拆分是否合理。两版承接自然，结尾都保留商量口吻，无明显模板赘语；B 的清晰度略胜。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10794,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2256,
+    "reasoning_output_tokens": 2005
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "62ba6846bf1dcc76ab2c0dc830993b35f8628e006347a3056471c30b3a1d8434",
+  "stderr_lines": 12
+}

@@ -1,0 +1,16 @@
+{
+  "reviewer": "Root maintenance session; not blind and not an external human review. Variant identities and primary judgments were already visible.",
+  "case_id": "r6-holdout-01",
+  "request": "帮我把这段 review 回复改得更清楚、合作一点。",
+  "original_excerpt": "这里把按钮 disable 掉应该能挡住当前页面上的重复提交",
+  "initial_no_skill_excerpt": "保存过程中禁用按钮，可以避免当前页面因连续点击而重复提交",
+  "assessment": "The initial no-skill draft changes a tentative expectation (应该能) into a capability assertion (可以避免). The user requested clearer, more cooperative wording but supplied no validation supporting that increase in certainty. The root review therefore flags a substantive loss of uncertainty, not an assertion that the PR was already implemented or that cross-page duplicates were solved. Blind reviewers disagree; do not relabel their raw gates or turn this adjudication into a stable pairwise win.",
+  "repeat_no_skill_excerpt": "这个 PR 我想先补上提交时禁用按钮、请求失败后恢复按钮可用状态这两块，避免当前页面内因连续点击造成的重复提交。",
+  "repeat_assessment": "Here 想先补上 frames 避免 as the purpose of the proposed work. The sentence need not repeat 应该 verbatim to preserve the proposal as a proposal. The original capability assertion is not reproduced in the same form; removing one hedge word is not by itself a failure criterion.",
+  "other_observations": [
+    "Both skill variants retain 应该能 in the original and repeated drafts. This does not identify which instruction caused the wording or establish a general reliability difference.",
+    "In the short repeat, 仍然可能重复提交 retains the cross-page limitation; the case does not require claiming that every two-page attempt will duplicate.",
+    "Across the initial six cases the root review found no additional material fact or explicit-scope concern beyond the disputed original no-skill sentence. This is a non-blind check, not independent validation."
+  ],
+  "policy_for_summary": "Preserve every blind review, report gate disagreement for the unique draft, and report the targeted repeat separately from the six-case comparison."
+}

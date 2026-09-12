@@ -1,0 +1,23 @@
+{
+  "case_id": "r6-repeat-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 51.787,
+  "prompt_sha256": "49d69aa244c4e2cca5d802fadfb7f5b918bbb269a254d0e4bc370714f0f8350c",
+  "output": "{\n  \"intended_effect\": \"让评审者了解此前漏测了连续点击、本次 PR 拟补的按钮处理及其局限，并就服务端幂等另开 issue 跟进的拆分方式提出意见。\",\n  \"gate_a\": \"pass\",\n  \"gate_b\": \"pass\",\n  \"issues_a\": [],\n  \"issues_b\": [],\n  \"template_issues_a\": [],\n  \"template_issues_b\": [],\n  \"preference\": \"B\",\n  \"reason\": \"两版都保留了漏测情况、计划状态、处理边界和征询意见。B 将 A 的“按钮状态处理”和“状态恢复”具体写成“提交时禁用按钮、请求失败后恢复按钮可用状态”，接着说明能覆盖的连点场景及跨页面限制，更便于评审判断拆分是否合适。“感谢提醒”也自然回应了对方的发现，贴合合作语气，没有无效铺垫。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10785,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1266,
+    "reasoning_output_tokens": 1034
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "02e803ef3adbbb2512350de0a23d7657cc05c2e46895f13ecb728f3bc454b013",
+  "stderr_lines": 12
+}
