@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 57.228,
+  "prompt_sha256": "dfd8b95bb1386c7e891e2625744ea209f6566482c076973adc3b2edbf1d999bc",
+  "output": "1. 旧值会保留。当前实现只读取 `panel:prefs`，解析失败时返回 `DEFAULT_PREFS` 的副本，不删除或覆写旧值，也不会清空 `localStorage`。解析结果是普通对象时，缺省字段用默认值补齐，已有字段覆盖默认值，未知字段也会保留。数组、`null` 等非普通对象会回退到默认值。这里的 `isPlainObject` 只判断是否为非 `null` 的普通对象，不校验各字段值。\n\n2. 这次没有加入 schema version 或 migration，migration 目前也没有排期。整套测试还没全绿：`prefs.test.ts: 8 passed`，但 `full suite: 79 passed, 1 failed`，失败项是 `table-layout.test.ts / narrow table snapshot`。快照失败还没复查，可能与测试字体有关只是我的猜测，目前没有证据。合入前还需要复查这项失败，并确认整套测试通过。",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13821,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1781,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "54a9d3d2785fc455779b6d8a9526318c621350d81691b85e44b988112834aef8",
+  "stderr_lines": 17
+}

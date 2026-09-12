@@ -1,0 +1,7 @@
+{
+  "source_run": "evals/runs/r5/baseline-holdout",
+  "skill_commit": "df030ac4e43c8d611b7a03ace85c04150948f4cf",
+  "suite_sha256": "d65f19ab38106ff13dea2bd1df8142870ba8d082c2aca4b4b477a0fe7a171ed9",
+  "rubric_sha256": "56dde3beb505ee06b0821b7d6dd43bfa3163a00eb93ccc6f485552c51e00e3ca",
+  "note": "Single-output audit, not a version comparison. Source metadata is excluded from judge prompts."
+}

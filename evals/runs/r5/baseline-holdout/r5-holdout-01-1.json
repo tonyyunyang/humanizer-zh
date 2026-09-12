@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 60.979,
+  "prompt_sha256": "773e563e770b4dd571b182df39ebd6f0bec1983d9a8c161548c9a6f1efa15396",
+  "output": "# Select（searchable）按 Escape 关闭选项层后，焦点未回到触发按钮\n\n## What happened?\n\n在本地 Storybook 的 Select / Searchable 中，用键盘打开选项层后按 Escape 关闭，焦点没有回到国家选择按钮。再按 Tab 时，焦点从页面前面的导航开始移动，未从国家选择按钮的位置继续。\n\n今天在同一台电脑上试了三次，结果一致。用鼠标可以成功选择国家；尚未测试用键盘确认选项或点击空白处关闭。\n\n## Expected behavior\n\n按 Escape 关闭选项层后，焦点应回到打开它的国家选择按钮，以便按 Tab 继续填写后面的字段。\n\n## Reproduction\n\n1. 刷新 Select / Searchable story，用 Tab 将焦点移到国家选择按钮。\n2. 按 Enter 打开选项层，此时输入框获得焦点。\n3. 按 Escape 关闭选项层。\n4. 再按 Tab，观察到焦点从页面前面的导航开始移动。\n\nStory 中的用法摘录：\n\n```tsx\n<Select\n  searchable\n  defaultOpen={false}\n  options={countryOptions}\n/>\n```\n\n## Evidence\n\n在控制台手动读取 `document.activeElement`，记录如下：\n\n```text\nbefore open: BUTTON #country-trigger\nafter open:  INPUT #country-filter\nafter Escape: BODY\n```\n\n录制的 gif 只有选项层关闭后的画面，没有拍到按键过程，本次未附上。\n\n同事提过“VoiceOver 可能也会跟着丢位置”，但我这次没有开启屏幕阅读器，也没有拿到他的复现记录，这一点尚未验证。\n\n## Environment\n\n- 组件库：`@pavilion/ui@1.6.0`\n- 浏览器：Chrome 132\n- 系统：macOS 15.1\n- 页面：本地 Storybook 的 Select / Searchable，没有可公开访问的网址\n- Safari 和 Windows 尚未测试",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13774,
+    "cached_input_tokens": 2304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1831,
+    "reasoning_output_tokens": 1388
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "86e0ada6de49d84929de0252d56c963e9e119950eeea4765bfc59842d1ca9784",
+  "stderr_lines": 18
+}

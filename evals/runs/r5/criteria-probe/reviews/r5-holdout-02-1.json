@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-02",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 34.09,
+  "prompt_sha256": "0a75b5c5216dc3596732a7d4ad9b16946437433d7103c0e41c36594b5ce2aa05",
+  "output": "{\n  \"intended_effect\": \"写出两条编号、可直接回复评审者的中文回复，保留技术标识，说明当前实现对旧值和配置字段的处理、本次 schema version 与 migration 的范围，以及实际测试状态，不承诺后续排期。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿正确以当前完整读取函数为准，没有沿用三天前笔记中的删除旧值、写入默认值和加入 migration 的方案。只读、返回默认值副本、普通对象字段合并及不校验字段值等说明均与材料一致。测试结果和失败项准确，保留了失败尚未复查、字体原因仅为无证据猜测的限定，也未承诺 migration 排期。技术标识保持原样，两条回复分别回应对应评审，解释充分、语气合适，可直接使用。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 10741,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 922,
+    "reasoning_output_tokens": 686
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "84407a1b8b06ff2182ee4901872141ac089dcfba2ae478561424720ae7f4decf",
+  "stderr_lines": 17
+}

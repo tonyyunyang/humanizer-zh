@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 62.098,
+  "prompt_sha256": "a3f3c7bd4c9d9743a45da0e5cd868c6b8923d6d72f9a11d01c30d6ef14006a5b",
+  "output": "# 绘巷演示交接\n演示时间：周五 15:00，现场使用离线包。\n\n## 已完成\n\n- 周三上午已用内置样例从头跑通“导入草图 → 配色 → 导出 PNG”三个流程，导出的 PNG 已在本地打开检查。配色结果使用内置数据。\n- `/v2/palettes/suggest` 的接口契约已和服务端确认。\n- 小弥本人确认：六组可公开演示的样例中，四组已完成。\n\n## 下一步 / 阻塞\n\n- `/v2/palettes/suggest` 前端还没连上。周三 11:03 和 11:09 对预发环境的两次探测均返回 503，原因尚未确认。\n- 剩余两组样例仍在校对，小弥确认会在周三 18:00 前交齐六组。\n- 叶舟确认周四 12:00 冻结离线包，无论在线接口是否恢复，都按这个时间执行。\n- 若接口在周四 10:00 前恢复，可以接入一个候选版本，但必须由叶舟检查三个完整流程后才能采用；来不及就继续用内置数据的离线包。在线接口不阻塞已经确定的离线演示。\n- 冻结前需补齐样例，并用最终六组样例再检查一次三个流程。这次检查还没做。\n\n## 演示口径\n能现场演示的，就现场演示；还没做完的，直接说还没做完。\n\n联系人：叶舟（演示），小弥（数据）",
+  "completed": true,
+  "usage": {
+    "input_tokens": 13826,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1926,
+    "reasoning_output_tokens": 1552
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "752e187444a840a742eeb0f476ec8d548c324458e2de26a51911a0bb73aa82ee",
+  "stderr_lines": 17
+}

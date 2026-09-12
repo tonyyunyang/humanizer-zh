@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-03",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 35.885,
+  "prompt_sha256": "756eef396a2335e59b92e7f332fb7fc86e4a51788da5788743c9e8c728113f3e",
+  "output": "{\n  \"intended_effect\": \"根据最新记录，仅更新“已完成”和“下一步 / 阻塞”两节，提供可直接替换的完整交接文档，明确完成状态、待办、冻结安排及在线候选版本的采用条件。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"两节之外的正文逐字保留。成稿准确区分内置样例验证、接口契约确认与前端尚未接入，保留预发环境两次 503 及原因未确认的限定。样例进度、小弥的交付承诺、叶舟确认的固定冻结时间、候选版本的恢复时限与检查条件、最终六组样例尚待复检均准确保留，并明确在线接口不阻塞离线演示。组织清楚，语气直接，无实质遗漏、无据增补或无效模板表达。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11344,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1025,
+    "reasoning_output_tokens": 784
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "ef5a5badd4bda318623ca9c41cefb3129691fb2ea29b60002c8a47f9bb0e2659",
+  "stderr_lines": 17
+}

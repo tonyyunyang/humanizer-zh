@@ -1,0 +1,23 @@
+{
+  "case_id": "r5-holdout-01",
+  "repetition": 1,
+  "status": "ok",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 25.08,
+  "prompt_sha256": "048e62394c39cfcce02600594d8a6c188ebf5da492513548cd50b32c1269aed5",
+  "output": "{\n  \"intended_effect\": \"整理一份中文 issue，聚焦可搜索 Select 按 Escape 关闭后未恢复触发按钮焦点的问题，保留五个指定英文模板标题，并区分实测结果、预期行为和未验证事项。\",\n  \"information_gate\": \"pass\",\n  \"task_fit\": \"adequate\",\n  \"issues\": [],\n  \"template_issues\": [],\n  \"reason\": \"成稿保留了复现步骤、同机三次观察、BUTTON→INPUT→BODY 的焦点记录及准确的包名、版本和环境信息。鼠标选择成功、键盘确认未测、VoiceOver 未验证和 gif 未附等边界交代清楚，未虚构网址、根因或扩大已验证范围。五个英文标题完整，中文正文组织清晰，可用于提交 issue。\",\n  \"confidence\": \"high\"\n}",
+  "completed": true,
+  "usage": {
+    "input_tokens": 11288,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 718,
+    "reasoning_output_tokens": 516
+  },
+  "errors": [],
+  "warnings": [],
+  "tools_used": [],
+  "stderr_sha256": "b11ccfc5e6ef444164a57f5a3dec045f85bdf729b6ad3880b1f6b2f4023f9332",
+  "stderr_lines": 17
+}
