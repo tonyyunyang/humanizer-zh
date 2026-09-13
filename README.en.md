@@ -6,7 +6,17 @@ A Chinese writing skill that removes formulaic phrasing while preserving the wri
 
 This independently maintained adaptation follows [Blader Humanizer](https://github.com/blader/humanizer), draws on the Chinese editing practice in [说人话](https://github.com/MrGeDiao/shuorenhua), and acknowledges [op7418's earlier Chinese edition](https://github.com/op7418/Humanizer-zh).
 
-The complete editing workflow lives in one [`SKILL.md`](SKILL.md). No runtime service, project API key, or npm package is required. Use it with your existing AI agent.
+The complete editing workflow lives in one [`SKILL.md`](SKILL.md). No runtime service, project API key, or npm package is required. Use it with your existing AI agent; its access, usage costs and data settings still apply.
+
+## See an actual edit
+
+![A recorded Chinese edit removes the promotional introduction while preserving the web-only limit and lack of mobile support.](assets/demo/before-after.gif)
+
+[Watch or download the 34-second demo](assets/demo/humanizer-zh.mp4) · [Static comparison](assets/demo/comparison.png) · [Inputs, outputs and provenance](docs/DEMO.md)
+
+The sample is a product update: when an upload fails, users can click Retry; the feature is available on the web only, with mobile support still unavailable. In this recorded run, the skill removes the promotional introduction and keeps both limitations.
+
+A second example retains every technical number and an untested condition. A third leaves an already-natural paragraph unchanged. These synthetic cases were each run once with Humanizer-zh **1.1.0** and gpt-6-astra. The saved outputs are unedited; the video's pacing is edited. They illustrate observed behavior, not a statistical benchmark or a guarantee for other models.
 
 ## Install
 

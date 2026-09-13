@@ -1,0 +1,35 @@
+{
+  "product": "Humanizer-zh",
+  "skill_version": "1.1.0",
+  "skill_commit": "72b23e9658400f36fead85f2e51ea8ea61804517",
+  "skill_sha256": "9c1be9fc3985c3e04422cd6f9808405ccf3fbdf541af72417008660908f2554c",
+  "recorded_on": "2026-09-13",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "cli_version": "codex-cli 0.153.4",
+  "method": "Fresh text-only Codex sessions using the pinned SKILL.md as editing guidance; one run per synthetic case. Output is unedited. No expected answers supplied.",
+  "video": "Presentation of saved input and output, with edited pacing; not a live product UI or a runtime speed benchmark.",
+  "cases": [
+    {
+      "id": "demo-update",
+      "request": "用 humanizer-zh 润色这段产品更新说明，保留事实与使用范围。只给最终成稿。",
+      "input": "这不仅仅是一次功能更新，更是我们对用户体验的持续深耕。现在，上传失败时可以点击「重试」。该功能目前只在网页版开放，手机端尚未支持。",
+      "output": "现在，上传失败时可以点击「重试」。该功能目前只在网页版开放，手机端尚未支持。",
+      "elapsed_seconds": 6.607
+    },
+    {
+      "id": "demo-metrics",
+      "request": "用 humanizer-zh 润色这段技术更新，保留全部数字、指标、条件和未完成事项。只给最终成稿。",
+      "input": "在测试环境中，我们针对 60 个请求的验证结果表明，缓存命中时的 p95 延迟由 420ms 降到了 260ms。这一成果充分体现了此次优化的显著价值。需要指出的是，缓存未命中的情况尚未验证。",
+      "output": "在测试环境中，我们验证了 60 个请求，结果显示：缓存命中时的 p95 延迟由 420ms 降到了 260ms。缓存未命中的情况尚未验证。",
+      "elapsed_seconds": 7.929
+    },
+    {
+      "id": "demo-voice",
+      "request": "用 humanizer-zh 看看这段中文需不需要润色，保留作者的语气。只给最终成稿。",
+      "input": "我本来只想修个小问题，结果一下午都搭进去了。明天再说吧。",
+      "output": "我本来只想修个小问题，结果一下午都搭进去了。明天再说吧。",
+      "elapsed_seconds": 8.116
+    }
+  ]
+}
